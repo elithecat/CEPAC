@@ -51,7 +51,7 @@ class ModelRunner:
                 'g++',
                 '-o', str(self.executable),
                 '-std=c++11',
-                '-O2',
+                '-O3',
             ] + [str(f) for f in self.cepac_dir.glob('*.cpp')]
 
             result = subprocess.run(
