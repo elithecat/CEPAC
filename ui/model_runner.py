@@ -124,26 +124,37 @@ class ModelRunner:
                     result['success'] = False
                     return result
 
-                # Read output files
-                out_file = tmpdir / f'{run_name}.out'
+                # Read output files - CEPAC puts them in results/ subdirectory or root
+                results_dir = tmpdir / 'results'
+
+                # Check both locations for output files
+                out_file = results_dir / f'{run_name}.out' if results_dir.exists() else tmpdir / f'{run_name}.out'
+                if not out_file.exists():
+                    out_file = tmpdir / f'{run_name}.out'
                 if out_file.exists():
                     with open(out_file, 'r') as f:
                         result['output'] = f.read()
 
-                cout_file = tmpdir / f'{run_name}.cout'
+                cout_file = results_dir / f'{run_name}.cout' if results_dir.exists() else tmpdir / f'{run_name}.cout'
+                if not cout_file.exists():
+                    cout_file = tmpdir / f'{run_name}.cout'
                 if cout_file.exists():
                     with open(cout_file, 'r') as f:
                         result['cout'] = f.read()
 
-                popstats_file = tmpdir / 'popstats'
+                popstats_file = results_dir / 'popstats.out' if results_dir.exists() else tmpdir / 'popstats.out'
+                if not popstats_file.exists():
+                    popstats_file = tmpdir / 'popstats.out'
                 if popstats_file.exists():
                     with open(popstats_file, 'r') as f:
                         result['popstats'] = f.read()
 
-                # Look for trace files
-                for trace_file in tmpdir.glob('*.trace'):
-                    with open(trace_file, 'r') as f:
-                        result['trace'] += f"=== {trace_file.name} ===\n{f.read()}\n"
+                # Look for trace files in both locations
+                search_dirs = [tmpdir, results_dir] if results_dir.exists() else [tmpdir]
+                for search_dir in search_dirs:
+                    for trace_file in search_dir.glob('*.trace'):
+                        with open(trace_file, 'r') as f:
+                            result['trace'] += f"=== {trace_file.name} ===\n{f.read()}\n"
 
                 result['success'] = True
 
