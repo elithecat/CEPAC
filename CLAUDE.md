@@ -36,11 +36,17 @@ g++ -o cepac *.cpp -std=c++11 -O3
 ./cepac /path/to/inputs/
 ```
 
-The model reads `.in` input files from the specified directory (or current directory) and produces:
-- `.out` files - main statistics output
-- `.cout` files - detailed cost statistics (if enabled)
-- `popstats` file - population summary across all runs
-- Trace files - detailed patient-level output for debugging
+**Important:** The argument must be a **directory path**, not a file path. The model searches for all `*.in` files in that directory.
+
+The model reads `.in` input files from the specified directory (or current directory) and produces output in a `results/` subdirectory:
+- `.out` files - main statistics output (one per `.in` file, **always** generated on successful run)
+- `.cout` files - detailed cost statistics (only if `EnableDetailedCosts` is set to 1 in the input file)
+- `popstats.out` file - population summary across all runs in a batch
+- Trace files - detailed patient-level output (only if `NumPatientsToTrace` > 0 in the input file)
+
+**Important:** If no `.out` file is generated, the model encountered an error. Errors may be printed to the console rather than stopping execution, so check console output carefully.
+
+**Known issue:** Running multiple input files in a single batch may cause segfaults due to state not being properly reset between runs. As a workaround, run each input file in its own directory.
 
 ## Architecture
 
