@@ -1217,6 +1217,134 @@ KEYWORD_MAP = {
 }
 
 
+def create_pmc9087297_params(risk_level='VHR', enable_prep=False):
+    """Create parameters based on PMC9087297 paper.
+
+    Paper: Cost-effectiveness of injectable cabotegravir (CAB-LA) PrEP vs oral PrEP
+    Setting: United States, MSM/TGW population
+    DOI: PMC9087297
+
+    Args:
+        risk_level: 'VHR' (very high risk) or 'HR' (high risk)
+        enable_prep: Whether to enable PrEP (False = no PrEP baseline)
+
+    Returns:
+        Complete parameter dictionary for CEPAC
+    """
+    # Start with defaults
+    params = create_default_params()
+
+    # === HIV Incidence Rates ===
+    # VHR: 5.32/100 PY = 0.0532 annual = 0.00443 monthly
+    # HR: 1.54/100 PY = 0.0154 annual = 0.00128 monthly
+    if risk_level == 'VHR':
+        monthly_incidence = 0.00443
+        run_suffix = 'VHR'
+    else:  # HR
+        monthly_incidence = 0.00128
+        run_suffix = 'HR'
+
+    prep_suffix = 'GenericPrEP' if enable_prep else 'NoPrEP'
+
+    # === RunSpecs ===
+    params['runspecs']['runSetName'] = 'PMC9087297'
+    params['runspecs']['runName'] = f'PMC9087297_{run_suffix}_{prep_suffix}'
+    params['runspecs']['numCohorts'] = 10000
+    params['runspecs']['discountFactor'] = 0.03  # 3% discount rate
+
+    # === Cohort Demographics ===
+    # Mean age: 30.1 years = 361 months (use 360)
+    params['cohort']['initialAgeMean'] = 360.0
+    params['cohort']['initialAgeStdDev'] = 120.0  # ~10 years SD
+    # 100% male (MSM/TGW)
+    params['cohort']['maleGenderDistribution'] = 1.0
+    # CD4 at infection: 667 cells/µL (CD4vhi stratum >500)
+    params['cohort']['initialCD4Mean'] = 667.0
+    params['cohort']['initialCD4StdDev'] = 100.0
+
+    # === HIV Testing ===
+    params['hivtest']['enableHIVTesting'] = True
+    params['hivtest']['HIVTestSensitivity'] = 0.99
+    params['hivtest']['HIVTestSpecificity'] = 0.99
+    params['hivtest']['HIVTestCost'] = 50.0  # Standard HIV test cost
+    params['hivtest']['probHIVTestAccept'] = 0.95
+    params['hivtest']['probHIVTestReturn'] = 0.95
+
+    # PrEP settings
+    if enable_prep:
+        params['hivtest']['enablePrEP'] = True
+        params['hivtest']['PrEPCostMonthly'] = 66.0  # Generic F/TDF: $790/year ÷ 12
+        params['hivtest']['PrEPEfficacy'] = 0.99  # ~99% efficacy with good adherence
+        params['hivtest']['probPrEPDropout'] = 0.02  # 2% monthly dropout
+    else:
+        params['hivtest']['enablePrEP'] = False
+        params['hivtest']['PrEPCostMonthly'] = 0.0
+        params['hivtest']['PrEPEfficacy'] = 0.0
+        params['hivtest']['probPrEPDropout'] = 0.0
+
+    # === ART Treatment ===
+    # ART efficacy: 93% (viral suppression)
+    # ART adherence ≥90%: 71% of cohort
+    # ART costs: $31,560/year (min) = $2,630/month
+    for i, art_line in enumerate(params['arts']['artData']):
+        art_line['costMonthly'] = 2630.0  # $31,560/year
+        art_line['costInitial'] = 500.0   # Initial ART setup cost
+        art_line['efficacyTimeHorizon'] = 48
+        # CD4 response on suppressive ART
+        for resp_type in range(CONSTANTS['CD4_RESPONSE_NUM_TYPES']):
+            art_line['CD4ChangeOnSuppARTMean'][resp_type] = [10.0, 5.0, 2.0]  # Monthly CD4 gain
+            art_line['CD4ChangeOnSuppARTStdDev'][resp_type] = [5.0, 3.0, 1.0]
+
+    # === QOL Settings ===
+    # QoL on ART: 0.83-0.87 (by CD4)
+    params['qol']['QOLBaseHIVNegative'] = 1.0
+    # QOL by CD4 strata and ART status [ART_state][CD4_strata]
+    # CD4 strata: VLO, LO, MLO, MHI, HI, VHI (indices 0-5)
+    # Off ART
+    params['qol']['QOLBaseHIVPositive'][0] = [0.75, 0.78, 0.80, 0.82, 0.84, 0.85]
+    # On ART
+    params['qol']['QOLBaseHIVPositive'][1] = [0.83, 0.84, 0.85, 0.86, 0.87, 0.87]
+
+    # === Cost Settings ===
+    n_age = CONSTANTS['COST_AGE_CAT_NUM']
+    n_gender = CONSTANTS['GENDER_NUM']
+    n_cd4 = CONSTANTS['CD4_NUM_STRATA']
+
+    # Routine HIV care: $3,280-$32,580/year = $273-$2,715/month
+    # Use middle estimate for HIV+ on ART
+    for age_cat in range(n_age):
+        for gender in range(n_gender):
+            for cd4 in range(n_cd4):
+                # Direct medical costs (index 0)
+                params['costs']['routineCareCostHIVPositive'][1][cd4][gender][age_cat][0] = 500.0
+                params['costs']['routineCareCostHIVPositive'][0][cd4][gender][age_cat][0] = 800.0
+
+    # CD4 and HVL test costs
+    for age_cat in range(n_age):
+        params['costs']['CD4TestCost'][age_cat][0] = 50.0   # Direct medical
+        params['costs']['HVLTestCost'][age_cat][0] = 100.0  # Direct medical
+
+    # General medicine costs for HIV-negative
+    for age_cat in range(n_age):
+        for gender in range(n_gender):
+            params['costs']['generalMedicineCost'][gender][age_cat][0] = 200.0
+
+    # === Natural History ===
+    # HIV death rate ratios by CD4
+    params['nathist']['HIVDeathRateRatio'] = [5.0, 3.0, 2.0, 1.5, 1.2, 1.0]
+    params['nathist']['ARTDeathRateRatio'] = 1.1
+
+    # CD4 decline rates (monthly) by CD4/HVL strata
+    for cd4 in range(CONSTANTS['CD4_NUM_STRATA']):
+        for hvl in range(CONSTANTS['HVL_NUM_STRATA']):
+            # Higher HVL = faster CD4 decline
+            base_decline = 2.0 + hvl * 0.5  # 2.0 to 5.0 cells/month
+            params['nathist']['monthlyCD4DeclineMean'][cd4][hvl] = base_decline
+            params['nathist']['monthlyCD4DeclineStdDev'][cd4][hvl] = base_decline * 0.3
+
+    return params
+
+
 def get_param_metadata():
     """Get metadata about parameters for UI generation."""
     return {

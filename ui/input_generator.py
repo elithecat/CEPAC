@@ -168,12 +168,15 @@ class InputGenerator:
             self._w('InitHVL')
             # HVL values also in reverse order (HVLvhi first)
             self._w(cd4, *[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
-        self._w('InitAge', 360.0, 120.0)
+        # Use params for age and gender
+        init_age_mean = p.get('initialAgeMean', 360.0)
+        init_age_sd = p.get('initialAgeStdDev', 120.0)
+        self._w('InitAge', init_age_mean, init_age_sd)
         self._w('InitAgeCustomDist', 0)
         self._w('AgeStratMins', *([0.0] * INIT_AGE_NUM_STRATA))
         self._w('AgeStratMaxes', *([0.0] * INIT_AGE_NUM_STRATA))
         self._w('AgeStratProbs', *([0.0] * INIT_AGE_NUM_STRATA))
-        self._w('InitGender', 0.5)
+        self._w('InitGender', p.get('maleGenderDistribution', 0.5))
         self._w('ProphNonCompliance', 0.0, 0.0)
         self._w('PatClinicTypes', 0.0, 0.0, 1.0)
         self._w('PatTreatmentTypes', 0.0, 0.0, 1.0)
@@ -954,9 +957,12 @@ class InputGenerator:
 
     def _gen_hivtest(self):
         """Generate HIVTest section (readHIVTestInputs)."""
-        self._w('EnableHIVtest', 0)
-        self._w('HIVtestAvail', 0)
-        self._w('PrEPEnable', 0)
+        p = self.p.get('hivtest', {})
+        enable_hiv_test = 1 if p.get('enableHIVTesting', False) else 0
+        enable_prep = 1 if p.get('enablePrEP', False) else 0
+        self._w('EnableHIVtest', enable_hiv_test)
+        self._w('HIVtestAvail', enable_hiv_test)
+        self._w('PrEPEnable', enable_prep)
         self._w('CD4testAvail', 0)
         self._w('AltStopRuleEnable', 0)
         self._w('AltStopRuleTotHIV', 0)
@@ -1019,18 +1025,26 @@ class InputGenerator:
         self._w('HIVtestBgStartAge', 0)
         self._w('HIVtestBgProbLink', 1.0)
         self._w('HIVtestDetectCost', *([0.0] * 3))
+        # PrEP parameters from hivtest section
+        prep_monthly_cost = p.get('PrEPCostMonthly', 0.0)
+        prep_efficacy = p.get('PrEPEfficacy', 0.0)
+        prep_dropout = p.get('probPrEPDropout', 0.0)
         self._w('PrEPDropoutThreshold', 12)
         self._w('DropoutThresholdRefPrEPStart', 0)
         self._w('PrEPHIVtestAcceptProb', *([1.0] * 2))
-        self._w('PrEPInitDist', *([0.0] * 2))
+        # If PrEP enabled, set initial distribution to 100% coverage
+        prep_init = 1.0 if p.get('enablePrEP', False) else 0.0
+        self._w('PrEPInitDist', prep_init, prep_init)
         self._w('PrEPJoinAfterRollout', *([0] * 2))
-        self._w('PrEPDropoutPreThreshold', *([0.0] * 2))
-        self._w('PrEPDropoutPostThreshold', *([0.0] * 2))
-        self._w('PrEPCoverage', *([0.0] * 2))
+        self._w('PrEPDropoutPreThreshold', prep_dropout, prep_dropout)
+        self._w('PrEPDropoutPostThreshold', prep_dropout, prep_dropout)
+        # PrEP coverage and efficacy
+        prep_coverage = 1.0 if p.get('enablePrEP', False) else 0.0
+        self._w('PrEPCoverage', prep_coverage, prep_coverage)
         self._w('PrEPDuration', *([0] * 2))
         self._w('PrEPShape', *([1.0] * 2))
         self._w('PrEPStartupCost', *([0.0] * 2))
-        self._w('PrEPMonthlyCost', *([0.0] * 2))
+        self._w('PrEPMonthlyCost', prep_monthly_cost, prep_monthly_cost)
         self._w('PrEPQoLMod', *([0.0] * 2))
         self._w2('PrepIncidMale', 'hiRisk', *([0.0] * 10))
         self._w2('PrepIncidMale', 'loRisk', *([0.0] * 10))
