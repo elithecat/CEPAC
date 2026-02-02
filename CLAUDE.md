@@ -125,12 +125,13 @@ A Flask-based web interface is provided for configuring and running the model.
 
 ```bash
 cd ui
-pip install -r requirements.txt
-python app.py
-# Open http://localhost:5000
+pip install flask
+python3 app.py --port 3000
 ```
 
-Optional arguments:
+Then open http://localhost:3000 in your browser.
+
+**Command-line options:**
 - `--host HOST` - Host to bind to (default: 0.0.0.0)
 - `--port PORT` - Port to listen on (default: 5000)
 - `--debug` - Enable debug mode
@@ -146,7 +147,7 @@ Optional arguments:
 
 ### UI Tabs
 
-The UI provides 21 configuration tabs matching the model's input structure:
+The UI provides 22 configuration tabs matching the model's input structure:
 
 | Tab | Description |
 |-----|-------------|
@@ -166,6 +167,7 @@ The UI provides 21 configuration tabs matching the model's input structure:
 | QOL | Quality of life modifiers |
 | HIV Testing | HIV testing and PrEP |
 | Pediatrics | Pediatric model settings |
+| Peds Prophs | Pediatric prophylaxis settings |
 | Peds ARTs | Pediatric ART parameters |
 | Peds Costs | Pediatric costs |
 | EID | Early infant diagnosis |

@@ -110,6 +110,7 @@ def create_default_params():
         'qol': create_qol_defaults(),
         'hivtest': create_hivtest_defaults(),
         'peds': create_peds_defaults(),
+        'pedsprophs': create_pedsprophs_defaults(),
         'pedsarts': create_pedsarts_defaults(),
         'pedscosts': create_pedscosts_defaults(),
         'eid': create_eid_defaults(),
@@ -785,57 +786,370 @@ def create_hivtest_defaults():
 
 def create_peds_defaults():
     """Peds tab defaults."""
+    PEDS_MATERNAL_STATUS_NUM = 4
+    PEDS_AGE_INFANT_NUM = 7
+    PEDS_AGE_EARLY_NUM = 10
+    PEDS_AGE_CHILD_NUM = 11
+    PEDS_CD4_PERC_NUM = 8
+    PEDS_PP_MATERNAL_ART_STATUS_NUM = 24
+    PEDS_EXPOSED_CONDITIONS_NUM = 4
+
     return {
         'enablePediatrics': False,
-        'probPedsHIVPosAtEntry': [0.0] * 3,  # IU, IP, PP
+        # Maternal status and transmission
+        'maternalStatusDistribution': [0.25] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherIncidentInfection': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMaternalDeath': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherStatusKnownPregnancy': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherStatusBecomeKnown': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherOnARTInitial': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherOnSuppressedART': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherKnownSuppressed': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherKnownNotSuppressed': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probMotherLowHVL': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        # Early VTHIV
+        'earlyVTHIVDistributionMotherOnArtSuppressed': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'earlyVTHIVDistributionMotherOnArtNotSuppressedLowHVL': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'earlyVTHIVDistributionMotherOnArtNotSuppressedHighHVL': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'earlyVTHIVDistributionMotherOffArt': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        # Post-partum VTHIV
+        'probVTHIVPPMotherOnARTSuppressed': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probVTHIVPPMotherOnARTNotSuppressedLowHVL': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probVTHIVPPMotherOnARTNotSuppressedHighHVL': [0.0] * PEDS_MATERNAL_STATUS_NUM,
+        'probVTHIVPPMotherOffART': [[0.0] * 4 for _ in range(PEDS_MATERNAL_STATUS_NUM)],
+        # Initial distributions
         'pedsInitialCD4PercMean': 0.25,
         'pedsInitialCD4PercStdDev': 0.1,
+        'pedsInitialHVLDistribution': [0.0] * CONSTANTS['HVL_NUM_STRATA'],
+        # Death rate ratios
+        'HIVDeathRateRatioPedsEarly': [[0.0] * PEDS_CD4_PERC_NUM for _ in range(PEDS_AGE_EARLY_NUM)],
+        'HIVDeathRateRatioPedsLate': [0.0] * CONSTANTS['CD4_NUM_STRATA'],
+        'ARTDeathRateRatioPeds': [[1.0] * PEDS_AGE_CHILD_NUM for _ in range(3)],
+        'genericRiskDeathRateRatioPeds': [[1.0] * PEDS_AGE_CHILD_NUM for _ in range(CONSTANTS['RISK_FACT_NUM'])],
+        # Background death rates
+        'backgroundDeathRateMalePedsEarly': [0.0] * PEDS_AGE_EARLY_NUM,
+        'backgroundDeathRateFemalePedsEarly': [0.0] * PEDS_AGE_EARLY_NUM,
+        'backgroundDeathRateExposedMalePedsEarly': [0.0] * PEDS_AGE_EARLY_NUM,
+        'backgroundDeathRateExposedFemalePedsEarly': [0.0] * PEDS_AGE_EARLY_NUM,
+        # OI probabilities
+        'probOINoHistPedsEarly': [[[0.0] * PEDS_CD4_PERC_NUM for _ in range(PEDS_AGE_EARLY_NUM)] for _ in range(CONSTANTS['OI_NUM'])],
+        'probOIWithHistPedsEarly': [[[0.0] * PEDS_CD4_PERC_NUM for _ in range(PEDS_AGE_EARLY_NUM)] for _ in range(CONSTANTS['OI_NUM'])],
+        'probOINoHistPedsLate': [[0.0] * CONSTANTS['OI_NUM'] for _ in range(CONSTANTS['CD4_NUM_STRATA'])],
+        'probOIWithHistPedsLate': [[0.0] * CONSTANTS['OI_NUM'] for _ in range(CONSTANTS['CD4_NUM_STRATA'])],
+        # ART policies
+        'maxPedsCD4Perc': [100.0] * PEDS_AGE_EARLY_NUM,
+        'intvlCD4TestPreARTPeds': [3, 3],
+        'intvlHVLTestPreARTPeds': [3, 3],
+        # Peds prophylaxis start/stop
+        'priProphStartPedsAgeLwr': [0.0] * CONSTANTS['OI_NUM'],
+        'priProphStartPedsAgeUpp': [999.0] * CONSTANTS['OI_NUM'],
+        'priProphStartPedsCD4PercUpp': [100.0] * CONSTANTS['OI_NUM'],
+        'priProphStartPedsCD4PercLwr': [0.0] * CONSTANTS['OI_NUM'],
+        'priProphStartPedsOIHistory': [[0] * CONSTANTS['OI_NUM'] for _ in range(CONSTANTS['OI_NUM'])],
+        'priProphStartPedsCondFirst': 0,
+        'priProphStartPedsCondSecond': 0,
+        'priProphStartPedsCondPar': 0,
+        # Peds ART start/fail/stop (simplified - full structure in generator)
+        'pedsARTStartMthStage': [0, 0, 0],
+        'pedsARTStartCD4PercBounds': [[[100.0, 0.0] for _ in range(CONSTANTS['ART_NUM_LINES'])] for _ in range(4)],
+        'pedsARTStartHVLBounds': [[CONSTANTS['HVL_NUM_STRATA'], 0] for _ in range(CONSTANTS['ART_NUM_LINES'])],
+    }
+
+
+def create_pedsprophs_defaults():
+    """PedsProphs tab defaults."""
+    PROPH_NUM = CONSTANTS['PROPH_NUM']
+    n_oi = CONSTANTS['OI_NUM']
+
+    def default_peds_proph():
+        return {
+            'id': -1,  # NOT_APPL - disabled by default
+            'primaryOIEfficacy': [0.0] * n_oi,
+            'secondaryOIEfficacy': [0.0] * n_oi,
+            'monthlyProbResistance': 0.0,
+            'percentResistance': 0.0,
+            'timeOfResistance': 0,
+            'costFactorResistance': 1.0,
+            'deathRateRatioResistance': 1.0,
+            'probMinorToxicity': 0.0,
+            'probMajorToxicity': 0.0,
+            'monthsToToxicity': 0,
+            'deathRateRatioMajorToxicity': 1.0,
+            'costMonthly': 0.0,
+            'costMinorToxicity': 0.0,
+            'QOLMinorToxicity': 1.0,
+            'costMajorToxicity': 0.0,
+            'QOLMajorToxicity': 1.0,
+            'monthsToSwitch': -1,
+            'switchOnMinorToxicity': False,
+            'switchOnMajorToxicity': False,
+        }
+
+    return {
+        # Primary peds prophylaxis [oi][proph_line]
+        'pedsPriProphData': [[default_peds_proph() for _ in range(PROPH_NUM)]
+                             for _ in range(n_oi)],
+        # Secondary peds prophylaxis [oi][proph_line]
+        'pedsSecProphData': [[default_peds_proph() for _ in range(PROPH_NUM)]
+                             for _ in range(n_oi)],
     }
 
 
 def create_pedsarts_defaults():
     """PedsARTs tab defaults."""
+    PEDS_ART_COST_AGE_CAT_NUM = CONSTANTS['PEDS_ART_COST_AGE_CAT_NUM']
+
+    def default_peds_art():
+        return {
+            'id': -1,  # NOT_APPL - disabled by default
+            'costInitial': [0.0] * PEDS_ART_COST_AGE_CAT_NUM,
+            'costMonthly': [0.0] * PEDS_ART_COST_AGE_CAT_NUM,
+            'efficacyTimeHorizonEarly': 48,
+            'efficacyTimeHorizonLate': 48,
+            'forceFailAtMonthEarly': -1,
+            'forceFailAtMonthLate': -1,
+        }
+
     return {
-        'pedsARTData': [{
-            'costInitial': 0.0,
-            'costMonthly': 0.0,
-        } for _ in range(CONSTANTS['ART_NUM_LINES'])]
+        'pedsARTData': [default_peds_art() for _ in range(CONSTANTS['ART_NUM_LINES'])]
     }
 
 
 def create_pedscosts_defaults():
     """PedsCosts tab defaults."""
+    PEDS_COST_AGE_CAT_NUM = CONSTANTS['PEDS_COST_AGE_CAT_NUM']
+    COST_NUM_TYPES = CONSTANTS['COST_NUM_TYPES']
+    n_oi = CONSTANTS['OI_NUM']
+    DTH_NUM_CAUSES_BASIC = CONSTANTS['DTH_NUM_CAUSES_BASIC']
+    n_gender = CONSTANTS['GENDER_NUM']
+    n_cd4 = CONSTANTS['CD4_NUM_STRATA']
+
+    def default_age_cat_costs():
+        return {
+            # Acute OI costs (by OI, ART state)
+            'acuteOICostTreatedNoART': [[0.0] * COST_NUM_TYPES for _ in range(n_oi)],
+            'acuteOICostUntreatedNoART': [[0.0] * COST_NUM_TYPES for _ in range(n_oi)],
+            'acuteOICostTreatedOnART': [[0.0] * COST_NUM_TYPES for _ in range(n_oi)],
+            'acuteOICostUntreatedOnART': [[0.0] * COST_NUM_TYPES for _ in range(n_oi)],
+            # CD4/HVL test costs
+            'CD4TestCost': [0.0] * COST_NUM_TYPES,
+            'HVLTestCost': [0.0] * COST_NUM_TYPES,
+            # Death costs
+            'deathCostTreatedNoART': [[0.0] * COST_NUM_TYPES for _ in range(DTH_NUM_CAUSES_BASIC)],
+            'deathCostUntreatedNoART': [[0.0] * COST_NUM_TYPES for _ in range(DTH_NUM_CAUSES_BASIC)],
+            'deathCostTreatedOnART': [[0.0] * COST_NUM_TYPES for _ in range(DTH_NUM_CAUSES_BASIC)],
+            'deathCostUntreatedOnART': [[0.0] * COST_NUM_TYPES for _ in range(DTH_NUM_CAUSES_BASIC)],
+        }
+
     return {
-        'pedsCD4TestCost': [0.0] * CONSTANTS['PEDS_COST_AGE_CAT_NUM'],
-        'pedsHVLTestCost': [0.0] * CONSTANTS['PEDS_COST_AGE_CAT_NUM'],
+        'pedsCostsByAgeCat': [default_age_cat_costs() for _ in range(PEDS_COST_AGE_CAT_NUM)],
+        # Routine care costs
+        'routineCareCostHIVNegDmed': [[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)],
+        'routineCareCostHIVNegNmed': [[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)],
+        'routineCareCostHIVNegTime': [[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)],
+        'routineCareCostHIVNegIndr': [[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)],
+        'routineCareCostHIVPosNoARTDmed': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosNoARTNmed': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosNoARTTime': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosNoARTIndr': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosOnARTDmed': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosOnARTNmed': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosOnARTTime': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
+        'routineCareCostHIVPosOnARTIndr': [[[0.0] * PEDS_COST_AGE_CAT_NUM for _ in range(n_gender)] for _ in range(n_cd4)],
     }
 
 
 def create_eid_defaults():
     """EID tab defaults."""
+    EID_NUM_ASSAYS = CONSTANTS['EID_NUM_ASSAYS']
+    EID_NUM_TESTS = CONSTANTS['EID_NUM_TESTS']
+    INFANT_HIV_PROPHS_NUM = CONSTANTS['INFANT_HIV_PROPHS_NUM']
+    INFANT_PROPH_AGES_NUM = 36
+    INFANT_PROPH_COST_AGES_NUM = 8
+    EID_COST_VISIT_NUM = 24
+    EID_TEST_AGE_CATEGORY_NUM = 18
+    PEDS_MATERNAL_STATUS_NUM = 4
+
+    def default_infant_proph():
+        return {
+            'enable': False,
+            'maxAge': 0,
+            'maternalHIVStatusKnown': 0,
+            'maternalHIVStatusPositive': 0,
+            'motherOnART': 0,
+            'maternalVSKnownDelivery': 0,
+            'motherSuppressedDelivery': 0,
+            'motherHVLHighDelivery': 0,
+            'maternalVSKnown': 0,
+            'motherSuppressed': 0,
+            'motherHVLHigh': 0,
+            'stopOnPosEID': False,
+            'adminProb': [0.0] * INFANT_PROPH_AGES_NUM,
+            'adminEIDNegMonths': [0] * INFANT_PROPH_AGES_NUM,
+            'startupCost': [0.0] * INFANT_PROPH_COST_AGES_NUM,
+            'doseCost': [0.0] * INFANT_PROPH_COST_AGES_NUM,
+            'effHorizon': 0,
+            'decayTime': 0,
+            'probSubsequentEff': 0.0,
+            'majorToxProb': 0.0,
+            'majorToxQOLMod': 1.0,
+            'majorToxCost': 0.0,
+            'majorToxDeathRateRatio': 1.0,
+            'majorToxDeathRateRatioDuration': 0,
+            'majorToxDeathCost': 0.0,
+            'majorToxStopOnTox': False,
+            'minorToxProb': 0.0,
+            'minorToxQOLMod': 1.0,
+            'minorToxCost': 0.0,
+            'ppVTHIVThreshold': 0,
+            'ppVTHIVMultOnARTPreSuppressed': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOnARTPreNotSuppLow': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOnARTPreNotSuppHigh': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPreEBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPreMBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPreCBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOnARTPostSuppressed': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOnARTPostNotSuppLow': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOnARTPostNotSuppHigh': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPostEBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPostMBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+            'ppVTHIVMultOffARTPostCBF': [1.0] * PEDS_MATERNAL_STATUS_NUM,
+        }
+
+    def default_eid_test():
+        return {
+            'countTowardEIDCosts': False,
+            'probOfferedTest': 0.0,
+            'probAcceptTest': 0.0,
+            'testCost': 0.0,
+            'costResult': 0.0,
+            'costNegResult': 0.0,
+            'costPosResult': 0.0,
+            'resultReturnProbLab': 1.0,
+            'resultReturnProbPatient': 1.0,
+            'resultReturnTimeMean': 0,
+            'resultReturnTimeStdDev': 0,
+            'sensitivityIU': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityIP': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityPPBeforeSR': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityPPAfterSR': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityPPDuringBF': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityMultMaternalART': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'sensitivityMultInfantProph': [[1.0] * EID_TEST_AGE_CATEGORY_NUM for _ in range(INFANT_HIV_PROPHS_NUM)],
+            'specificityHEUBeforeSR': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'specificityHEUAfterSR': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'specificityUninfectedMother': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'specificityMotherInfectedBF': [1.0] * EID_TEST_AGE_CATEGORY_NUM,
+            'specificityMultInfantProph': [[1.0] * EID_TEST_AGE_CATEGORY_NUM for _ in range(INFANT_HIV_PROPHS_NUM)],
+            'confAssayFirst': -1,
+            'confAssaySecond': -1,
+            'confDelayFirst': 0,
+            'confDelaySecond': 0,
+            'probLink': 1.0,
+            'probMaternalStatusKnownOnPosResult': 0.0,
+        }
+
     return {
         'enableEID': False,
-        'eidTestCost': [0.0] * CONSTANTS['EID_NUM_TESTS'],
-        'eidTestSensitivity': [[0.0] * 18 for _ in range(CONSTANTS['EID_NUM_TESTS'])],
-        'eidTestSpecificity': [[1.0] * 18 for _ in range(CONSTANTS['EID_NUM_TESTS'])],
+        'altStopRuleEnable': False,
+        'altStopRuleTotHIV': 0,
+        'altStopRuleTotCohort': 0,
+        # Testing admin
+        'testingAdminAssayUnknownPos': [0] * EID_NUM_ASSAYS,
+        'testingAdminAgeUnknownPos': [0] * EID_NUM_ASSAYS,
+        'testingAdminProbPresentUnknownPos': [0.0] * EID_NUM_ASSAYS,
+        'testingAdminProbNonMaternalUnknownPos': [0.0] * EID_NUM_ASSAYS,
+        'testingAdminEIDVisitUnknownPos': [False] * EID_NUM_ASSAYS,
+        'testingAdminReofferUnknownPos': [False] * EID_NUM_ASSAYS,
+        'testingAdminAssayKnownPos': [0] * EID_NUM_ASSAYS,
+        'testingAdminAgeKnownPos': [0] * EID_NUM_ASSAYS,
+        'testingAdminProbPresentKnownPos': [0.0] * EID_NUM_ASSAYS,
+        'testingAdminProbNonMaternalKnownPos': [0.0] * EID_NUM_ASSAYS,
+        'testingAdminEIDVisitKnownPos': [False] * EID_NUM_ASSAYS,
+        'testingAdminReofferKnownPos': [False] * EID_NUM_ASSAYS,
+        # Seroreversion and multipliers
+        'ageSeroreversionMean': 18,
+        'ageSeroreversionStdDev': 3,
+        'multProbPresentIfMissedVisit': 1.0,
+        'multProbOfferIfNonMaternal': 1.0,
+        'probKnowledgePriorResult': 1.0,
+        # Visit costs
+        'costVisit': [0.0] * EID_COST_VISIT_NUM,
+        # OI detection
+        'probDetectionOnOI': [0.0] * CONSTANTS['OI_NUM'],
+        'probOIDetectionConfirmedLabTest': 0.0,
+        'oiLabTestMonthsThreshold': 0,
+        'oiAssayUnknownPos': [0, 0],
+        'oiAssayKnownPos': [0, 0],
+        # Infant HIV prophylaxis
+        'infantHIVProphs': [default_infant_proph() for _ in range(INFANT_HIV_PROPHS_NUM)],
+        # EID HIV tests
+        'eidTests': [default_eid_test() for _ in range(EID_NUM_TESTS)],
     }
 
 
 def create_adolescent_defaults():
     """Adolescent tab defaults."""
+    ADOLESCENT_NUM_AGES = CONSTANTS['ADOLESCENT_NUM_AGES']
+    n_cd4 = CONSTANTS['CD4_NUM_STRATA']
+    n_hvl = CONSTANTS['HVL_NUM_STRATA']
+    n_oi = CONSTANTS['OI_NUM']
+    n_risk = CONSTANTS['RISK_FACT_NUM']
+
     return {
         'enableAdolescent': False,
-        'adolescentAgeBounds': [10, 15, 20],
+        'transitionToAdult': False,
+        'ageTransitionToAdult': 18,
+        'ageTransitionFromPeds': 10,
+        'adolescentAgeBounds': [0] * (ADOLESCENT_NUM_AGES - 1),
+        # CD4 decline
+        'monthlyCD4DeclineMeanAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                              for _ in range(n_hvl)]
+                                             for _ in range(n_cd4)],
+        'monthlyCD4DeclineStdDevAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                                for _ in range(n_hvl)]
+                                               for _ in range(n_cd4)],
+        # OI probabilities
+        'monthlyOIProbOffARTNoHistAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                                  for _ in range(n_cd4)]
+                                                 for _ in range(n_oi)],
+        'monthlyOIProbOffARTWithHistAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                                    for _ in range(n_cd4)]
+                                                   for _ in range(n_oi)],
+        'monthlyOIProbOnARTNoHistAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                                 for _ in range(n_cd4)]
+                                                for _ in range(n_oi)],
+        'monthlyOIProbOnARTWithHistAdolescent': [[[0.0] * ADOLESCENT_NUM_AGES
+                                                   for _ in range(n_cd4)]
+                                                  for _ in range(n_oi)],
+        # Death rate ratios
+        'HIVDeathRateRatioAdolescent': [[1.0] * ADOLESCENT_NUM_AGES for _ in range(n_cd4)],
+        'ARTDeathRateRatioAdolescent': [1.0] * ADOLESCENT_NUM_AGES,
+        'genericRiskDeathRateRatioAdolescent': [[1.0] * ADOLESCENT_NUM_AGES for _ in range(n_risk)],
+        'acuteOIDeathRateRatioAdolescent': [[1.0] * ADOLESCENT_NUM_AGES for _ in range(n_cd4)],
+        'acuteOIDeathRateRatioTBAdolescent': [[1.0] * ADOLESCENT_NUM_AGES for _ in range(n_cd4)],
+        'severeOIHistDeathRateRatioAdolescent': [1.0] * ADOLESCENT_NUM_AGES,
+        'severeOIHistEffectDurationAdolescent': 0,
+        'TB_OIHistDeathRateRatioAdolescent': [1.0] * ADOLESCENT_NUM_AGES,
+        'TB_OIHistEffectDurationAdolescent': 0,
     }
 
 
 def create_adolescentarts_defaults():
     """AdolescentARTs tab defaults."""
+    ADOLESCENT_NUM_AGES = CONSTANTS['ADOLESCENT_NUM_AGES']
+
+    def default_adolescent_art():
+        return {
+            'id': -1,  # NOT_APPL - disabled by default
+            'costInitial': [0.0] * ADOLESCENT_NUM_AGES,
+            'costMonthly': [0.0] * ADOLESCENT_NUM_AGES,
+            'efficacyTimeHorizon': [48] * ADOLESCENT_NUM_AGES,
+            'forceFailAtMonth': [-1] * ADOLESCENT_NUM_AGES,
+        }
+
     return {
-        'adolescentARTData': [{
-            'costInitial': 0.0,
-            'costMonthly': 0.0,
-        } for _ in range(CONSTANTS['ART_NUM_LINES'])]
+        'adolescentARTData': [default_adolescent_art() for _ in range(CONSTANTS['ART_NUM_LINES'])]
     }
 
 
@@ -923,6 +1237,7 @@ def get_param_metadata():
             {'id': 'qol', 'name': 'QOL', 'description': 'Quality of life modifiers'},
             {'id': 'hivtest', 'name': 'HIV Testing', 'description': 'HIV testing and PrEP'},
             {'id': 'peds', 'name': 'Pediatrics', 'description': 'Pediatric model settings'},
+            {'id': 'pedsprophs', 'name': 'Peds Prophs', 'description': 'Pediatric prophylaxis settings'},
             {'id': 'pedsarts', 'name': 'Peds ARTs', 'description': 'Pediatric ART parameters'},
             {'id': 'pedscosts', 'name': 'Peds Costs', 'description': 'Pediatric costs'},
             {'id': 'eid', 'name': 'EID', 'description': 'Early infant diagnosis'},

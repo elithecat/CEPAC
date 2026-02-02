@@ -1,0 +1,4984 @@
+[
+  {
+    "keyword": "Runset",
+    "func": "readRunSpecsInputs",
+    "line": 216,
+    "type": "single"
+  },
+  {
+    "keyword": "CohortSize",
+    "func": "readRunSpecsInputs",
+    "line": 220,
+    "type": "single"
+  },
+  {
+    "keyword": "DiscFactor",
+    "func": "readRunSpecsInputs",
+    "line": 223,
+    "type": "single"
+  },
+  {
+    "keyword": "MaxPatCD4",
+    "func": "readRunSpecsInputs",
+    "line": 227,
+    "type": "single"
+  },
+  {
+    "keyword": "MthRecARTEffA",
+    "func": "readRunSpecsInputs",
+    "line": 231,
+    "type": "single"
+  },
+  {
+    "keyword": "MthRecARTEffB",
+    "func": "readRunSpecsInputs",
+    "line": 233,
+    "type": "single"
+  },
+  {
+    "keyword": "MthRecARTEffC",
+    "func": "readRunSpecsInputs",
+    "line": 235,
+    "type": "single"
+  },
+  {
+    "keyword": "RandSeedByTime",
+    "func": "readRunSpecsInputs",
+    "line": 238,
+    "type": "single"
+  },
+  {
+    "keyword": "UserLocale",
+    "func": "readRunSpecsInputs",
+    "line": 242,
+    "type": "single"
+  },
+  {
+    "keyword": "InpVer",
+    "func": "readRunSpecsInputs",
+    "line": 247,
+    "type": "single"
+  },
+  {
+    "keyword": "ModelVer",
+    "func": "readRunSpecsInputs",
+    "line": 256,
+    "type": "single"
+  },
+  {
+    "keyword": "IncludeTB_AsOI",
+    "func": "readRunSpecsInputs",
+    "line": 261,
+    "type": "single"
+  },
+  {
+    "keyword": "OIstrs",
+    "func": "readRunSpecsInputs",
+    "line": 265,
+    "type": "single"
+  },
+  {
+    "keyword": "LongitLogCohort",
+    "func": "readRunSpecsInputs",
+    "line": 280,
+    "type": "single"
+  },
+  {
+    "keyword": "LongitLogFirstOIs",
+    "func": "readRunSpecsInputs",
+    "line": 283,
+    "type": "single"
+  },
+  {
+    "keyword": "LogPriorOIHistProb",
+    "func": "readRunSpecsInputs",
+    "line": 288,
+    "type": "single"
+  },
+  {
+    "keyword": "LogOIHistwithARTfails",
+    "func": "readRunSpecsInputs",
+    "line": 292,
+    "type": "single"
+  },
+  {
+    "keyword": "LogOIHistwithCD4",
+    "func": "readRunSpecsInputs",
+    "line": 295,
+    "type": "single"
+  },
+  {
+    "keyword": "LogOIHistwithHVL",
+    "func": "readRunSpecsInputs",
+    "line": 298,
+    "type": "single"
+  },
+  {
+    "keyword": "LogOIHistExcludeOITypes",
+    "func": "readRunSpecsInputs",
+    "line": 301,
+    "type": "single"
+  },
+  {
+    "keyword": "FOB_OIs",
+    "func": "readRunSpecsInputs",
+    "line": 307,
+    "type": "single"
+  },
+  {
+    "keyword": "Severe_OIs",
+    "func": "readRunSpecsInputs",
+    "line": 311,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4Bounds",
+    "func": "readRunSpecsInputs",
+    "line": 317,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableMultDiscountOutput",
+    "func": "readRunSpecsInputs",
+    "line": 322,
+    "type": "single"
+  },
+  {
+    "keyword": "DiscountRatesCost",
+    "func": "readRunSpecsInputs",
+    "line": 327,
+    "type": "single"
+  },
+  {
+    "keyword": "DiscountRatesBenefit",
+    "func": "readRunSpecsInputs",
+    "line": 335,
+    "type": "single"
+  },
+  {
+    "keyword": "NumPatientsToTrace",
+    "func": "readOutputInputs",
+    "line": 349,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableSubCohorts",
+    "func": "readOutputInputs",
+    "line": 353,
+    "type": "single"
+  },
+  {
+    "keyword": "SubCohortValues",
+    "func": "readOutputInputs",
+    "line": 356,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableDetailedCosts",
+    "func": "readOutputInputs",
+    "line": 361,
+    "type": "single"
+  },
+  {
+    "keyword": "InitCD4",
+    "func": "readCohortInputs",
+    "line": 373,
+    "type": "single"
+  },
+  {
+    "keyword": "UseSqRtTransform",
+    "func": "readCohortInputs",
+    "line": 375,
+    "type": "single"
+  },
+  {
+    "keyword": "InitHVL",
+    "func": "readCohortInputs",
+    "line": 381,
+    "type": "single"
+  },
+  {
+    "keyword": "InitAge",
+    "func": "readCohortInputs",
+    "line": 387,
+    "type": "single"
+  },
+  {
+    "keyword": "InitAgeCustomDist",
+    "func": "readCohortInputs",
+    "line": 391,
+    "type": "single"
+  },
+  {
+    "keyword": "AgeStratMins",
+    "func": "readCohortInputs",
+    "line": 396,
+    "type": "single"
+  },
+  {
+    "keyword": "AgeStratMaxes",
+    "func": "readCohortInputs",
+    "line": 400,
+    "type": "single"
+  },
+  {
+    "keyword": "AgeStratProbs",
+    "func": "readCohortInputs",
+    "line": 406,
+    "type": "single"
+  },
+  {
+    "keyword": "InitGender",
+    "func": "readCohortInputs",
+    "line": 414,
+    "type": "single"
+  },
+  {
+    "keyword": "ProphNonCompliance",
+    "func": "readCohortInputs",
+    "line": 417,
+    "type": "single"
+  },
+  {
+    "keyword": "PatClinicTypes",
+    "func": "readCohortInputs",
+    "line": 421,
+    "type": "single"
+  },
+  {
+    "keyword": "PatTreatmentTypes",
+    "func": "readCohortInputs",
+    "line": 429,
+    "type": "single"
+  },
+  {
+    "keyword": "PatCD4ResponeTypeOnART",
+    "func": "readCohortInputs",
+    "line": 437,
+    "type": "single"
+  },
+  {
+    "keyword": "PriorOIHistAtEntry",
+    "func": "readCohortInputs",
+    "line": 446,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbRiskFactorPrev",
+    "func": "readCohortInputs",
+    "line": 457,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbRiskFactorIncid",
+    "func": "readCohortInputs",
+    "line": 461,
+    "type": "single"
+  },
+  {
+    "keyword": "GenRiskFactorStrs",
+    "func": "readCohortInputs",
+    "line": 465,
+    "type": "single"
+  },
+  {
+    "keyword": "ShowTransmissionOutput",
+    "func": "readCohortInputs",
+    "line": 472,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionRateOnART",
+    "keyword2": "Acute",
+    "func": "readCohortInputs",
+    "line": 481,
+    "type": "double"
+  },
+  {
+    "keyword": "TransmissionRateOffART",
+    "keyword2": "Acute",
+    "func": "readCohortInputs",
+    "line": 490,
+    "type": "double"
+  },
+  {
+    "keyword": "TransmissionUseHIVTestAcuteDef",
+    "func": "readCohortInputs",
+    "line": 494,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionAcuteDuration",
+    "func": "readCohortInputs",
+    "line": 498,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlTransmissionRateMultiplier",
+    "func": "readCohortInputs",
+    "line": 501,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionRateMultiplier",
+    "func": "readCohortInputs",
+    "line": 505,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionRiskDistribution",
+    "keyword2": "TRANSM_RISK_STRS[i]",
+    "func": "readCohortInputs",
+    "line": 510,
+    "type": "double"
+  },
+  {
+    "keyword": "TransmissionRiskMultiplierBounds",
+    "func": "readCohortInputs",
+    "line": 519,
+    "type": "single"
+  },
+  {
+    "keyword": "UseDynamicTransmission",
+    "func": "readCohortInputs",
+    "line": 532,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionNumTransmissionsHRG",
+    "func": "readCohortInputs",
+    "line": 537,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionPropHRGAttrib",
+    "func": "readCohortInputs",
+    "line": 539,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionNumHIVPosHRG",
+    "func": "readCohortInputs",
+    "line": 541,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionNumHIVNegHRG",
+    "func": "readCohortInputs",
+    "line": 543,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionWarmupSize",
+    "func": "readCohortInputs",
+    "line": 545,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionKeepPrEPAfterWarmup",
+    "func": "readCohortInputs",
+    "line": 548,
+    "type": "single"
+  },
+  {
+    "keyword": "DynamicTransmissionUsePrEPDuringWarmup",
+    "func": "readCohortInputs",
+    "line": 551,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionUseEndLifeHVLAdjust",
+    "func": "readCohortInputs",
+    "line": 555,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionEndLifeAdjustCD4Threshold",
+    "func": "readCohortInputs",
+    "line": 559,
+    "type": "single"
+  },
+  {
+    "keyword": "TransmissionEndLifeAdjustARTLineThreshold",
+    "func": "readCohortInputs",
+    "line": 562,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlClinicVisit",
+    "func": "readTreatmentInputsPart1",
+    "line": 573,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbDetOI_Entry",
+    "func": "readTreatmentInputsPart1",
+    "line": 576,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbDetOI_LastVst",
+    "func": "readTreatmentInputsPart1",
+    "line": 579,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbSwitchSecProph",
+    "func": "readTreatmentInputsPart1",
+    "line": 583,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlCD4Tst_CD4Threshold",
+    "func": "readTreatmentInputsPart1",
+    "line": 588,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlCD4Tst_MonthsThreshold",
+    "func": "readTreatmentInputsPart1",
+    "line": 590,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlCD4Tst",
+    "func": "readTreatmentInputsPart1",
+    "line": 594,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlHVLTst",
+    "func": "readTreatmentInputsPart1",
+    "line": 600,
+    "type": "single"
+  },
+  {
+    "keyword": "HVLtestErrProb",
+    "func": "readTreatmentInputsPart1",
+    "line": 608,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4testErrSDev",
+    "func": "readTreatmentInputsPart1",
+    "line": 611,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4testBiasMean",
+    "func": "readTreatmentInputsPart1",
+    "line": 613,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4testBiasSdev",
+    "func": "readTreatmentInputsPart1",
+    "line": 615,
+    "type": "single"
+  },
+  {
+    "keyword": "ObsvARTFailTestOnRegClinicVst",
+    "func": "readTreatmentInputsPart1",
+    "line": 619,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTInitHVLTestsWOClinicVst",
+    "func": "readTreatmentInputsPart1",
+    "line": 623,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTInitCD4TestsWOClinicVst",
+    "func": "readTreatmentInputsPart1",
+    "line": 625,
+    "type": "single"
+  },
+  {
+    "keyword": "OIVstAsNotSchedClinicVst",
+    "func": "readTreatmentInputsPart1",
+    "line": 628,
+    "type": "single"
+  },
+  {
+    "keyword": "LagToCD4Test",
+    "func": "readTreatmentInputsPart1",
+    "line": 633,
+    "type": "single"
+  },
+  {
+    "keyword": "LagToHVLTest",
+    "func": "readTreatmentInputsPart1",
+    "line": 635,
+    "type": "single"
+  },
+  {
+    "keyword": "StopCD4MonitoringEnable",
+    "func": "readTreatmentInputsPart1",
+    "line": 639,
+    "type": "single"
+  },
+  {
+    "keyword": "StopCD4MonitoringThreshold",
+    "func": "readTreatmentInputsPart1",
+    "line": 643,
+    "type": "single"
+  },
+  {
+    "keyword": "StopCD4MonitoringMthsPostARTInit",
+    "func": "readTreatmentInputsPart1",
+    "line": 645,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstart_CD4",
+    "keyword2": "upp",
+    "func": "readTreatmentInputsPart1",
+    "line": 650,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4",
+    "keyword2": "lwr",
+    "func": "readTreatmentInputsPart1",
+    "line": 653,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_HVL",
+    "keyword2": "upp",
+    "func": "readTreatmentInputsPart1",
+    "line": 657,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_HVL",
+    "keyword2": "lwr",
+    "func": "readTreatmentInputsPart1",
+    "line": 660,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4HVL",
+    "keyword2": "CD4upp",
+    "func": "readTreatmentInputsPart1",
+    "line": 664,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4HVL",
+    "keyword2": "CD4lwr",
+    "func": "readTreatmentInputsPart1",
+    "line": 667,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4HVL",
+    "keyword2": "HVLupp",
+    "func": "readTreatmentInputsPart1",
+    "line": 670,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4HVL",
+    "keyword2": "HVLlwr",
+    "func": "readTreatmentInputsPart1",
+    "line": 673,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_OIs",
+    "keyword2": "numOIs",
+    "func": "readTreatmentInputsPart1",
+    "line": 684,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4OI",
+    "keyword2": "CD4upp",
+    "func": "readTreatmentInputsPart1",
+    "line": 688,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart_CD4OI",
+    "keyword2": "CD4lwr",
+    "func": "readTreatmentInputsPart1",
+    "line": 691,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart",
+    "keyword2": "obsvFailFPSuppression",
+    "func": "readTreatmentInputsPart1",
+    "line": 702,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart",
+    "keyword2": "minMthNum",
+    "func": "readTreatmentInputsPart1",
+    "line": 709,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart",
+    "keyword2": "maxMthNum",
+    "func": "readTreatmentInputsPart1",
+    "line": 713,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTstart",
+    "keyword2": "MthsSincePrevRegStop",
+    "func": "readTreatmentInputsPart1",
+    "line": 717,
+    "type": "double"
+  },
+  {
+    "keyword": "EnableSTIforART",
+    "func": "readTreatmentInputsPart2",
+    "line": 728,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_hvlNumIncr",
+    "func": "readTreatmentInputsPart2",
+    "line": 736,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_hvlAbsol",
+    "func": "readTreatmentInputsPart2",
+    "line": 740,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 741,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_hvlAbsol",
+    "func": "readTreatmentInputsPart2",
+    "line": 744,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 745,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_hvlAtSetptAsFailDiag",
+    "func": "readTreatmentInputsPart2",
+    "line": 749,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_hvlMthsFromInit",
+    "func": "readTreatmentInputsPart2",
+    "line": 755,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4PercDrop",
+    "func": "readTreatmentInputsPart2",
+    "line": 759,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4BelowPreARTNadir",
+    "func": "readTreatmentInputsPart2",
+    "line": 763,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4AbsolOR",
+    "func": "readTreatmentInputsPart2",
+    "line": 769,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 770,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4AbsolOR",
+    "func": "readTreatmentInputsPart2",
+    "line": 773,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 774,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4AbsolAND",
+    "func": "readTreatmentInputsPart2",
+    "line": 778,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 779,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4AbsolAND",
+    "func": "readTreatmentInputsPart2",
+    "line": 782,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readTreatmentInputsPart2",
+    "line": 783,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_cd4MthsFromInit",
+    "func": "readTreatmentInputsPart2",
+    "line": 787,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_OIs",
+    "func": "readTreatmentInputsPart2",
+    "line": 792,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_OIsMinNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 799,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_OIsMthsFromInit",
+    "func": "readTreatmentInputsPart2",
+    "line": 802,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_diagNumTestsFail",
+    "func": "readTreatmentInputsPart2",
+    "line": 806,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_diagUseHVLTestsConfirm",
+    "func": "readTreatmentInputsPart2",
+    "line": 809,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_diagUseCD4TestsConfirm",
+    "func": "readTreatmentInputsPart2",
+    "line": 814,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTfail_diagNumTestsConfirm",
+    "func": "readTreatmentInputsPart2",
+    "line": 819,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_MaxMthsOnART",
+    "func": "readTreatmentInputsPart2",
+    "line": 825,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_MajorToxicity",
+    "func": "readTreatmentInputsPart2",
+    "line": 829,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailImmed",
+    "func": "readTreatmentInputsPart2",
+    "line": 835,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailBelowCD4",
+    "func": "readTreatmentInputsPart2",
+    "line": 840,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailSevereOI",
+    "func": "readTreatmentInputsPart2",
+    "line": 843,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailMthsAfterObsv",
+    "func": "readTreatmentInputsPart2",
+    "line": 848,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailMinMthNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 852,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTstop_OnFailMthsFromInit",
+    "func": "readTreatmentInputsPart2",
+    "line": 855,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTStopMajorToxNextLine",
+    "func": "readTreatmentInputsPart2",
+    "line": 860,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTresistRed_initSucc",
+    "keyword2": "buffer",
+    "func": "readTreatmentInputsPart2",
+    "line": 871,
+    "type": "double"
+  },
+  {
+    "keyword": "ARTresistRed_HVL",
+    "func": "readTreatmentInputsPart2",
+    "line": 876,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 882,
+    "type": "single"
+  },
+  {
+    "keyword": "boolFlag",
+    "func": "readTreatmentInputsPart2",
+    "line": 883,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 888,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 889,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 892,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 893,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 896,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 897,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 900,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 901,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 905,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 910,
+    "type": "single"
+  },
+  {
+    "keyword": "minMthNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 911,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 916,
+    "type": "single"
+  },
+  {
+    "keyword": "boolFlag",
+    "func": "readTreatmentInputsPart2",
+    "line": 917,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 922,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 923,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 926,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 927,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 930,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 931,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 934,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 935,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 939,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 944,
+    "type": "single"
+  },
+  {
+    "keyword": "minMthNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 945,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 948,
+    "type": "single"
+  },
+  {
+    "keyword": "mthsOnProph",
+    "func": "readTreatmentInputsPart2",
+    "line": 949,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 954,
+    "type": "single"
+  },
+  {
+    "keyword": "boolFlag",
+    "func": "readTreatmentInputsPart2",
+    "line": 955,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 960,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 961,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 964,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 965,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 968,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 969,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 972,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 973,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 977,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStart",
+    "func": "readTreatmentInputsPart2",
+    "line": 982,
+    "type": "single"
+  },
+  {
+    "keyword": "minMthNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 983,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 988,
+    "type": "single"
+  },
+  {
+    "keyword": "boolFlag",
+    "func": "readTreatmentInputsPart2",
+    "line": 989,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 994,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 995,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 998,
+    "type": "single"
+  },
+  {
+    "keyword": "curCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 999,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 1002,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4upp",
+    "func": "readTreatmentInputsPart2",
+    "line": 1003,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 1006,
+    "type": "single"
+  },
+  {
+    "keyword": "minCD4lwr",
+    "func": "readTreatmentInputsPart2",
+    "line": 1007,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 1011,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 1016,
+    "type": "single"
+  },
+  {
+    "keyword": "minMthNum",
+    "func": "readTreatmentInputsPart2",
+    "line": 1017,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStop",
+    "func": "readTreatmentInputsPart2",
+    "line": 1020,
+    "type": "single"
+  },
+  {
+    "keyword": "mthsOnProph",
+    "func": "readTreatmentInputsPart2",
+    "line": 1021,
+    "type": "single"
+  },
+  {
+    "keyword": "UseLTFU",
+    "func": "readLTFUInputs",
+    "line": 1032,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespLTFUPreART",
+    "func": "readLTFUInputs",
+    "line": 1035,
+    "type": "single"
+  },
+  {
+    "keyword": "UseInterventionHetOutcomes",
+    "func": "readLTFUInputs",
+    "line": 1039,
+    "type": "single"
+  },
+  {
+    "keyword": "HetOutcomes",
+    "func": "readLTFUInputs",
+    "line": 1043,
+    "type": "single"
+  },
+  {
+    "keyword": "LTFU",
+    "func": "readLTFUInputs",
+    "line": 1044,
+    "type": "single"
+  },
+  {
+    "keyword": "LTFU",
+    "func": "readLTFUInputs",
+    "line": 1050,
+    "type": "single"
+  },
+  {
+    "keyword": "HetOutcomesOffIntervention",
+    "func": "readLTFUInputs",
+    "line": 1055,
+    "type": "single"
+  },
+  {
+    "keyword": "LTFU",
+    "func": "readLTFUInputs",
+    "line": 1056,
+    "type": "single"
+  },
+  {
+    "keyword": "PropGenMedCostsByState",
+    "func": "readLTFUInputs",
+    "line": 1061,
+    "type": "single"
+  },
+  {
+    "keyword": "PropInterventionCostsByState",
+    "func": "readLTFUInputs",
+    "line": 1066,
+    "type": "single"
+  },
+  {
+    "keyword": "pLTFUOIProph",
+    "func": "readLTFUInputs",
+    "line": 1073,
+    "type": "single"
+  },
+  {
+    "keyword": "pLTFUOITreat",
+    "func": "readLTFUInputs",
+    "line": 1075,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCMinMonthsLost",
+    "func": "readLTFUInputs",
+    "line": 1079,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCBackground",
+    "func": "readLTFUInputs",
+    "line": 1081,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCCD4",
+    "func": "readLTFUInputs",
+    "line": 1083,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCAcuteSevereOI",
+    "func": "readLTFUInputs",
+    "line": 1085,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCAcuteMildOI",
+    "func": "readLTFUInputs",
+    "line": 1087,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCTBPosDiagnosis",
+    "func": "readLTFUInputs",
+    "line": 1089,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCCD4Threshold",
+    "func": "readLTFUInputs",
+    "line": 1091,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCSevereOIType",
+    "func": "readLTFUInputs",
+    "line": 1093,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCMaxTimePrevOnART",
+    "func": "readLTFUInputs",
+    "line": 1098,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCProbTakeSameART",
+    "func": "readLTFUInputs",
+    "line": 1100,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCRecheckARTPolicies",
+    "func": "readLTFUInputs",
+    "line": 1102,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCProbSuppByPrevOutcome",
+    "func": "readLTFUInputs",
+    "line": 1106,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCProbSuppPrevFail",
+    "func": "readLTFUInputs",
+    "line": 1109,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCProbSuppPrevSupp",
+    "func": "readLTFUInputs",
+    "line": 1113,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCProbResumeIntervention",
+    "func": "readLTFUInputs",
+    "line": 1118,
+    "type": "single"
+  },
+  {
+    "keyword": "RTCResumeInterventionCost",
+    "func": "readLTFUInputs",
+    "line": 1121,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespBaseline",
+    "func": "readHeterogeneityInputs",
+    "line": 1129,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespAge",
+    "func": "readHeterogeneityInputs",
+    "line": 1132,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespPedsAge",
+    "func": "readHeterogeneityInputs",
+    "line": 1137,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespCD4",
+    "func": "readHeterogeneityInputs",
+    "line": 1140,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespFemale",
+    "func": "readHeterogeneityInputs",
+    "line": 1144,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespHistOIs",
+    "func": "readHeterogeneityInputs",
+    "line": 1146,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespPriorARTTox",
+    "func": "readHeterogeneityInputs",
+    "line": 1148,
+    "type": "single"
+  },
+  {
+    "keyword": "PropRespRiskFactors",
+    "func": "readHeterogeneityInputs",
+    "line": 1150,
+    "type": "single"
+  },
+  {
+    "keyword": "UseIntervention",
+    "func": "readHeterogeneityInputs",
+    "line": 1155,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionDurationMean",
+    "func": "readHeterogeneityInputs",
+    "line": 1161,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionDurationSD",
+    "func": "readHeterogeneityInputs",
+    "line": 1164,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionPropAdjustmentMean",
+    "func": "readHeterogeneityInputs",
+    "line": 1169,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionPropAdjustmentSD",
+    "func": "readHeterogeneityInputs",
+    "line": 1172,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionPropAdjustmentDistribution",
+    "func": "readHeterogeneityInputs",
+    "line": 1176,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionCostStartup",
+    "func": "readHeterogeneityInputs",
+    "line": 1182,
+    "type": "single"
+  },
+  {
+    "keyword": "InterventionCostMonthly",
+    "func": "readHeterogeneityInputs",
+    "line": 1185,
+    "type": "single"
+  },
+  {
+    "keyword": "STIstart_CD4",
+    "keyword2": "upp",
+    "func": "readSTIInputs",
+    "line": 1197,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4",
+    "keyword2": "lwr",
+    "func": "readSTIInputs",
+    "line": 1200,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_HVL",
+    "keyword2": "upp",
+    "func": "readSTIInputs",
+    "line": 1204,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_HVL",
+    "keyword2": "lwr",
+    "func": "readSTIInputs",
+    "line": 1207,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4HVL",
+    "keyword2": "CD4upp",
+    "func": "readSTIInputs",
+    "line": 1211,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4HVL",
+    "keyword2": "CD4lwr",
+    "func": "readSTIInputs",
+    "line": 1214,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4HVL",
+    "keyword2": "HVLupp",
+    "func": "readSTIInputs",
+    "line": 1217,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4HVL",
+    "keyword2": "HVLlwr",
+    "func": "readSTIInputs",
+    "line": 1220,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_OIs",
+    "keyword2": "numOIs",
+    "func": "readSTIInputs",
+    "line": 1231,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4OI",
+    "keyword2": "CD4upp",
+    "func": "readSTIInputs",
+    "line": 1235,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart_CD4OI",
+    "keyword2": "CD4lwr",
+    "func": "readSTIInputs",
+    "line": 1238,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart",
+    "keyword2": "minMthNum",
+    "func": "readSTIInputs",
+    "line": 1249,
+    "type": "double"
+  },
+  {
+    "keyword": "STIstart",
+    "keyword2": "minMthNum_ARTinit",
+    "func": "readSTIInputs",
+    "line": 1252,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restartART",
+    "keyword2": "cd4upp",
+    "func": "readSTIInputs",
+    "line": 1257,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restartART",
+    "keyword2": "cd4lwr",
+    "func": "readSTIInputs",
+    "line": 1260,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restartART",
+    "keyword2": "hvlupp",
+    "func": "readSTIInputs",
+    "line": 1263,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restartART",
+    "keyword2": "hvllwr",
+    "func": "readSTIInputs",
+    "line": 1266,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restopART",
+    "keyword2": "cd4upp",
+    "func": "readSTIInputs",
+    "line": 1271,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restopART",
+    "keyword2": "cd4lwr",
+    "func": "readSTIInputs",
+    "line": 1274,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restopART",
+    "keyword2": "hvlupp",
+    "func": "readSTIInputs",
+    "line": 1277,
+    "type": "double"
+  },
+  {
+    "keyword": "STI_restopART",
+    "keyword2": "hvllwr",
+    "func": "readSTIInputs",
+    "line": 1280,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4",
+    "keyword2": "upp",
+    "func": "readSTIInputs",
+    "line": 1286,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4",
+    "keyword2": "lwr",
+    "func": "readSTIInputs",
+    "line": 1289,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_HVL",
+    "keyword2": "upp",
+    "func": "readSTIInputs",
+    "line": 1293,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_HVL",
+    "keyword2": "lwr",
+    "func": "readSTIInputs",
+    "line": 1296,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4HVL",
+    "keyword2": "CD4upp",
+    "func": "readSTIInputs",
+    "line": 1300,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4HVL",
+    "keyword2": "CD4lwr",
+    "func": "readSTIInputs",
+    "line": 1303,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4HVL",
+    "keyword2": "HVLupp",
+    "func": "readSTIInputs",
+    "line": 1306,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4HVL",
+    "keyword2": "HVLlwr",
+    "func": "readSTIInputs",
+    "line": 1309,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_OIs",
+    "keyword2": "numOIs",
+    "func": "readSTIInputs",
+    "line": 1320,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4OI",
+    "keyword2": "CD4upp",
+    "func": "readSTIInputs",
+    "line": 1324,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt_CD4OI",
+    "keyword2": "CD4lwr",
+    "func": "readSTIInputs",
+    "line": 1327,
+    "type": "double"
+  },
+  {
+    "keyword": "STIendpt",
+    "keyword2": "minMthNum",
+    "func": "readSTIInputs",
+    "line": 1338,
+    "type": "double"
+  },
+  {
+    "keyword": "Id",
+    "func": "readProphInputs",
+    "line": 1354,
+    "type": "single"
+  },
+  {
+    "keyword": "EffPriOIs",
+    "func": "readProphInputs",
+    "line": 1371,
+    "type": "single"
+  },
+  {
+    "keyword": "EffSecOIs",
+    "func": "readProphInputs",
+    "line": 1379,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readProphInputs",
+    "line": 1386,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readProphInputs",
+    "line": 1395,
+    "type": "single"
+  },
+  {
+    "keyword": "CostQOL",
+    "func": "readProphInputs",
+    "line": 1403,
+    "type": "single"
+  },
+  {
+    "keyword": "Switch",
+    "func": "readProphInputs",
+    "line": 1412,
+    "type": "single"
+  },
+  {
+    "keyword": "Id",
+    "func": "readProphInputs",
+    "line": 1426,
+    "type": "single"
+  },
+  {
+    "keyword": "EffPriOIs",
+    "func": "readProphInputs",
+    "line": 1439,
+    "type": "single"
+  },
+  {
+    "keyword": "EffSecOIs",
+    "func": "readProphInputs",
+    "line": 1445,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readProphInputs",
+    "line": 1452,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readProphInputs",
+    "line": 1461,
+    "type": "single"
+  },
+  {
+    "keyword": "CostQOL",
+    "func": "readProphInputs",
+    "line": 1469,
+    "type": "single"
+  },
+  {
+    "keyword": "Switch",
+    "func": "readProphInputs",
+    "line": 1478,
+    "type": "single"
+  },
+  {
+    "keyword": "Supp",
+    "func": "readARTInputs",
+    "line": 1582,
+    "type": "single"
+  },
+  {
+    "keyword": "Fail",
+    "func": "readARTInputs",
+    "line": 1585,
+    "type": "single"
+  },
+  {
+    "keyword": "TimeToSwitch",
+    "func": "readARTInputs",
+    "line": 1632,
+    "type": "single"
+  },
+  {
+    "keyword": "Supp",
+    "func": "readARTInputs",
+    "line": 1665,
+    "type": "single"
+  },
+  {
+    "keyword": "LateFail",
+    "func": "readARTInputs",
+    "line": 1668,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectOI",
+    "func": "readARTInputs",
+    "line": 1671,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectCHRMs",
+    "func": "readARTInputs",
+    "line": 1674,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectMort",
+    "func": "readARTInputs",
+    "line": 1677,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readARTInputs",
+    "line": 1680,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readARTInputs",
+    "line": 1683,
+    "type": "single"
+  },
+  {
+    "keyword": "Cost",
+    "func": "readARTInputs",
+    "line": 1686,
+    "type": "single"
+  },
+  {
+    "keyword": "RestartAfterFail",
+    "func": "readARTInputs",
+    "line": 1689,
+    "type": "single"
+  },
+  {
+    "keyword": "Resuppression",
+    "func": "readARTInputs",
+    "line": 1692,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1706,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1709,
+    "type": "single"
+  },
+  {
+    "keyword": "OIProb_NoHist_noART",
+    "func": "readNatHistInputs",
+    "line": 1713,
+    "type": "single"
+  },
+  {
+    "keyword": "OIProb_Hist_noART",
+    "func": "readNatHistInputs",
+    "line": 1720,
+    "type": "single"
+  },
+  {
+    "keyword": "OIProb_onART_Mult",
+    "func": "readNatHistInputs",
+    "line": 1727,
+    "type": "single"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1733,
+    "type": "single"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatioTB",
+    "func": "readNatHistInputs",
+    "line": 1736,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1740,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistEffectDuration",
+    "func": "readNatHistInputs",
+    "line": 1742,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1744,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistEffectDuration",
+    "func": "readNatHistInputs",
+    "line": 1746,
+    "type": "single"
+  },
+  {
+    "keyword": "GenRiskDthRateRatio",
+    "func": "readNatHistInputs",
+    "line": 1749,
+    "type": "single"
+  },
+  {
+    "keyword": "BslCD4Decl_Mean",
+    "func": "readNatHistInputs",
+    "line": 1754,
+    "type": "single"
+  },
+  {
+    "keyword": "BslCD4Decl_SDev",
+    "func": "readNatHistInputs",
+    "line": 1758,
+    "type": "single"
+  },
+  {
+    "keyword": "BslCD4Decl_BtwSbjct",
+    "func": "readNatHistInputs",
+    "line": 1764,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRate_Male",
+    "func": "readNatHistInputs",
+    "line": 1769,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRate_Female",
+    "func": "readNatHistInputs",
+    "line": 1772,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundMortModifierType",
+    "func": "readNatHistInputs",
+    "line": 1776,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundMortModifier",
+    "func": "readNatHistInputs",
+    "line": 1779,
+    "type": "single"
+  },
+  {
+    "keyword": "CHRMstrs",
+    "func": "readCHRMsInputs",
+    "line": 1789,
+    "type": "single"
+  },
+  {
+    "keyword": "ShowCHRMOutput",
+    "func": "readCHRMsInputs",
+    "line": 1796,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableOrphans",
+    "func": "readCHRMsInputs",
+    "line": 1801,
+    "type": "single"
+  },
+  {
+    "keyword": "ShowOrphansOutput",
+    "func": "readCHRMsInputs",
+    "line": 1805,
+    "type": "single"
+  },
+  {
+    "keyword": "CHRMDurationUseSqrtTrans",
+    "func": "readCHRMsInputs",
+    "line": 1829,
+    "type": "single"
+  },
+  {
+    "keyword": "MinMthsSincePrevCHRMSOrphans",
+    "func": "readCHRMsInputs",
+    "line": 1870,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLModMultipleCHRMs",
+    "func": "readCHRMsInputs",
+    "line": 1959,
+    "type": "single"
+  },
+  {
+    "keyword": "CostAgeBounds",
+    "func": "readCostInputs",
+    "line": 1971,
+    "type": "single"
+  },
+  {
+    "keyword": "EndYr",
+    "func": "readCostInputs",
+    "line": 1972,
+    "type": "single"
+  },
+  {
+    "keyword": "CostGenMed_dmed",
+    "func": "readCostInputs",
+    "line": 2058,
+    "type": "single"
+  },
+  {
+    "keyword": "CostGenMed_nmed",
+    "func": "readCostInputs",
+    "line": 2064,
+    "type": "single"
+  },
+  {
+    "keyword": "CostGenMed_time",
+    "func": "readCostInputs",
+    "line": 2070,
+    "type": "single"
+  },
+  {
+    "keyword": "CostGenMed_indr",
+    "func": "readCostInputs",
+    "line": 2076,
+    "type": "single"
+  },
+  {
+    "keyword": "CostNeg_dmed",
+    "func": "readCostInputs",
+    "line": 2138,
+    "type": "single"
+  },
+  {
+    "keyword": "CostNeg_nmed",
+    "func": "readCostInputs",
+    "line": 2144,
+    "type": "single"
+  },
+  {
+    "keyword": "CostNeg_time",
+    "func": "readCostInputs",
+    "line": 2150,
+    "type": "single"
+  },
+  {
+    "keyword": "CostNeg_indr",
+    "func": "readCostInputs",
+    "line": 2156,
+    "type": "single"
+  },
+  {
+    "keyword": "CostNegStopAge",
+    "func": "readCostInputs",
+    "line": 2162,
+    "type": "single"
+  },
+  {
+    "keyword": "CostUndet_dmed",
+    "func": "readCostInputs",
+    "line": 2165,
+    "type": "single"
+  },
+  {
+    "keyword": "CostUndet_nmed",
+    "func": "readCostInputs",
+    "line": 2171,
+    "type": "single"
+  },
+  {
+    "keyword": "CostUndet_time",
+    "func": "readCostInputs",
+    "line": 2177,
+    "type": "single"
+  },
+  {
+    "keyword": "CostUndet_indr",
+    "func": "readCostInputs",
+    "line": 2183,
+    "type": "single"
+  },
+  {
+    "keyword": "CostUndetStopAge",
+    "func": "readCostInputs",
+    "line": 2189,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableTB",
+    "func": "readTBInputs",
+    "line": 2213,
+    "type": "single"
+  },
+  {
+    "keyword": "TBClinicIntegrated",
+    "func": "readTBInputs",
+    "line": 2217,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbTB_Entry",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2222,
+    "type": "double"
+  },
+  {
+    "keyword": "DistTB_Entry_Strain",
+    "func": "readTBInputs",
+    "line": 2233,
+    "type": "single"
+  },
+  {
+    "keyword": "MthsSinceInitTBTreatStop_Entry",
+    "func": "readTBInputs",
+    "line": 2237,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbSputum_Entry",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2241,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbImmune_Entry",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2251,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbSymptoms_Entry",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2261,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbMthTBIncid",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2273,
+    "type": "double"
+  },
+  {
+    "keyword": "TBInfectionMultiplier",
+    "func": "readTBInputs",
+    "line": 2282,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbImmune_Infection",
+    "func": "readTBInputs",
+    "line": 2287,
+    "type": "single"
+  },
+  {
+    "keyword": "TBActivationMthThreshold",
+    "func": "readTBInputs",
+    "line": 2294,
+    "type": "single"
+  },
+  {
+    "keyword": "TBActivationProbActivate1",
+    "func": "readTBInputs",
+    "line": 2297,
+    "type": "single"
+  },
+  {
+    "keyword": "TBActivationProbActivate2",
+    "func": "readTBInputs",
+    "line": 2303,
+    "type": "single"
+  },
+  {
+    "keyword": "TBActivationPropPulm",
+    "func": "readTBInputs",
+    "line": 2309,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbSputumHiOnActivation",
+    "func": "readTBInputs",
+    "line": 2315,
+    "type": "single"
+  },
+  {
+    "keyword": "TBIncidenceRelapse",
+    "func": "readTBInputs",
+    "line": 2323,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRelapseFCD4",
+    "func": "readTBInputs",
+    "line": 2326,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatDefaultRelapseMult",
+    "func": "readTBInputs",
+    "line": 2330,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRelapsePropPulm",
+    "func": "readTBInputs",
+    "line": 2333,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbSputumHiOnRelapse",
+    "func": "readTBInputs",
+    "line": 2339,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRelapseMthUnfavorableOutcome",
+    "func": "readTBInputs",
+    "line": 2345,
+    "type": "single"
+  },
+  {
+    "keyword": "TBSymptomsIncidence",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2349,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDthRateRatio",
+    "keyword2": "HIV_Neg",
+    "func": "readTBInputs",
+    "line": 2360,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDthRateRatioTxSuccessBounds",
+    "func": "readTBInputs",
+    "line": 2368,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDthRateRatioTxFailureBounds",
+    "func": "readTBInputs",
+    "line": 2383,
+    "type": "single"
+  },
+  {
+    "keyword": "NatHistMultType",
+    "func": "readTBInputs",
+    "line": 2399,
+    "type": "single"
+  },
+  {
+    "keyword": "NatHistMultTimeBounds",
+    "func": "readTBInputs",
+    "line": 2403,
+    "type": "single"
+  },
+  {
+    "keyword": "NatHistMultTime",
+    "func": "readTBInputs",
+    "line": 2406,
+    "type": "single"
+  },
+  {
+    "keyword": "TBSelfCureEnable",
+    "func": "readTBInputs",
+    "line": 2410,
+    "type": "single"
+  },
+  {
+    "keyword": "TBMonthOfSelfCure",
+    "func": "readTBInputs",
+    "line": 2414,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphOrder",
+    "func": "readTBInputs",
+    "line": 2418,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphDuration",
+    "func": "readTBInputs",
+    "line": 2422,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphMaxRestarts",
+    "func": "readTBInputs",
+    "line": 2425,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStartKnownPos",
+    "func": "readTBInputs",
+    "line": 2429,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStartNotKnownPos",
+    "func": "readTBInputs",
+    "line": 2441,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStartPropToReceiveUponQual",
+    "func": "readTBInputs",
+    "line": 2450,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStartLagToStart",
+    "func": "readTBInputs",
+    "line": 2452,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStopMthDropoutProb",
+    "func": "readTBInputs",
+    "line": 2454,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStopKnownPos",
+    "func": "readTBInputs",
+    "line": 2457,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStopNotKnownPos",
+    "func": "readTBInputs",
+    "line": 2468,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphMoveToNextAfterTox",
+    "func": "readTBInputs",
+    "line": 2477,
+    "type": "single"
+  },
+  {
+    "keyword": "UseTBLTFU",
+    "func": "readTBInputs",
+    "line": 2609,
+    "type": "single"
+  },
+  {
+    "keyword": "MthsToLongTermEffects",
+    "func": "readTBInputs",
+    "line": 2613,
+    "type": "single"
+  },
+  {
+    "keyword": "TBMaxMthsLTFU",
+    "func": "readTBInputs",
+    "line": 2616,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProbLTFU_Stage1",
+    "func": "readTBInputs",
+    "line": 2619,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProbLTFU_Stage2",
+    "func": "readTBInputs",
+    "line": 2622,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProbRTCHIVNeg",
+    "func": "readTBInputs",
+    "line": 2626,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProbRTCHIVPos",
+    "func": "readTBInputs",
+    "line": 2630,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStartWhileHIVLTFU",
+    "func": "readTBInputs",
+    "line": 2634,
+    "type": "single"
+  },
+  {
+    "keyword": "TBProphStopWhileHIVLTFUProb",
+    "func": "readTBInputs",
+    "line": 2638,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRTCRestartReg",
+    "func": "readTBInputs",
+    "line": 2641,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRTCResumeReg",
+    "func": "readTBInputs",
+    "line": 2645,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRTCRetest",
+    "func": "readTBInputs",
+    "line": 2649,
+    "type": "single"
+  },
+  {
+    "keyword": "TBRTCNextReg",
+    "func": "readTBInputs",
+    "line": 2653,
+    "type": "single"
+  },
+  {
+    "keyword": "CostsTBUntreated",
+    "func": "readTBInputs",
+    "line": 2658,
+    "type": "single"
+  },
+  {
+    "keyword": "CostsTBTreated",
+    "keyword2": "Visit",
+    "func": "readTBInputs",
+    "line": 2663,
+    "type": "double"
+  },
+  {
+    "keyword": "CostsTBTreated",
+    "keyword2": "Medication",
+    "func": "readTBInputs",
+    "line": 2669,
+    "type": "double"
+  },
+  {
+    "keyword": "CostsTBDeath",
+    "keyword2": "Adult",
+    "func": "readTBInputs",
+    "line": 2675,
+    "type": "double"
+  },
+  {
+    "keyword": "QOLActiveTB",
+    "func": "readTBInputs",
+    "line": 2687,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLDeathActiveTB",
+    "func": "readTBInputs",
+    "line": 2689,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableTBDiagnostics",
+    "func": "readTBInputs",
+    "line": 2693,
+    "type": "single"
+  },
+  {
+    "keyword": "AllowMultipleTestsSameMonth",
+    "func": "readTBInputs",
+    "line": 2697,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyAndOr",
+    "func": "readTBInputs",
+    "line": 2702,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicy",
+    "func": "readTBInputs",
+    "line": 2706,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicySymptomsProb",
+    "func": "readTBInputs",
+    "line": 2712,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyCD4Bounds",
+    "func": "readTBInputs",
+    "line": 2715,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyCalendarMth",
+    "func": "readTBInputs",
+    "line": 2717,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyMthIntvlProb",
+    "func": "readTBInputs",
+    "line": 2721,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyMthIntvlBounds",
+    "func": "readTBInputs",
+    "line": 2723,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitPolicyMthIntvl",
+    "func": "readTBInputs",
+    "line": 2727,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagInitMinMthsPostTreatment",
+    "func": "readTBInputs",
+    "line": 2730,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagTestOrderNeverTreat",
+    "func": "readTBInputs",
+    "line": 2734,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagTestOrderNeverTreatDST",
+    "func": "readTBInputs",
+    "line": 2737,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagTestOrderEverTreat",
+    "func": "readTBInputs",
+    "line": 2743,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagTestOrderEverTreatDST",
+    "func": "readTBInputs",
+    "line": 2746,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagStartInTreat",
+    "keyword2": "HIVNeg",
+    "func": "readTBInputs",
+    "line": 2752,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagStartInTreat",
+    "keyword2": "HIVPos",
+    "func": "readTBInputs",
+    "line": 2756,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "2Tests",
+    "func": "readTBInputs",
+    "line": 2761,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "3Tests1Pos",
+    "func": "readTBInputs",
+    "line": 2767,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "3Tests1Neg",
+    "func": "readTBInputs",
+    "line": 2772,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "4Tests2Pos1Pos",
+    "func": "readTBInputs",
+    "line": 2778,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "4Tests2Pos1Neg",
+    "func": "readTBInputs",
+    "line": 2783,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "4Tests2Neg1Pos",
+    "func": "readTBInputs",
+    "line": 2788,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagSeq",
+    "keyword2": "4Tests2Neg1Neg",
+    "func": "readTBInputs",
+    "line": 2793,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagAllowIncomplete",
+    "func": "readTBInputs",
+    "line": 2800,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagAllowNoDiagnosis",
+    "func": "readTBInputs",
+    "line": 2804,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "1Test",
+    "func": "readTBInputs",
+    "line": 2808,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "2Tests1Pos",
+    "func": "readTBInputs",
+    "line": 2814,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "2Tests1Neg",
+    "func": "readTBInputs",
+    "line": 2819,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "3Tests2Pos1Pos",
+    "func": "readTBInputs",
+    "line": 2825,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "3Tests2Pos1Neg",
+    "func": "readTBInputs",
+    "line": 2830,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "3Tests2Neg1Pos",
+    "func": "readTBInputs",
+    "line": 2835,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "3Tests2Neg1Neg",
+    "func": "readTBInputs",
+    "line": 2840,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Pos2Pos1Pos",
+    "func": "readTBInputs",
+    "line": 2846,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Pos2Pos1Neg",
+    "func": "readTBInputs",
+    "line": 2851,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Pos2Neg1Pos",
+    "func": "readTBInputs",
+    "line": 2856,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Pos2Neg1Neg",
+    "func": "readTBInputs",
+    "line": 2861,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Neg2Pos1Pos",
+    "func": "readTBInputs",
+    "line": 2866,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Neg2Pos1Neg",
+    "func": "readTBInputs",
+    "line": 2871,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Neg2Neg1Pos",
+    "func": "readTBInputs",
+    "line": 2876,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagResultMatrix",
+    "keyword2": "4Tests3Neg2Neg1Neg",
+    "func": "readTBInputs",
+    "line": 2881,
+    "type": "double"
+  },
+  {
+    "keyword": "TBDiagProbLinkTBTreatmentIntegrated",
+    "func": "readTBInputs",
+    "line": 2888,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagProbLinkTBTreatmentUnintegrated",
+    "func": "readTBInputs",
+    "line": 2890,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagRTCForHIVUponLinkageIntegrated",
+    "func": "readTBInputs",
+    "line": 2892,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagProbHIVDetUponTBLinkageIntegrated",
+    "func": "readTBInputs",
+    "line": 2897,
+    "type": "single"
+  },
+  {
+    "keyword": "TBDiagProbHIVDetUponTBLinkageUnintegrated",
+    "func": "readTBInputs",
+    "line": 2899,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatProbInitialNeverTreat",
+    "keyword2": "DS",
+    "func": "readTBInputs",
+    "line": 3047,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbInitialNeverTreat",
+    "keyword2": "MDR",
+    "func": "readTBInputs",
+    "line": 3050,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbInitialNeverTreat",
+    "keyword2": "XDR",
+    "func": "readTBInputs",
+    "line": 3053,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbInitialEverTreat",
+    "keyword2": "DS",
+    "func": "readTBInputs",
+    "line": 3057,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbInitialEverTreat",
+    "keyword2": "MDR",
+    "func": "readTBInputs",
+    "line": 3060,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbInitialEverTreat",
+    "keyword2": "XDR",
+    "func": "readTBInputs",
+    "line": 3063,
+    "type": "double"
+  },
+  {
+    "keyword": "TBTreatProbRepeatLine",
+    "func": "readTBInputs",
+    "line": 3067,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatNumRepeats",
+    "func": "readTBInputs",
+    "line": 3070,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatProbResistAfterFail",
+    "func": "readTBInputs",
+    "line": 3073,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatProbResistAfterDefault",
+    "func": "readTBInputs",
+    "line": 3076,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatProbEmpiricMDR",
+    "func": "readTBInputs",
+    "line": 3080,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatProbEmpiricXDR",
+    "func": "readTBInputs",
+    "line": 3082,
+    "type": "single"
+  },
+  {
+    "keyword": "TBTreatEmpiricNum",
+    "func": "readTBInputs",
+    "line": 3085,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLRoutine",
+    "func": "readQOLInputs",
+    "line": 3246,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLRoutineOIHistEffectDuration",
+    "func": "readQOLInputs",
+    "line": 3252,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLAcuteOI",
+    "func": "readQOLInputs",
+    "line": 3257,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLDeath",
+    "func": "readQOLInputs",
+    "line": 3261,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLBackgroundMale",
+    "func": "readQOLInputs",
+    "line": 3266,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLBackgroundFemale",
+    "func": "readQOLInputs",
+    "line": 3270,
+    "type": "single"
+  },
+  {
+    "keyword": "QOLCalculationType",
+    "func": "readQOLInputs",
+    "line": 3274,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableHIVtest",
+    "func": "readHIVTestInputs",
+    "line": 3285,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestAvail",
+    "func": "readHIVTestInputs",
+    "line": 3289,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPEnable",
+    "func": "readHIVTestInputs",
+    "line": 3293,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4testAvail",
+    "func": "readHIVTestInputs",
+    "line": 3303,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleEnable",
+    "func": "readHIVTestInputs",
+    "line": 3307,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleTotHIV",
+    "func": "readHIVTestInputs",
+    "line": 3312,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleTotCohort",
+    "func": "readHIVTestInputs",
+    "line": 3314,
+    "type": "single"
+  },
+  {
+    "keyword": "IncidenceAgeBins",
+    "func": "readHIVTestInputs",
+    "line": 3318,
+    "type": "single"
+  },
+  {
+    "keyword": "EndYr",
+    "func": "readHIVTestInputs",
+    "line": 3319,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdistNeg",
+    "func": "readHIVTestInputs",
+    "line": 3325,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdistPosAcute",
+    "func": "readHIVTestInputs",
+    "line": 3327,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdistPosChr",
+    "func": "readHIVTestInputs",
+    "line": 3329,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVNegRiskDist",
+    "func": "readHIVTestInputs",
+    "line": 3333,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVacuteCD4dist",
+    "func": "readHIVTestInputs",
+    "line": 3337,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVacuteHVLdist",
+    "func": "readHIVTestInputs",
+    "line": 3340,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVmthIncidMale",
+    "func": "readHIVTestInputs",
+    "line": 3348,
+    "type": "single"
+  },
+  {
+    "keyword": "hiRisk",
+    "func": "readHIVTestInputs",
+    "line": 3349,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVmthIncidMale",
+    "func": "readHIVTestInputs",
+    "line": 3353,
+    "type": "single"
+  },
+  {
+    "keyword": "loRisk",
+    "func": "readHIVTestInputs",
+    "line": 3354,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVmthIncidFemale",
+    "func": "readHIVTestInputs",
+    "line": 3358,
+    "type": "single"
+  },
+  {
+    "keyword": "hiRisk",
+    "func": "readHIVTestInputs",
+    "line": 3359,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVmthIncidFemale",
+    "func": "readHIVTestInputs",
+    "line": 3363,
+    "type": "single"
+  },
+  {
+    "keyword": "loRisk",
+    "func": "readHIVTestInputs",
+    "line": 3364,
+    "type": "single"
+  },
+  {
+    "keyword": "UseHIVIncidReductionMult",
+    "func": "readHIVTestInputs",
+    "line": 3369,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVIncidReductionMult",
+    "func": "readHIVTestInputs",
+    "line": 3372,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVIncidReductionMultBounds",
+    "func": "readHIVTestInputs",
+    "line": 3378,
+    "type": "single"
+  },
+  {
+    "keyword": "MthsAcuteToChrHIV",
+    "func": "readHIVTestInputs",
+    "line": 3383,
+    "type": "single"
+  },
+  {
+    "keyword": "MeanCD4ChgAtChrHIVTrans",
+    "func": "readHIVTestInputs",
+    "line": 3386,
+    "type": "single"
+  },
+  {
+    "keyword": "SDevCD4ChgAtChrHIVTrans",
+    "func": "readHIVTestInputs",
+    "line": 3389,
+    "type": "single"
+  },
+  {
+    "keyword": "HVLDistribAtChrHIVTrans",
+    "func": "readHIVTestInputs",
+    "line": 3394,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdetectAcute",
+    "func": "readHIVTestInputs",
+    "line": 3400,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdetectAsympChr",
+    "func": "readHIVTestInputs",
+    "line": 3402,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVdetectSympChr",
+    "func": "readHIVTestInputs",
+    "line": 3404,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVProbDetAtOI",
+    "func": "readHIVTestInputs",
+    "line": 3408,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVProbLinkAtOIDet",
+    "func": "readHIVTestInputs",
+    "line": 3413,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetCD4Cost",
+    "func": "readHIVTestInputs",
+    "line": 3418,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetCD4QOL",
+    "func": "readHIVTestInputs",
+    "line": 3421,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVnegDthCost",
+    "func": "readHIVTestInputs",
+    "line": 3426,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetHIVDthCost",
+    "func": "readHIVTestInputs",
+    "line": 3428,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetBgMortDthCost",
+    "func": "readHIVTestInputs",
+    "line": 3430,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVnegDthQOL",
+    "func": "readHIVTestInputs",
+    "line": 3434,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetHIVDthQOL",
+    "func": "readHIVTestInputs",
+    "line": 3436,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVundetBgMortDthQOL",
+    "func": "readHIVTestInputs",
+    "line": 3438,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestStartAge",
+    "func": "readHIVTestInputs",
+    "line": 3442,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestStopAge",
+    "func": "readHIVTestInputs",
+    "line": 3444,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestFreqInterval",
+    "func": "readHIVTestInputs",
+    "line": 3446,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestFreqProb",
+    "func": "readHIVTestInputs",
+    "line": 3449,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestRetProb",
+    "func": "readHIVTestInputs",
+    "line": 3475,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestPosProb",
+    "func": "readHIVTestInputs",
+    "line": 3482,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestPosCost",
+    "func": "readHIVTestInputs",
+    "line": 3488,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestNegCost",
+    "func": "readHIVTestInputs",
+    "line": 3494,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestPosQOLMod",
+    "func": "readHIVTestInputs",
+    "line": 3500,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestNegQOLMod",
+    "func": "readHIVTestInputs",
+    "line": 3506,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestCost",
+    "func": "readHIVTestInputs",
+    "line": 3512,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestStartupCost",
+    "func": "readHIVTestInputs",
+    "line": 3521,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestNonRetCost",
+    "func": "readHIVTestInputs",
+    "line": 3528,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgAcceptProb",
+    "func": "readHIVTestInputs",
+    "line": 3537,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgReturnProb",
+    "func": "readHIVTestInputs",
+    "line": 3545,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgPosProb",
+    "func": "readHIVTestInputs",
+    "line": 3553,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgTestCost",
+    "func": "readHIVTestInputs",
+    "line": 3561,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgTestPosCost",
+    "func": "readHIVTestInputs",
+    "line": 3569,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgTestNegCost",
+    "func": "readHIVTestInputs",
+    "line": 3577,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgStartAge",
+    "func": "readHIVTestInputs",
+    "line": 3586,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestBgProbLink",
+    "func": "readHIVTestInputs",
+    "line": 3588,
+    "type": "single"
+  },
+  {
+    "keyword": "HIVtestDetectCost",
+    "func": "readHIVTestInputs",
+    "line": 3592,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPDropoutThreshold",
+    "func": "readHIVTestInputs",
+    "line": 3599,
+    "type": "single"
+  },
+  {
+    "keyword": "DropoutThresholdRefPrEPStart",
+    "func": "readHIVTestInputs",
+    "line": 3601,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPHIVtestAcceptProb",
+    "func": "readHIVTestInputs",
+    "line": 3604,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPInitDist",
+    "func": "readHIVTestInputs",
+    "line": 3607,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPJoinAfterRollout",
+    "func": "readHIVTestInputs",
+    "line": 3611,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPDropoutPreThreshold",
+    "func": "readHIVTestInputs",
+    "line": 3616,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPDropoutPostThreshold",
+    "func": "readHIVTestInputs",
+    "line": 3619,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPCoverage",
+    "func": "readHIVTestInputs",
+    "line": 3622,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPDuration",
+    "func": "readHIVTestInputs",
+    "line": 3625,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPShape",
+    "func": "readHIVTestInputs",
+    "line": 3628,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPStartupCost",
+    "func": "readHIVTestInputs",
+    "line": 3632,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPMonthlyCost",
+    "func": "readHIVTestInputs",
+    "line": 3635,
+    "type": "single"
+  },
+  {
+    "keyword": "PrEPQoLMod",
+    "func": "readHIVTestInputs",
+    "line": 3638,
+    "type": "single"
+  },
+  {
+    "keyword": "PrepIncidMale",
+    "func": "readHIVTestInputs",
+    "line": 3642,
+    "type": "single"
+  },
+  {
+    "keyword": "hiRisk",
+    "func": "readHIVTestInputs",
+    "line": 3643,
+    "type": "single"
+  },
+  {
+    "keyword": "PrepIncidMale",
+    "func": "readHIVTestInputs",
+    "line": 3647,
+    "type": "single"
+  },
+  {
+    "keyword": "loRisk",
+    "func": "readHIVTestInputs",
+    "line": 3648,
+    "type": "single"
+  },
+  {
+    "keyword": "PrepIncidFemale",
+    "func": "readHIVTestInputs",
+    "line": 3652,
+    "type": "single"
+  },
+  {
+    "keyword": "hiRisk",
+    "func": "readHIVTestInputs",
+    "line": 3653,
+    "type": "single"
+  },
+  {
+    "keyword": "PrepIncidFemale",
+    "func": "readHIVTestInputs",
+    "line": 3657,
+    "type": "single"
+  },
+  {
+    "keyword": "loRisk",
+    "func": "readHIVTestInputs",
+    "line": 3658,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestAcceptProb",
+    "func": "readHIVTestInputs",
+    "line": 3664,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestRetProb",
+    "func": "readHIVTestInputs",
+    "line": 3669,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestStartupCost",
+    "func": "readHIVTestInputs",
+    "line": 3674,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestCost",
+    "func": "readHIVTestInputs",
+    "line": 3679,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestNonRetCost",
+    "func": "readHIVTestInputs",
+    "line": 3684,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestRetCost",
+    "func": "readHIVTestInputs",
+    "line": 3689,
+    "type": "single"
+  },
+  {
+    "keyword": "LabStageStdDev",
+    "func": "readHIVTestInputs",
+    "line": 3694,
+    "type": "single"
+  },
+  {
+    "keyword": "LabStageBiasMean",
+    "func": "readHIVTestInputs",
+    "line": 3696,
+    "type": "single"
+  },
+  {
+    "keyword": "LabStageBiasStdDevPerc",
+    "func": "readHIVTestInputs",
+    "line": 3698,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4TestLinkProb",
+    "func": "readHIVTestInputs",
+    "line": 3702,
+    "type": "single"
+  },
+  {
+    "keyword": "EnablePeds",
+    "func": "readPedsInputs",
+    "line": 3715,
+    "type": "single"
+  },
+  {
+    "keyword": "InitAgePeds",
+    "func": "readPedsInputs",
+    "line": 3720,
+    "type": "single"
+  },
+  {
+    "keyword": "DistMatStat",
+    "func": "readPedsInputs",
+    "line": 3724,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbInfectionMom",
+    "func": "readPedsInputs",
+    "line": 3727,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMatMort",
+    "func": "readPedsInputs",
+    "line": 3730,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMatStatKnown",
+    "func": "readPedsInputs",
+    "line": 3734,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMatStatKnownBF",
+    "func": "readPedsInputs",
+    "line": 3737,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMomOnARTPreg",
+    "func": "readPedsInputs",
+    "line": 3740,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMomSuppressed",
+    "func": "readPedsInputs",
+    "line": 3743,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMomKnownSuppressed",
+    "func": "readPedsInputs",
+    "line": 3747,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMomKnownNotSuppressed",
+    "func": "readPedsInputs",
+    "line": 3750,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbMomLowHVL",
+    "func": "readPedsInputs",
+    "line": 3753,
+    "type": "single"
+  },
+  {
+    "keyword": "DistEarlyVTHIVIU",
+    "func": "readPedsInputs",
+    "line": 3757,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbEarlyVTHIVOnART",
+    "keyword2": "Suppressed",
+    "func": "readPedsInputs",
+    "line": 3760,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbEarlyVTHIVOnART",
+    "keyword2": "NotSuppressedLowHVL",
+    "func": "readPedsInputs",
+    "line": 3763,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbEarlyVTHIVOnART",
+    "keyword2": "NotSuppressedHighHVL",
+    "func": "readPedsInputs",
+    "line": 3766,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbEarlyVTHIVOffART",
+    "func": "readPedsInputs",
+    "line": 3769,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbPPVTHIVOnART",
+    "keyword2": "Suppressed",
+    "func": "readPedsInputs",
+    "line": 3773,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbPPVTHIVOnART",
+    "keyword2": "NotSuppressedLowHVL",
+    "func": "readPedsInputs",
+    "line": 3776,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbPPVTHIVOnART",
+    "keyword2": "NotSuppressedHighHVL",
+    "func": "readPedsInputs",
+    "line": 3779,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbPPVTHIVOffART",
+    "keyword2": "EBF",
+    "func": "readPedsInputs",
+    "line": 3783,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbPPVTHIVOffART",
+    "keyword2": "MBF",
+    "func": "readPedsInputs",
+    "line": 3787,
+    "type": "double"
+  },
+  {
+    "keyword": "ProbPPVTHIVOffART",
+    "keyword2": "CBF",
+    "func": "readPedsInputs",
+    "line": 3791,
+    "type": "double"
+  },
+  {
+    "keyword": "BreastfedDist",
+    "func": "readPedsInputs",
+    "line": 3799,
+    "type": "single"
+  },
+  {
+    "keyword": "BreastfedStopAge",
+    "func": "readPedsInputs",
+    "line": 3805,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbStopBFWhenVSKnownNotSuppressedLowHVL",
+    "func": "readPedsInputs",
+    "line": 3808,
+    "type": "single"
+  },
+  {
+    "keyword": "ProbStopBFWhenVSKnownNotSuppressedHighHVL",
+    "func": "readPedsInputs",
+    "line": 3810,
+    "type": "single"
+  },
+  {
+    "keyword": "InitCD4PercPrevIU",
+    "func": "readPedsInputs",
+    "line": 3814,
+    "type": "single"
+  },
+  {
+    "keyword": "InitCD4PercPrevIP",
+    "func": "readPedsInputs",
+    "line": 3817,
+    "type": "single"
+  },
+  {
+    "keyword": "InitCD4PercIncidPP",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3821,
+    "type": "double"
+  },
+  {
+    "keyword": "InitCD4PercIncidPP",
+    "keyword2": "18+mth",
+    "func": "readPedsInputs",
+    "line": 3826,
+    "type": "double"
+  },
+  {
+    "keyword": "InitHVLPrevIU",
+    "func": "readPedsInputs",
+    "line": 3831,
+    "type": "single"
+  },
+  {
+    "keyword": "InitHVLPrevIP",
+    "func": "readPedsInputs",
+    "line": 3835,
+    "type": "single"
+  },
+  {
+    "keyword": "InitHVLIncidPP",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3840,
+    "type": "double"
+  },
+  {
+    "keyword": "InitHVLIncidPP",
+    "keyword2": "18+mth",
+    "func": "readPedsInputs",
+    "line": 3846,
+    "type": "double"
+  },
+  {
+    "keyword": "AdultCD4Strata",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3853,
+    "type": "double"
+  },
+  {
+    "keyword": "UsePPMaternalARTStatus",
+    "func": "readPedsInputs",
+    "line": 3861,
+    "type": "single"
+  },
+  {
+    "keyword": "PPMaternalARTStatusOnART",
+    "keyword2": "Suppressed",
+    "func": "readPedsInputs",
+    "line": 3864,
+    "type": "double"
+  },
+  {
+    "keyword": "PPMaternalARTStatusOnART",
+    "keyword2": "NotSuppressedLowHVL",
+    "func": "readPedsInputs",
+    "line": 3867,
+    "type": "double"
+  },
+  {
+    "keyword": "PPMaternalARTStatusOnART",
+    "keyword2": "NotSuppressedHighHVL",
+    "func": "readPedsInputs",
+    "line": 3870,
+    "type": "double"
+  },
+  {
+    "keyword": "PPMaternalARTStatusOffART",
+    "func": "readPedsInputs",
+    "line": 3873,
+    "type": "single"
+  },
+  {
+    "keyword": "PPMaternalARTStatusVSKnown",
+    "func": "readPedsInputs",
+    "line": 3876,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4PercDeclinePrevIU",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3883,
+    "type": "double"
+  },
+  {
+    "keyword": "CD4PercDeclinePrevIP",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3889,
+    "type": "double"
+  },
+  {
+    "keyword": "CD4PercDeclineIncidPP",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3895,
+    "type": "double"
+  },
+  {
+    "keyword": "CD4PercTransition",
+    "keyword2": "PEDS_CD4_PERC_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3903,
+    "type": "double"
+  },
+  {
+    "keyword": "HIVDthRateRatio_PedsEarly",
+    "keyword2": "PEDS_AGE_CAT_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 3918,
+    "type": "double"
+  },
+  {
+    "keyword": "HIVDthRateRatio_PedsLate",
+    "func": "readPedsInputs",
+    "line": 3925,
+    "type": "single"
+  },
+  {
+    "keyword": "MatMortDeathRateRatioEarly",
+    "func": "readPedsInputs",
+    "line": 3930,
+    "type": "single"
+  },
+  {
+    "keyword": "MatMortDeathRateRatioDurationEarly",
+    "func": "readPedsInputs",
+    "line": 3932,
+    "type": "single"
+  },
+  {
+    "keyword": "ReplFedDeathRateRatioEarly",
+    "func": "readPedsInputs",
+    "line": 3934,
+    "type": "single"
+  },
+  {
+    "keyword": "ReplFedDeathRateRatioDurationEarly",
+    "func": "readPedsInputs",
+    "line": 3936,
+    "type": "single"
+  },
+  {
+    "keyword": "MatMortDeathRateRatioLate",
+    "func": "readPedsInputs",
+    "line": 3938,
+    "type": "single"
+  },
+  {
+    "keyword": "MatMortDeathRateRatioDurationLate",
+    "func": "readPedsInputs",
+    "line": 3940,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRate_MalePedsEarly",
+    "func": "readPedsInputs",
+    "line": 3952,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRate_FemalePedsEarly",
+    "func": "readPedsInputs",
+    "line": 3956,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRateExposed_MalePedsEarly",
+    "func": "readPedsInputs",
+    "line": 3960,
+    "type": "single"
+  },
+  {
+    "keyword": "BackgroundDthRateExposed_FemalePedsEarly",
+    "func": "readPedsInputs",
+    "line": 3964,
+    "type": "single"
+  },
+  {
+    "keyword": "UseExposedDefPeds",
+    "func": "readPedsInputs",
+    "line": 3970,
+    "type": "single"
+  },
+  {
+    "keyword": "ExposedDefEarly",
+    "func": "readPedsInputs",
+    "line": 3975,
+    "type": "single"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatio_PedsEarly",
+    "keyword2": "PEDS_CD4_PERC_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 4013,
+    "type": "double"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatioTB_PedsEarly",
+    "keyword2": "PEDS_CD4_PERC_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 4019,
+    "type": "double"
+  },
+  {
+    "keyword": "SevrOI_HistDthRateRatio_PedsEarly",
+    "func": "readPedsInputs",
+    "line": 4025,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistEffectDuration_PedsEarly",
+    "func": "readPedsInputs",
+    "line": 4028,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistDthRateRatio_PedsEarly",
+    "func": "readPedsInputs",
+    "line": 4030,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistEffectDuration_PedsEarly",
+    "func": "readPedsInputs",
+    "line": 4033,
+    "type": "single"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatio_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4037,
+    "type": "single"
+  },
+  {
+    "keyword": "AcuteOIDthRateRatioTB_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4040,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistDthRateRatio_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4045,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistEffectDuration_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4047,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistDthRateRatio_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4050,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistEffectDuration_PedsLate",
+    "func": "readPedsInputs",
+    "line": 4052,
+    "type": "single"
+  },
+  {
+    "keyword": "MaxPedsCD4Perc",
+    "func": "readPedsInputs",
+    "line": 4057,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlCD4TstPreARTPeds",
+    "func": "readPedsInputs",
+    "line": 4061,
+    "type": "single"
+  },
+  {
+    "keyword": "IntvlHVLTstPreARTPeds",
+    "func": "readPedsInputs",
+    "line": 4064,
+    "type": "single"
+  },
+  {
+    "keyword": "MthStageARTDthRateRatioPeds",
+    "func": "readPedsInputs",
+    "line": 4069,
+    "type": "single"
+  },
+  {
+    "keyword": "MthStageRateMultOIsPedsEarly",
+    "func": "readPedsInputs",
+    "line": 4080,
+    "type": "single"
+  },
+  {
+    "keyword": "RateMultOIsPedsEarly",
+    "keyword2": "PEDS_CD4_PERC_STRS[i]",
+    "func": "readPedsInputs",
+    "line": 4084,
+    "type": "double"
+  },
+  {
+    "keyword": "PriProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4097,
+    "type": "single"
+  },
+  {
+    "keyword": "agelwr",
+    "func": "readPedsInputs",
+    "line": 4098,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4101,
+    "type": "single"
+  },
+  {
+    "keyword": "ageupp",
+    "func": "readPedsInputs",
+    "line": 4102,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4106,
+    "type": "single"
+  },
+  {
+    "keyword": "cd4Percupp",
+    "func": "readPedsInputs",
+    "line": 4107,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4110,
+    "type": "single"
+  },
+  {
+    "keyword": "cd4Perclwr",
+    "func": "readPedsInputs",
+    "line": 4111,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4116,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds_CondFirst",
+    "func": "readPedsInputs",
+    "line": 4122,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds_CondSecond",
+    "func": "readPedsInputs",
+    "line": 4125,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStartPeds_CondPar",
+    "func": "readPedsInputs",
+    "line": 4128,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4133,
+    "type": "single"
+  },
+  {
+    "keyword": "agelwr",
+    "func": "readPedsInputs",
+    "line": 4134,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4137,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4Perclwr",
+    "func": "readPedsInputs",
+    "line": 4138,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4142,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4147,
+    "type": "single"
+  },
+  {
+    "keyword": "mthsOnProph",
+    "func": "readPedsInputs",
+    "line": 4148,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds_CondFirst",
+    "func": "readPedsInputs",
+    "line": 4152,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds_CondSecond",
+    "func": "readPedsInputs",
+    "line": 4155,
+    "type": "single"
+  },
+  {
+    "keyword": "PriProphStopPeds_CondPar",
+    "func": "readPedsInputs",
+    "line": 4158,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4163,
+    "type": "single"
+  },
+  {
+    "keyword": "agelwr",
+    "func": "readPedsInputs",
+    "line": 4164,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4167,
+    "type": "single"
+  },
+  {
+    "keyword": "ageupp",
+    "func": "readPedsInputs",
+    "line": 4168,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4172,
+    "type": "single"
+  },
+  {
+    "keyword": "cd4Percupp",
+    "func": "readPedsInputs",
+    "line": 4173,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4176,
+    "type": "single"
+  },
+  {
+    "keyword": "cd4Perclwr",
+    "func": "readPedsInputs",
+    "line": 4177,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds",
+    "func": "readPedsInputs",
+    "line": 4182,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds_CondFirst",
+    "func": "readPedsInputs",
+    "line": 4188,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds_CondSecond",
+    "func": "readPedsInputs",
+    "line": 4191,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStartPeds_CondPar",
+    "func": "readPedsInputs",
+    "line": 4194,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4199,
+    "type": "single"
+  },
+  {
+    "keyword": "agelwr",
+    "func": "readPedsInputs",
+    "line": 4200,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4203,
+    "type": "single"
+  },
+  {
+    "keyword": "CD4Perclwr",
+    "func": "readPedsInputs",
+    "line": 4204,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4208,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds",
+    "func": "readPedsInputs",
+    "line": 4213,
+    "type": "single"
+  },
+  {
+    "keyword": "mthsOnProph",
+    "func": "readPedsInputs",
+    "line": 4214,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds_CondFirst",
+    "func": "readPedsInputs",
+    "line": 4218,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds_CondSecond",
+    "func": "readPedsInputs",
+    "line": 4221,
+    "type": "single"
+  },
+  {
+    "keyword": "SecProphStopPeds_CondPar",
+    "func": "readPedsInputs",
+    "line": 4224,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstartMthStage",
+    "func": "readPedsInputs",
+    "line": 4230,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstart_HVL",
+    "keyword2": "upp",
+    "func": "readPedsInputs",
+    "line": 4246,
+    "type": "double"
+  },
+  {
+    "keyword": "PedsARTstart_HVL",
+    "keyword2": "lwr",
+    "func": "readPedsInputs",
+    "line": 4249,
+    "type": "double"
+  },
+  {
+    "keyword": "PedsARTstart_OIs",
+    "keyword2": "numOIs",
+    "func": "readPedsInputs",
+    "line": 4261,
+    "type": "double"
+  },
+  {
+    "keyword": "PedsARTstart",
+    "keyword2": "minMthNum",
+    "func": "readPedsInputs",
+    "line": 4266,
+    "type": "double"
+  },
+  {
+    "keyword": "PedsARTstart",
+    "keyword2": "MthsSincePrevRegStop",
+    "func": "readPedsInputs",
+    "line": 4269,
+    "type": "double"
+  },
+  {
+    "keyword": "PedsARTfail_hvlNumIncr",
+    "func": "readPedsInputs",
+    "line": 4275,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_hvlAbsol",
+    "func": "readPedsInputs",
+    "line": 4279,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readPedsInputs",
+    "line": 4280,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_hvlAbsol",
+    "func": "readPedsInputs",
+    "line": 4283,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readPedsInputs",
+    "line": 4284,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_hvlAtSetptAsFailDiag",
+    "func": "readPedsInputs",
+    "line": 4288,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_hvlMthsFromInit",
+    "func": "readPedsInputs",
+    "line": 4294,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4PercDrop",
+    "func": "readPedsInputs",
+    "line": 4298,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4BelowPreARTNadir",
+    "func": "readPedsInputs",
+    "line": 4302,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4AbsolOR",
+    "func": "readPedsInputs",
+    "line": 4308,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readPedsInputs",
+    "line": 4309,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4AbsolOR",
+    "func": "readPedsInputs",
+    "line": 4312,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readPedsInputs",
+    "line": 4313,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4AbsolAND",
+    "func": "readPedsInputs",
+    "line": 4317,
+    "type": "single"
+  },
+  {
+    "keyword": "uppBnd",
+    "func": "readPedsInputs",
+    "line": 4318,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4AbsolAND",
+    "func": "readPedsInputs",
+    "line": 4321,
+    "type": "single"
+  },
+  {
+    "keyword": "lwrBnd",
+    "func": "readPedsInputs",
+    "line": 4322,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_cd4MthsFromInit",
+    "func": "readPedsInputs",
+    "line": 4326,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_OIs",
+    "func": "readPedsInputs",
+    "line": 4331,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_OIsMinNum",
+    "func": "readPedsInputs",
+    "line": 4338,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_OIsMthsFromInit",
+    "func": "readPedsInputs",
+    "line": 4341,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_diagNumTestsFail",
+    "func": "readPedsInputs",
+    "line": 4345,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_diagUseHVLTestsConfirm",
+    "func": "readPedsInputs",
+    "line": 4348,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_diagUseCD4TestsConfirm",
+    "func": "readPedsInputs",
+    "line": 4353,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTfail_diagNumTestsConfirm",
+    "func": "readPedsInputs",
+    "line": 4358,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_MaxMthsOnART",
+    "func": "readPedsInputs",
+    "line": 4364,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_MajorToxicity",
+    "func": "readPedsInputs",
+    "line": 4368,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailImmed",
+    "func": "readPedsInputs",
+    "line": 4374,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailBelowCD4",
+    "func": "readPedsInputs",
+    "line": 4379,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailSevereOI",
+    "func": "readPedsInputs",
+    "line": 4382,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailMthsAfterObsv",
+    "func": "readPedsInputs",
+    "line": 4387,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailMinMthNum",
+    "func": "readPedsInputs",
+    "line": 4391,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsARTstop_OnFailMthsFromInit",
+    "func": "readPedsInputs",
+    "line": 4394,
+    "type": "single"
+  },
+  {
+    "keyword": "Id",
+    "func": "readPedsProphInputs",
+    "line": 4410,
+    "type": "single"
+  },
+  {
+    "keyword": "EffPriOIs",
+    "func": "readPedsProphInputs",
+    "line": 4423,
+    "type": "single"
+  },
+  {
+    "keyword": "EffSecOIs",
+    "func": "readPedsProphInputs",
+    "line": 4429,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readPedsProphInputs",
+    "line": 4436,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readPedsProphInputs",
+    "line": 4445,
+    "type": "single"
+  },
+  {
+    "keyword": "CostQOL",
+    "func": "readPedsProphInputs",
+    "line": 4453,
+    "type": "single"
+  },
+  {
+    "keyword": "Switch",
+    "func": "readPedsProphInputs",
+    "line": 4462,
+    "type": "single"
+  },
+  {
+    "keyword": "Id",
+    "func": "readPedsProphInputs",
+    "line": 4476,
+    "type": "single"
+  },
+  {
+    "keyword": "EffPriOIs",
+    "func": "readPedsProphInputs",
+    "line": 4489,
+    "type": "single"
+  },
+  {
+    "keyword": "EffSecOIs",
+    "func": "readPedsProphInputs",
+    "line": 4495,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readPedsProphInputs",
+    "line": 4502,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readPedsProphInputs",
+    "line": 4511,
+    "type": "single"
+  },
+  {
+    "keyword": "CostQOL",
+    "func": "readPedsProphInputs",
+    "line": 4519,
+    "type": "single"
+  },
+  {
+    "keyword": "Switch",
+    "func": "readPedsProphInputs",
+    "line": 4528,
+    "type": "single"
+  },
+  {
+    "keyword": "Supp",
+    "func": "readPedsARTInputs",
+    "line": 4689,
+    "type": "single"
+  },
+  {
+    "keyword": "LateFail",
+    "func": "readPedsARTInputs",
+    "line": 4692,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectOI",
+    "func": "readPedsARTInputs",
+    "line": 4695,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectCHRMs",
+    "func": "readPedsARTInputs",
+    "line": 4698,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectMort",
+    "func": "readPedsARTInputs",
+    "line": 4701,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readPedsARTInputs",
+    "line": 4704,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readPedsARTInputs",
+    "line": 4707,
+    "type": "single"
+  },
+  {
+    "keyword": "Cost",
+    "func": "readPedsARTInputs",
+    "line": 4710,
+    "type": "single"
+  },
+  {
+    "keyword": "RestartAfterFail",
+    "func": "readPedsARTInputs",
+    "line": 4713,
+    "type": "single"
+  },
+  {
+    "keyword": "Resuppression",
+    "func": "readPedsARTInputs",
+    "line": 4716,
+    "type": "single"
+  },
+  {
+    "keyword": "Supp",
+    "func": "readPedsARTInputs",
+    "line": 4738,
+    "type": "single"
+  },
+  {
+    "keyword": "LateFail",
+    "func": "readPedsARTInputs",
+    "line": 4741,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectOI",
+    "func": "readPedsARTInputs",
+    "line": 4744,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectCHRMs",
+    "func": "readPedsARTInputs",
+    "line": 4747,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectMort",
+    "func": "readPedsARTInputs",
+    "line": 4750,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readPedsARTInputs",
+    "line": 4753,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readPedsARTInputs",
+    "line": 4756,
+    "type": "single"
+  },
+  {
+    "keyword": "Cost",
+    "func": "readPedsARTInputs",
+    "line": 4759,
+    "type": "single"
+  },
+  {
+    "keyword": "RestartAfterFail",
+    "func": "readPedsARTInputs",
+    "line": 4762,
+    "type": "single"
+  },
+  {
+    "keyword": "Resuppression",
+    "func": "readPedsARTInputs",
+    "line": 4765,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsCostRoutine_HIVneg_dmed",
+    "func": "readPedsCostInputs",
+    "line": 4864,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsCostRoutine_HIVneg_nmed",
+    "func": "readPedsCostInputs",
+    "line": 4870,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsCostRoutine_HIVneg_time",
+    "func": "readPedsCostInputs",
+    "line": 4876,
+    "type": "single"
+  },
+  {
+    "keyword": "PedsCostRoutine_HIVneg_indr",
+    "func": "readPedsCostInputs",
+    "line": 4882,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableHIVtestEID",
+    "func": "readEIDInputs",
+    "line": 4951,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleEnableEID",
+    "func": "readEIDInputs",
+    "line": 4957,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleTotHIVEID",
+    "func": "readEIDInputs",
+    "line": 4962,
+    "type": "single"
+  },
+  {
+    "keyword": "AltStopRuleTotCohortEID",
+    "func": "readEIDInputs",
+    "line": 4964,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminAssayUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4968,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminAgeUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4971,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminProbPresentUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4974,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminProbNonMaternalUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4977,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminEIDVisitUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4980,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminReofferUnknownPos",
+    "func": "readEIDInputs",
+    "line": 4985,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminAssayKnownPos",
+    "func": "readEIDInputs",
+    "line": 4992,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminAgeKnownPos",
+    "func": "readEIDInputs",
+    "line": 4995,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminProbPresentKnownPos",
+    "func": "readEIDInputs",
+    "line": 4998,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminProbNonMaternalKnownPos",
+    "func": "readEIDInputs",
+    "line": 5001,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminEIDVisitKnownPos",
+    "func": "readEIDInputs",
+    "line": 5004,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDTestingAdminReofferKnownPos",
+    "func": "readEIDInputs",
+    "line": 5009,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDAgeSeroreversion",
+    "func": "readEIDInputs",
+    "line": 5016,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDMultProbPresentIfMissedVisit",
+    "func": "readEIDInputs",
+    "line": 5020,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDMultProbOfferIfNonMaternal",
+    "func": "readEIDInputs",
+    "line": 5022,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDProbKnowledgePriorResult",
+    "func": "readEIDInputs",
+    "line": 5024,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDCostVisit",
+    "func": "readEIDInputs",
+    "line": 5028,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDProbDetectionOnOI",
+    "func": "readEIDInputs",
+    "line": 5033,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDProbOIDetectionConfirmedLabTest",
+    "func": "readEIDInputs",
+    "line": 5038,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDOILabTestMonthsThreshold",
+    "func": "readEIDInputs",
+    "line": 5041,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDOIAssayUnknownPos",
+    "func": "readEIDInputs",
+    "line": 5044,
+    "type": "single"
+  },
+  {
+    "keyword": "EIDOIAssayKnownPos",
+    "func": "readEIDInputs",
+    "line": 5048,
+    "type": "single"
+  },
+  {
+    "keyword": "EnableAdolescent",
+    "func": "readAdolescentInputs",
+    "line": 5362,
+    "type": "single"
+  },
+  {
+    "keyword": "TransitionToAdult",
+    "func": "readAdolescentInputs",
+    "line": 5366,
+    "type": "single"
+  },
+  {
+    "keyword": "AgeTransitionToAdult",
+    "func": "readAdolescentInputs",
+    "line": 5369,
+    "type": "single"
+  },
+  {
+    "keyword": "AgeTransitionFromPeds",
+    "func": "readAdolescentInputs",
+    "line": 5372,
+    "type": "single"
+  },
+  {
+    "keyword": "AdolescentAgeBounds",
+    "func": "readAdolescentInputs",
+    "line": 5375,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTDthRateRatio_Adolescent",
+    "func": "readAdolescentInputs",
+    "line": 5431,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistDthRateRatio_Adolescent",
+    "func": "readAdolescentInputs",
+    "line": 5454,
+    "type": "single"
+  },
+  {
+    "keyword": "SevrOI_HistEffectDuration_Adolescent",
+    "func": "readAdolescentInputs",
+    "line": 5457,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistDthRateRatio_Adolescent",
+    "func": "readAdolescentInputs",
+    "line": 5459,
+    "type": "single"
+  },
+  {
+    "keyword": "TB_OI_HistEffectDuration_Adolescent",
+    "func": "readAdolescentInputs",
+    "line": 5462,
+    "type": "single"
+  },
+  {
+    "keyword": "Supp",
+    "func": "readAdolescentARTInputs",
+    "line": 5609,
+    "type": "single"
+  },
+  {
+    "keyword": "LateFail",
+    "func": "readAdolescentARTInputs",
+    "line": 5612,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectOI",
+    "func": "readAdolescentARTInputs",
+    "line": 5615,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectCHRMs",
+    "func": "readAdolescentARTInputs",
+    "line": 5618,
+    "type": "single"
+  },
+  {
+    "keyword": "ARTEffectMort",
+    "func": "readAdolescentARTInputs",
+    "line": 5621,
+    "type": "single"
+  },
+  {
+    "keyword": "Resist",
+    "func": "readAdolescentARTInputs",
+    "line": 5624,
+    "type": "single"
+  },
+  {
+    "keyword": "Tox",
+    "func": "readAdolescentARTInputs",
+    "line": 5627,
+    "type": "single"
+  },
+  {
+    "keyword": "Cost",
+    "func": "readAdolescentARTInputs",
+    "line": 5630,
+    "type": "single"
+  },
+  {
+    "keyword": "RestartAfterFail",
+    "func": "readAdolescentARTInputs",
+    "line": 5633,
+    "type": "single"
+  },
+  {
+    "keyword": "Resuppression",
+    "func": "readAdolescentARTInputs",
+    "line": 5636,
+    "type": "single"
+  }
+]
