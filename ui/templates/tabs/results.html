@@ -83,11 +83,45 @@ function previewOutput(filename) {
 </style>
 
 <div class="form-section" id="results-output-section" style="display: none;">
-    <h3>Model Output (.out)</h3>
+    <h3>Model Output (.out)
+        <button id="btn-save-output" class="btn btn-sm btn-primary" onclick="saveToPresets()" style="margin-left: 10px;">Save to Presets</button>
+        <span id="save-status" style="margin-left: 10px; font-weight: normal; font-size: 14px;"></span>
+    </h3>
     <div class="results-container">
         <pre id="results-output" class="results-text"></pre>
     </div>
 </div>
+
+<script>
+function saveToPresets() {
+    const btn = document.getElementById('btn-save-output');
+    const status = document.getElementById('save-status');
+    btn.disabled = true;
+    status.textContent = 'Saving...';
+
+    fetch('/api/save-output', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                status.textContent = '✓ ' + data.message;
+                status.style.color = 'green';
+                // Refresh the output files list
+                setTimeout(() => {
+                    location.reload();
+                }, 1500);
+            } else {
+                status.textContent = '✗ ' + data.message;
+                status.style.color = 'red';
+                btn.disabled = false;
+            }
+        })
+        .catch(err => {
+            status.textContent = '✗ Error saving';
+            status.style.color = 'red';
+            btn.disabled = false;
+        });
+}
+</script>
 
 <div class="form-section" id="results-cout-section" style="display: none;">
     <h3>Cost Output (.cout)</h3>

@@ -24,6 +24,10 @@ app.config['SECRET_KEY'] = 'cepac-ui-secret-key'
 # Global state for current parameters
 current_params = create_default_params()
 
+# Store last run results for saving
+last_run_results = None
+last_run_name = None
+
 
 @app.route('/')
 def index():
@@ -116,6 +120,7 @@ def import_in_file():
 @app.route('/api/run', methods=['POST'])
 def run_model():
     """Run the CEPAC model with current parameters."""
+    global last_run_results, last_run_name
     try:
         # Generate input file
         input_content = generate_in_file(current_params)
@@ -125,12 +130,45 @@ def run_model():
         runner = ModelRunner()
         result = runner.run(input_content, run_name)
 
+        # Store results for potential saving
+        if result.get('success'):
+            last_run_results = result
+            last_run_name = run_name
+
         return jsonify(result)
 
     except Exception as e:
         return jsonify({
             'success': False,
             'message': f'Error running model: {str(e)}'
+        }), 500
+
+
+@app.route('/api/save-output', methods=['POST'])
+def save_output():
+    """Save the last run's output to presets directory."""
+    global last_run_results, last_run_name
+
+    if not last_run_results or not last_run_results.get('output'):
+        return jsonify({'success': False, 'message': 'No results to save'}), 400
+
+    try:
+        filename = f"{last_run_name}.out"
+        filepath = os.path.join(PRESETS_DIR, filename)
+
+        with open(filepath, 'w') as f:
+            f.write(last_run_results['output'])
+
+        return jsonify({
+            'success': True,
+            'message': f'Saved to {filename}',
+            'filename': filename
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'Error saving: {str(e)}'
         }), 500
 
 
