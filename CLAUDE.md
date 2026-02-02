@@ -10,11 +10,20 @@ The model simulates individual patient lifecycles month-by-month, tracking HIV i
 
 ## Build Commands
 
-This is a standard C++ project. No build system (Makefile/CMake) is provided in the repository.
+### Using Make (Recommended)
 
-To compile manually (example for g++):
 ```bash
-g++ -o cepac *.cpp -std=c++11
+make          # Build with incremental compilation
+make clean    # Remove build artifacts
+make rebuild  # Clean and rebuild
+make run      # Build and run with current directory inputs
+make info     # Show file counts
+```
+
+### Manual Compilation
+
+```bash
+g++ -o cepac *.cpp -std=c++11 -O3
 ```
 
 ## Running the Model
@@ -227,3 +236,83 @@ The script performs chunk-by-chunk review of all source files for:
 - Potential bugs
 - Memory management concerns
 - Epidemiological accuracy
+
+## Codebase Overview
+
+### File Statistics
+
+| Type | Count | Lines |
+|------|-------|-------|
+| C++ Source (.cpp) | 26 | 30,689 |
+| C++ Headers (.h) | 27 | 7,337 |
+| **Total C++** | **53** | **38,026** |
+| Python (ui/) | 8 | ~8,500 |
+
+### Core Classes
+
+**Simulation Core:**
+- `SimContext` - Reads and stores all input parameters from `.in` files
+- `Patient` - Represents a single simulated patient with all state
+- `StateUpdater` - Base class for all monthly update logic
+
+**Statistics & Output:**
+- `RunStats` - Per-run statistics (`.out` files)
+- `CostStats` - Detailed cost tracking (`.cout` files)
+- `SummaryStats` - Population summary across runs (`popstats`)
+- `Tracer` - Detailed patient trace output
+
+**Monthly Updaters (inherit from StateUpdater):**
+| Class | Purpose |
+|-------|---------|
+| `BeginMonthUpdater` | Month initialization, age updates |
+| `HIVInfectionUpdater` | HIV infection events |
+| `CHRMsUpdater` | Chronic conditions (hepatic/renal/malignancy) |
+| `DrugToxicityUpdater` | ART toxicity events |
+| `TBDiseaseUpdater` | TB disease progression |
+| `AcuteOIUpdater` | Acute opportunistic infections |
+| `MortalityUpdater` | Death events |
+| `CD4HVLUpdater` | CD4/viral load changes |
+| `HIVTestingUpdater` | HIV testing |
+| `BehaviorUpdater` | Risk behaviors |
+| `DrugEfficacyUpdater` | ART efficacy |
+| `CD4TestUpdater` | CD4 lab testing |
+| `HVLTestUpdater` | Viral load testing |
+| `ClinicVisitUpdater` | Clinic visit logic |
+| `TBClinicalUpdater` | TB clinical care |
+| `EndMonthUpdater` | Finalize month, update statistics |
+
+**Utilities:**
+- `CepacUtil` - Random numbers (Mersenne Twister), file I/O, probability conversions
+- `MTRand` - Mersenne Twister RNG implementation
+
+### Data Flow
+
+```
+main() [ConsoleMain.cpp]
+    │
+    ├── SimContext::readInputs()     ← Parse .in file
+    │
+    ├── for each patient:
+    │   ├── new Patient(simContext)
+    │   │
+    │   └── while alive:
+    │       └── patient->simulateMonth()
+    │           ├── BeginMonthUpdater
+    │           ├── HIVInfectionUpdater
+    │           ├── CHRMsUpdater
+    │           ├── ... (all updaters)
+    │           └── EndMonthUpdater
+    │
+    └── RunStats::writeOutput()      → Generate .out file
+```
+
+### Largest Source Files
+
+| File | Lines | Description |
+|------|-------|-------------|
+| SimContext.cpp | 6,027 | Input file parsing |
+| Patient.cpp | 4,209 | Patient state and simulation |
+| RunStats.cpp | 3,852 | Statistics collection |
+| StateUpdater.cpp | 3,411 | Base updater logic |
+| ClinicVisitUpdater.cpp | 1,975 | Clinic visit handling |
+| CostStats.cpp | 1,847 | Cost tracking |
