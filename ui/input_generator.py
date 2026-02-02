@@ -89,8 +89,8 @@ class InputGenerator:
 
         self._w("RandSeedByTime", p.get('randomSeedByTime', True))
         self._w("UserLocale", p.get('userProgramLocale', 'en_US'))
-        self._w("InpVer", p.get('inputVersion', '11.0'))
-        self._w("ModelVer", p.get('modelVersion', '11.0'))
+        self._w("InpVer", p.get('inputVersion', '20210615'))
+        self._w("ModelVer", p.get('modelVersion', '50d'))
         self._w("IncludeTB_AsOI", p.get('OIsIncludeTB', False))
         self._w("OIstrs", p.get('OINames', [f'OI_{i+1}' for i in range(15)]))
         self._w("LongitLogCohort", p.get('longitLoggingLevel', 0))
