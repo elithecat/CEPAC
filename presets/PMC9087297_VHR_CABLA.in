@@ -330,10 +330,10 @@ HIVtestNegQOLMod	0	0	0	0
 HIVtestCost	0	0	0	0
 HIVtestStartupCost	0	0	0	0	0
 HIVtestNonRetCost	0	0	0	0	0
-HIVtestBgAcceptProb	0	0	0	0	0
+HIVtestBgAcceptProb	0.0185	0.0185	0.0185	0.0185	0.0185
 HIVtestBgReturnProb	1	1	1	1	1
 HIVtestBgPosProb	0	0	1	1	1
-HIVtestBgTestCost	0	0	0	0	0
+HIVtestBgTestCost	50	50	50	50	50
 HIVtestBgTestPosCost	0	0	0	0	0
 HIVtestBgTestNegCost	0	0	0	0	0
 HIVtestBgStartAge	0
@@ -826,8 +826,8 @@ AgeCat1CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat1CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat1CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat1CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat1CostCD4Test	0	0	0	0
-AgeCat1CostHVLTest	0	0	0	0
+AgeCat1CostCD4Test	62	62	62	62
+AgeCat1CostHVLTest	112	112	112	112
 AgeCat1CostDth_noART_treated	OI1	0	0	0	0
 AgeCat1CostDth_noART_treated	OI2	0	0	0	0
 AgeCat1CostDth_noART_treated	OI3	0	0	0	0
@@ -956,8 +956,8 @@ AgeCat2CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat2CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat2CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat2CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat2CostCD4Test	0	0	0	0
-AgeCat2CostHVLTest	0	0	0	0
+AgeCat2CostCD4Test	62	62	62	62
+AgeCat2CostHVLTest	112	112	112	112
 AgeCat2CostDth_noART_treated	OI1	0	0	0	0
 AgeCat2CostDth_noART_treated	OI2	0	0	0	0
 AgeCat2CostDth_noART_treated	OI3	0	0	0	0
@@ -1086,8 +1086,8 @@ AgeCat3CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat3CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat3CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat3CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat3CostCD4Test	0	0	0	0
-AgeCat3CostHVLTest	0	0	0	0
+AgeCat3CostCD4Test	62	62	62	62
+AgeCat3CostHVLTest	112	112	112	112
 AgeCat3CostDth_noART_treated	OI1	0	0	0	0
 AgeCat3CostDth_noART_treated	OI2	0	0	0	0
 AgeCat3CostDth_noART_treated	OI3	0	0	0	0
@@ -1216,8 +1216,8 @@ AgeCat4CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat4CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat4CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat4CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat4CostCD4Test	0	0	0	0
-AgeCat4CostHVLTest	0	0	0	0
+AgeCat4CostCD4Test	62	62	62	62
+AgeCat4CostHVLTest	112	112	112	112
 AgeCat4CostDth_noART_treated	OI1	0	0	0	0
 AgeCat4CostDth_noART_treated	OI2	0	0	0	0
 AgeCat4CostDth_noART_treated	OI3	0	0	0	0
@@ -1346,8 +1346,8 @@ AgeCat5CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat5CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat5CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat5CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat5CostCD4Test	0	0	0	0
-AgeCat5CostHVLTest	0	0	0	0
+AgeCat5CostCD4Test	62	62	62	62
+AgeCat5CostHVLTest	112	112	112	112
 AgeCat5CostDth_noART_treated	OI1	0	0	0	0
 AgeCat5CostDth_noART_treated	OI2	0	0	0	0
 AgeCat5CostDth_noART_treated	OI3	0	0	0	0
@@ -1476,8 +1476,8 @@ AgeCat6CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat6CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat6CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat6CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat6CostCD4Test	0	0	0	0
-AgeCat6CostHVLTest	0	0	0	0
+AgeCat6CostCD4Test	62	62	62	62
+AgeCat6CostHVLTest	112	112	112	112
 AgeCat6CostDth_noART_treated	OI1	0	0	0	0
 AgeCat6CostDth_noART_treated	OI2	0	0	0	0
 AgeCat6CostDth_noART_treated	OI3	0	0	0	0
@@ -1606,8 +1606,8 @@ AgeCat7CostAcuteOI_onART_untreated	OI12	0	0	0	0
 AgeCat7CostAcuteOI_onART_untreated	OI13	0	0	0	0
 AgeCat7CostAcuteOI_onART_untreated	OI14	0	0	0	0
 AgeCat7CostAcuteOI_onART_untreated	OI15	0	0	0	0
-AgeCat7CostCD4Test	0	0	0	0
-AgeCat7CostHVLTest	0	0	0	0
+AgeCat7CostCD4Test	62	62	62	62
+AgeCat7CostHVLTest	112	112	112	112
 AgeCat7CostDth_noART_treated	OI1	0	0	0	0
 AgeCat7CostDth_noART_treated	OI2	0	0	0	0
 AgeCat7CostDth_noART_treated	OI3	0	0	0	0
@@ -1680,51 +1680,51 @@ CostGenMed_dmed	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostGenMed_nmed	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostGenMed_time	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostGenMed_indr	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4vhi	275	275	275	275	275	275	275	275	275	275	275	275	275	275
 CostRoutine_HIVpos_noART_nmed	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4_hi	283	283	283	283	283	283	283	283	283	283	283	283	283	283
 CostRoutine_HIVpos_noART_nmed	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4mhi	417	417	417	417	417	417	417	417	417	417	417	417	417	417
 CostRoutine_HIVpos_noART_nmed	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4mlo	733	733	733	733	733	733	733	733	733	733	733	733	733	733
 CostRoutine_HIVpos_noART_nmed	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4_lo	733	733	733	733	733	733	733	733	733	733	733	733	733	733
 CostRoutine_HIVpos_noART_nmed	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_noART_dmed	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_noART_dmed	CD4vlo	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717
 CostRoutine_HIVpos_noART_nmed	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_time	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_noART_indr	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4vhi	275	275	275	275	275	275	275	275	275	275	275	275	275	275
 CostRoutine_HIVpos_onART_nmed	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4_hi	283	283	283	283	283	283	283	283	283	283	283	283	283	283
 CostRoutine_HIVpos_onART_nmed	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4mhi	417	417	417	417	417	417	417	417	417	417	417	417	417	417
 CostRoutine_HIVpos_onART_nmed	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4mlo	733	733	733	733	733	733	733	733	733	733	733	733	733	733
 CostRoutine_HIVpos_onART_nmed	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4_lo	733	733	733	733	733	733	733	733	733	733	733	733	733	733
 CostRoutine_HIVpos_onART_nmed	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CostRoutine_HIVpos_onART_dmed	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CostRoutine_HIVpos_onART_dmed	CD4vlo	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717	2717
 CostRoutine_HIVpos_onART_nmed	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_time	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 CostRoutine_HIVpos_onART_indr	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -1891,7 +1891,7 @@ ARTstart	MthsSincePrevRegStop	0	0	0	0	0	0	0	0	0	0
 ART1Id	-1
 ART1InitCost	0
 ART1InitCostAdd	0
-ART1MthCost	0
+ART1MthCost	3843
 ART1MthCostAdd	0
 ART1EffTimeHorizon	6
 ART1ResuppEffTimeHorizon	6
@@ -5182,8 +5182,8 @@ Peds1CostAcuteOI_onART_untreated	OI12	0	0	0	0
 Peds1CostAcuteOI_onART_untreated	OI13	0	0	0	0
 Peds1CostAcuteOI_onART_untreated	OI14	0	0	0	0
 Peds1CostAcuteOI_onART_untreated	OI15	0	0	0	0
-Peds1CostCD4Test	0	0	0	0
-Peds1CostHVLTest	0	0	0	0
+Peds1CostCD4Test	62	62	62	62
+Peds1CostHVLTest	112	112	112	112
 Peds1CostDth_noART_treated	OI1	0	0	0	0
 Peds1CostDth_noART_treated	OI2	0	0	0	0
 Peds1CostDth_noART_treated	OI3	0	0	0	0
@@ -5312,8 +5312,8 @@ Peds2CostAcuteOI_onART_untreated	OI12	0	0	0	0
 Peds2CostAcuteOI_onART_untreated	OI13	0	0	0	0
 Peds2CostAcuteOI_onART_untreated	OI14	0	0	0	0
 Peds2CostAcuteOI_onART_untreated	OI15	0	0	0	0
-Peds2CostCD4Test	0	0	0	0
-Peds2CostHVLTest	0	0	0	0
+Peds2CostCD4Test	62	62	62	62
+Peds2CostHVLTest	112	112	112	112
 Peds2CostDth_noART_treated	OI1	0	0	0	0
 Peds2CostDth_noART_treated	OI2	0	0	0	0
 Peds2CostDth_noART_treated	OI3	0	0	0	0
@@ -5442,8 +5442,8 @@ Peds3CostAcuteOI_onART_untreated	OI12	0	0	0	0
 Peds3CostAcuteOI_onART_untreated	OI13	0	0	0	0
 Peds3CostAcuteOI_onART_untreated	OI14	0	0	0	0
 Peds3CostAcuteOI_onART_untreated	OI15	0	0	0	0
-Peds3CostCD4Test	0	0	0	0
-Peds3CostHVLTest	0	0	0	0
+Peds3CostCD4Test	62	62	62	62
+Peds3CostHVLTest	112	112	112	112
 Peds3CostDth_noART_treated	OI1	0	0	0	0
 Peds3CostDth_noART_treated	OI2	0	0	0	0
 Peds3CostDth_noART_treated	OI3	0	0	0	0
@@ -5572,8 +5572,8 @@ Peds4CostAcuteOI_onART_untreated	OI12	0	0	0	0
 Peds4CostAcuteOI_onART_untreated	OI13	0	0	0	0
 Peds4CostAcuteOI_onART_untreated	OI14	0	0	0	0
 Peds4CostAcuteOI_onART_untreated	OI15	0	0	0	0
-Peds4CostCD4Test	0	0	0	0
-Peds4CostHVLTest	0	0	0	0
+Peds4CostCD4Test	62	62	62	62
+Peds4CostHVLTest	112	112	112	112
 Peds4CostDth_noART_treated	OI1	0	0	0	0
 Peds4CostDth_noART_treated	OI2	0	0	0	0
 Peds4CostDth_noART_treated	OI3	0	0	0	0

@@ -1,0 +1,1497 @@
+POPULATION SUMMARY MEASURES (run completed 02/02/26,23:02:16)
+[Program version 50d, build 2025-01-09]
+	Outcome/Measure 	Average 	Std Dev 	LB 	UB
+	Costs 	125925.81 	218084.51 	121651.36 	130200.27
+	Life Months 	354.1023 	16.1531 	353.7857 	354.4189
+	Quality-Adj Life Mths 	354.0378 	16.1730 	353.7208 	354.3548
+	 	Avg Costs 	Avg LMs 	Avg QALMs
+	Up to 0 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 1 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 2 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 3 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 4 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 5 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 6 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 7 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 8 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 9 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Up to 10 ART(s) obsv fail 	125925.81 	354.1023 	354.0378
+	Only HIV+ patients 	190370.22 	355.3150 	355.2520
+	Total Clinic Visits 	1018019
+HIV SCREENING MODULE
+	Overall Prevalence
+	HIV+ Cases (Preval):	0		HIV- Cases (Preval):	10000
+	Incidence
+		Total	Never PrEP	PrEP Dropout When Infected	On PrEP When Infected
+	HIV+ Cases (Incident):	6609	6609	0	0
+		Mean	SD
+	Mths to Inf (Incid):	346.82	245.88
+
+	Total HIV+ Cases:	6609
+
+	# Ever on PrEP (all patients)	0
+	# Drop out of PrEP (all patients)	0
+	Only HIV- patients (never infected)
+		Num Patients	Avg LMs 	Avg QALMs
+	Ever on PrEP 	0 	0.0000 	0.0000 
+	Never on PrEP 	3391 	351.7387 	351.6713 
+	Total HIV Exposed (Pediatric)
+		Mother Chronic HIV (Preganancy)	Mother Acute HIV (Pregnancy)			Mother Acute HIV (Breastfeeding)	HIV- Never Exposed
+	Before Birth	0	0		After Birth	0	0
+		False Positive	False Positive Linked
+	Life Months	0	0
+		HIVasym	HIVsymp	HIVacut	HIVneg_loRisk	HIVneg_hiRisk
+	Init States (Prevalence):	0	0	0	0	10000
+	Linked to HIV Care at Init:	0	0	0
+
+	CD4 at Detection (Preval):	HIVasym	HIVsymp	HIVacut	Total
+	CD4vhi	0	0	0	0
+	CD4_hi	0	0	0	0
+	CD4mhi	0	0	0	0
+	CD4mlo	0	0	0	0
+	CD4_lo	0	0	0	0
+	CD4vlo	0	0	0	0
+	Total	0	0	0
+	Mean CD4 Count at Det (Preval):	0.00	0.00	0.00	0.00
+
+	HVL at Detection (Preval):	HIVasym	HIVsymp	HIVacut	Total
+	HVLvhi	0	0	0	0
+	HVL_hi	0	0	0	0
+	HVLmhi	0	0	0	0
+	HVLmed	0	0	0	0
+	HVLmlo	0	0	0	0
+	HVL_lo	0	0	0	0
+	HVLvlo	0	0	0	0
+		Mean	SD
+	Mths from model start to det (Preval):	0.00	0.00
+	Age in mths at det (Preval):	0.00	0.00
+
+	CD4 at Detection (Incid):	HIVasym	HIVsymp	HIVacut	Total	Total %
+	CD4vhi	3403	0	192	3595	56.57
+	CD4_hi	0	0	0	0	0.00
+	CD4mhi	0	0	0	0	0.00
+	CD4mlo	0	0	0	0	0.00
+	CD4_lo	0	0	0	0	0.00
+	CD4vlo	2567	0	193	2760	43.43
+	Total	5970	0	385
+	Mean CD4 Count at Det (Incid):	760.59	0.00	686.54	756.11
+
+	HVL at Detection (Incid):	HIVasym	HIVsymp	HIVacut	Total	Total %
+	HVLvhi	0	0	0	0	0.00
+	HVL_hi	0	0	0	0	0.00
+	HVLmhi	0	0	0	0	0.00
+	HVLmed	0	0	0	0	0.00
+	HVLmlo	0	0	0	0	0.00
+	HVL_lo	0	0	0	0	0.00
+	HVLvlo	5970	0	385	6355	100.00
+		Mean	SD
+	Mths from model start to det (Incid):	380.50	235.69
+	Mths from HIV inf to det (Incid):	50.84	50.63
+	Age in mths at det (Incid):	732.43	246.87
+
+	CD4 at Linkage:	HIVasym	HIVsymp	HIVacut	Total
+	CD4vhi	3403	0	192	3595
+	CD4_hi	0	0	0	0
+	CD4mhi	0	0	0	0
+	CD4mlo	0	0	0	0
+	CD4_lo	0	0	0	0
+	CD4vlo	2567	0	193	2760
+	Total	5970	0	385
+	Mean CD4 Count at Linkage:	760.59	0.00	686.54	756.11
+
+	HVL at Linkage:	HIVasym	HIVsymp	HIVacut	Total
+	HVLvhi	0	0	0	0
+	HVL_hi	0	0	0	0
+	HVLmhi	0	0	0	0
+	HVLmed	0	0	0	0
+	HVLmlo	0	0	0	0
+	HVL_lo	0	0	0	0
+	HVLvlo	5970	0	385	6355
+		Mean	SD
+	Mths from model start to linkage:	380.50	235.69
+	Age in mths at linkage:	732.43	246.87
+		Male	Female
+	Gender at Detection:	6355	0
+		initial	HIVscreening	HIVscreeningPrevDetected	HIVbackground	HIVbackgroundPrevDetected	presentingOI	presentingOIPrevDetected	linkingToTBCare	linkingToTBCarePrevDetected	unidentified
+	Method of Detection (Preval):	0	0	0	0	0	0	0	0	0	0
+	Method of Detection (Incid):	0	0	0	6355	0	0	0	0	0	254
+	Method of Linkage:	0	0	0	6355	0	0	0	0	0	254
+	Mean months to linkage:	0.00	0.00	0.00	380.50	0.00	0.00	0.00	0.00	0.00	0.00
+	SD(mo to linkage):	0.00	0.00	0.00	235.69	0.00	0.00	0.00	0.00	0.00	0.00
+		OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Presenting OI:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Presenting OI (Previously Detected):	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		HIVasym	HIVsymp	HIVacut	HIVneg_loRisk	HIVneg_hiRisk
+	Patient Test Accept Distrib 1:	0	0	0	0	10000
+	Patient Test Accept Distrib 2:	0	0	0	0	0
+	Patient Test Accept Distrib 3:	0	0	0	0	0
+		Accept	Refuse
+	HIV Test accepts:	0	0
+	HIV Test returns:	0	0
+	Lab Staging accepts:	0	0
+	Lab Staging returns:	0	0
+	Linkage To Care (Lab Staging):	0	0
+		[/0mths]	[/0mths]	[/0mths]	[/0mths]	[/0mths]
+	Patient Testing Freq in Prog:	10000	0	0	0	0
+		truePos	falsPos	trueNeg	falsNeg	Total
+	Num Test Results (Preval):	0	N/A	N/A	0	0
+	Num Test Results (Incid):	0	N/A	N/A	0	0
+	Num Test Results (HIVneg):	N/A	0	0	N/A	0
+		HIVasym	HIVsymp	HIVacut	HIVneg_loRisk	HIVneg_hiRisk
+	Num Tests Done by State:	0	0	0	0	0
+	Num Lab Staging Accepts by State:	0	0	0
+	Num Lab Staging Return for Results by State:	0	0	0
+	Num Lab Staging Return for Results		TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TOTAL
+			CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+	OBSV	CD4vlo	0	0	0	0	0	0	0
+	OBSV	CD4_lo	0	0	0	0	0	0	0
+	OBSV	CD4mlo	0	0	0	0	0	0	0
+	OBSV	CD4mhi	0	0	0	0	0	0	0
+	OBSV	CD4_hi	0	0	0	0	0	0	0
+	OBSV	CD4vhi	0	0	0	0	0	0	0
+		TOTAL	0	0	0	0	0	0	0
+	Num Lab Staging Link to Care		TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TOTAL
+			CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+	OBSV	CD4vlo	0	0	0	0	0	0	0
+	OBSV	CD4_lo	0	0	0	0	0	0	0
+	OBSV	CD4mlo	0	0	0	0	0	0	0
+	OBSV	CD4mhi	0	0	0	0	0	0	0
+	OBSV	CD4_hi	0	0	0	0	0	0	0
+	OBSV	CD4vhi	0	0	0	0	0	0	0
+		TOTAL	0	0	0	0	0	0	0
+LIFE MONTH SURVIVAL OF ENTIRE HIV+ COHORT
+	LM bucket (UB, excl):	271	272	273	274	275	276	277	278	279	280	281	282	283	284	285	286	287	288	289	290	291	292	293	294	295	296	297	298	299	300	301	302	303	304	305	306	307	308	309	310	311	312	313	314	315	316	317	318	319	320	321	322	323	324	325	326	327	328	329	330	331	332	333	334	335	336	337	338	339	340	341	342	343	344	345	346	347	348	349	350	351	352	353	354	355	356	357	358	359	360	361	362	363	364	365	366	367	368	369	370	371	372	373	374	375	376	377	378	379	380	381	382	383	384	385	386
+	# Patients:	1	0	0	1	0	0	1	2	0	1	0	1	0	1	0	1	0	1	1	1	2	2	1	2	1	2	3	0	3	6	1	1	2	4	2	5	4	7	8	6	10	4	13	11	5	10	5	26	18	12	19	23	27	24	22	31	32	32	38	40	33	47	37	49	55	50	55	56	66	77	87	98	85	97	103	112	105	125	137	120	144	126	151	167	191	173	160	169	183	180	207	191	221	153	202	194	180	169	150	138	151	140	127	108	98	88	80	62	65	51	36	26	24	10	15	9
+	LM Min:	270.4774		LM Max:	385.9115
+	LM Median:	357.6624		LM AvgDev:	12.0351
+	LM Mean:	355.3150		LM StdDev:	15.6519		LM AvgDev:	12.1788
+	LM Variance:	244.9809		LM Skew:	-0.9404		LM Kurtosis:	1.3957
+	Cost Mean:	190370.22		Cost StdDev:	244369.39
+	QALM Mean:	355.2520		QALM StdDev:	15.6711
+LIFE MONTH SURVIVAL EXCLUDING LONGEST 5% (330 HIV+ patients) LMs
+	LM bucket (UB, excl):	271	272	273	274	275	276	277	278	279	280	281	282	283	284	285	286	287	288	289	290	291	292	293	294	295	296	297	298	299	300	301	302	303	304	305	306	307	308	309	310	311	312	313	314	315	316	317	318	319	320	321	322	323	324	325	326	327	328	329	330	331	332	333	334	335	336	337	338	339	340	341	342	343	344	345	346	347	348	349	350	351	352	353	354	355	356	357	358	359	360	361	362	363	364	365	366	367	368	369	370	371	372	373	374	375	376	377
+	# Patients:	1	0	0	1	0	0	1	2	0	1	0	1	0	1	0	1	0	1	1	1	2	2	1	2	1	2	3	0	3	6	1	1	2	4	2	5	4	7	8	6	10	4	13	11	5	10	5	26	18	12	19	23	27	24	22	31	32	32	38	40	33	47	37	49	55	50	55	56	66	77	87	98	85	97	103	112	105	125	137	120	144	126	151	167	191	173	160	169	183	180	207	191	221	153	202	194	180	169	150	138	151	140	127	108	98	88	48
+	LM Min:	270.4774		LM Max:	376.5749
+	LM Median:	356.6910		LM AvgDev:	11.4895
+	LM Mean:	354.0375		LM StdDev:	14.9961		LM AvgDev:	11.6863
+	LM Variance:	224.8842		LM Skew:	-1.0994		LM Kurtosis:	1.6882
+	Cost Mean:	190759.85		Cost StdDev:	244558.30
+	QALM Mean:	353.9729		QALM StdDev:	15.0146
+LIFE MONTH SURVIVAL EXCLUDING SHORTEST 5% (330 HIV+ patients) LMs
+	LM bucket (UB, excl):	326	327	328	329	330	331	332	333	334	335	336	337	338	339	340	341	342	343	344	345	346	347	348	349	350	351	352	353	354	355	356	357	358	359	360	361	362	363	364	365	366	367	368	369	370	371	372	373	374	375	376	377	378	379	380	381	382	383	384	385	386
+	# Patients:	4	32	32	38	40	33	47	37	49	55	50	55	56	66	77	87	98	85	97	103	112	105	125	137	120	144	126	151	167	191	173	160	169	183	180	207	191	221	153	202	194	180	169	150	138	151	140	127	108	98	88	80	62	65	51	36	26	24	10	15	9
+	LM Min:	325.7980		LM Max:	385.9115
+	LM Median:	358.6148		LM AvgDev:	10.4116
+	LM Mean:	357.4224		LM StdDev:	12.7703		LM AvgDev:	10.4514
+	LM Variance:	163.0806		LM Skew:	-0.3083		LM Kurtosis:	-0.5164
+	Cost Mean:	191930.02		Cost StdDev:	245829.95
+	QALM Mean:	357.3620		QALM StdDev:	12.7860
+LIFE MONTH SURVIVAL EXCLUDING LONGEST & SHORTEST 5% (660 HIV+ patients) LMs
+	LM bucket (UB, excl):	326	327	328	329	330	331	332	333	334	335	336	337	338	339	340	341	342	343	344	345	346	347	348	349	350	351	352	353	354	355	356	357	358	359	360	361	362	363	364	365	366	367	368	369	370	371	372	373	374	375	376	377
+	# Patients:	4	32	32	38	40	33	47	37	49	55	50	55	56	66	77	87	98	85	97	103	112	105	125	137	120	144	126	151	167	191	173	160	169	183	180	207	191	221	153	202	194	180	169	150	138	151	140	127	108	98	88	48
+	LM Min:	325.7980		LM Max:	376.5749
+	LM Median:	357.6624		LM AvgDev:	9.7976
+	LM Mean:	356.1909		LM StdDev:	11.9570		LM AvgDev:	9.8616
+	LM Variance:	142.9687		LM Skew:	-0.4535		LM Kurtosis:	-0.5456
+	Cost Mean:	192427.79		Cost StdDev:	246105.80
+	QALM Mean:	356.1290		QALM StdDev:	11.9717
+INITIAL DISTRIBUTIONS
+	CD4 Count Level 	# Patients 		HVL Setpt Lvl 	# Patients 		Curr HVL Lvl 	# Patients
+	VHI (>500) 	3738 		VHI (>100k) 	0 		VHI 	0
+	HI (300-500) 	0 		HI (30k-100k) 	0 		HI 	0
+	MHI (200-300) 	0 		MHI (10k-30k) 	0 		MHI 	0
+	MLO (100-200) 	0 		MED (3k-10k) 	0 		MED 	0
+	LO (50-100) 	0 		MLO (500-3k) 	0 		MLO 	0
+	VLO (0-50) 	2871 		LO (20-500) 	0 		LO 	0
+	 	 		VLO (0-20) 	6609 		VLO 	6609
+	Avg Init Age(Mths): 	700 
+	Male Patients: 	6609 		Female Patients: 	0
+	 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15
+	Prior OI Histories Distrib: 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+		Type_1	Type_2	Type_3	Type_4
+	ART Response Types	1621	1638	1660	1690
+		Risk1	Risk2	Risk3	Risk4	Risk5
+	Risk Factors	0	0	0	0	0
+	Peds/Maternal	negative	HIVchr CD4 high	HIVchr CD4 low	HIVacut
+	HIVposIU	0	0	0	0
+	HIVposIP	0	0	0	0
+	HIVneg	0	0	0	0
+CHRMs SUMMARIES
+	Total Patients with CHRM
+		CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10
+	HIV+	0	0	0	0	0	0	0	0	0	0
+	HIV-	0	0	0	0	0	0	0	0	0	0
+	Total	0	0	0	0	0	0	0	0	0	0
+	Avg Mths with CHRM
+		CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10
+	HIV+	0	0	0	0	0	0	0	0	0	0
+	HIV-	0	0	0	0	0	0	0	0	0	0
+	HIV+ Patients
+	Prevalent	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Total
+	CD4vhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4_hi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mlo	0	0	0	0	0	0	0	0	0	0	0
+	CD4_lo	0	0	0	0	0	0	0	0	0	0	0
+	CD4vlo	0	0	0	0	0	0	0	0	0	0	0
+	Total	0	0	0	0	0	0	0	0	0	0
+	Incident	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Total
+	CD4vhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4_hi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mlo	0	0	0	0	0	0	0	0	0	0	0
+	CD4_lo	0	0	0	0	0	0	0	0	0	0	0
+	CD4vlo	0	0	0	0	0	0	0	0	0	0	0
+	Total	0	0	0	0	0	0	0	0	0	0
+	Deaths	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Total
+	CD4vhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4_hi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mhi	0	0	0	0	0	0	0	0	0	0	0
+	CD4mlo	0	0	0	0	0	0	0	0	0	0	0
+	CD4_lo	0	0	0	0	0	0	0	0	0	0	0
+	CD4vlo	0	0	0	0	0	0	0	0	0	0	0
+	Total	0	0	0	0	0	0	0	0	0	0
+	HIV- Patients
+		CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Total
+	Prevalent	0	0	0	0	0	0	0	0	0	0	0
+	Incident	0	0	0	0	0	0	0	0	0	0	0
+OI SUMMARIES
+	Type/OI 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15
+	# Primary OIs 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	# Secondary OIs 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0		# OIs Total	0
+	Primary OIs 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	Total
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Secondary OIs 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	Total
+	CD4vhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	CD4_hi	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	CD4mhi	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	CD4mlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	CD4_lo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	CD4vlo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Detected OIs 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	Total
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Total 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+PRIOR OI HIST PROB AS PROPORTION OF PATIENTS (LOGGED)
+	OI: OI1	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI2	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI3	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI4	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI5	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI6	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI7	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI8	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI9	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI10	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI11	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI12	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI13	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI14	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI15	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+PRIOR OI HIST PROB BY PATIENT MTHS (LOGGED)
+	OI: OI1	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI2	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI3	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI4	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI5	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI6	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI7	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI8	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI9	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI10	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI11	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI12	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI13	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI14	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+	OI: OI15	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	HVLvhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_hi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmhi	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmed	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLmlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVL_lo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	HVLvlo	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+	Total	N/A	N/A	N/A	N/A	N/A	N/A
+CAUSES OF DEATH
+	CD4 Count Level 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	HIV 	backgroundMort 	TB(Active) 	toxART 	toxProph 	toxTBProph 	toxTBTreatment 	toxInfantHIVProph 	CHRM1 	CHRM2 	CHRM3 	CHRM4 	CHRM5 	CHRM6 	CHRM7 	CHRM8 	CHRM9 	CHRM10 	Risk1 	Risk2 	Risk3 	Risk4 	Risk5 	Total
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	3738 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	3738
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	2871 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	2871
+	Total HIV+ Deaths 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6609 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6609
+
+	Status 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	HIV 	backgroundMort 	TB(Active) 	toxART 	toxProph 	toxTBProph 	toxTBTreatment 	toxInfantHIVProph 	CHRM1 	CHRM2 	CHRM3 	CHRM4 	CHRM5 	CHRM6 	CHRM7 	CHRM8 	CHRM9 	CHRM10 	Risk1 	Risk2 	Risk3 	Risk4 	Risk5 	Total
+	HIV- 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	3391 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	3391
+	HIV+undetected 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	254 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	254
+	HIV+unlinked(detected not in care) 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	HIV+in_care 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6355 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6355
+	HIV+LTFU 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	HIV+RTC 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Total HIV+ Deaths 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6609 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	6609
+	Total Deaths 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10000 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10000
+
+	Age Bracket 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	HIV 	backgroundMort 	TB(Active) 	toxART 	toxProph 	toxTBProph 	toxTBTreatment 	toxInfantHIVProph 	CHRM1 	CHRM2 	CHRM3 	CHRM4 	CHRM5 	CHRM6 	CHRM7 	CHRM8 	CHRM9 	CHRM10 	Risk1 	Risk2 	Risk3 	Risk4 	Risk5
+	<20 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	20-24 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	25-29 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	30-34 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	35-39 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	40-44 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	45-49 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	50-54 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	55-59 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	60-64 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	65-69 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	70-74 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	75-79 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	>=80 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	10000 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Death Distrib 	CD4vhi 	CD4_hi 	CD4mhi 	CD4mlo 	CD4_lo 	CD4vlo 	Total
+	HVLvhi 	0 	0 	0 	0 	0 	0 	0
+	HVL_hi 	0 	0 	0 	0 	0 	0 	0
+	HVLmhi 	0 	0 	0 	0 	0 	0 	0
+	HVLmed 	0 	0 	0 	0 	0 	0 	0
+	HVLmlo 	0 	0 	0 	0 	0 	0 	0
+	HVL_lo 	0 	0 	0 	0 	0 	0 	0
+	HVLvlo 	3738 	0 	0 	0 	0 	2871 	6609
+	CD4/OIhist 	CD4vhi 	CD4_hi 	CD4mhi 	CD4mlo 	CD4_lo 	CD4vlo 	Total 
+	HIV [woOIHist] 	0 	0 	0 	0 	0 	0 	0 
+	HIV [w.OIHist] 	0 	0 	0 	0 	0 	0 	0 
+	Background Mortality [woOIHist] 	3738 	0 	0 	0 	0 	2871 	6609 
+	Background Mortality [w.OIHist] 	0 	0 	0 	0 	0 	0 	0
+	ART Tox Deaths	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+	HVLvlo	0	0	0	0	0	0
+	HVL_lo	0	0	0	0	0	0
+	HVLmlo	0	0	0	0	0	0
+	HVLmed	0	0	0	0	0	0
+	HVLmhi	0	0	0	0	0	0
+	HVL_hi	0	0	0	0	0	0
+	HVLvhi	0	0	0	0	0	0
+	Deaths From ART Toxicity
+		Distribution of CD4 at ART Tox Death
+		Mean	N/A
+		Std Dev	N/A
+		Distribution of HVL at ART Tox Death
+			CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+
+		Probability of OI History at ART Tox Death
+		OI1	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI2	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI3	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI4	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI5	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI6	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI7	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI8	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI9	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI10	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI11	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI12	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI13	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI14	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		OI15	CD4vlo	CD4_lo	CD4mlo	CD4mhi	CD4_hi	CD4vhi
+		HVLvlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_lo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmlo	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmed	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLmhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVL_hi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+		HVLvhi	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+OVERALL SURVIVAL
+	CD4 Strata: 	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	Life Months [woOIHist]	574427	0	0	0	0	431439	1005866
+	Life Months [w.OIHist]	0	0	0	0	0	0	0
+	Life Months [Total]	574427	0	0	0	0	431439	1005866
+	HVL Strata: 	HVLvhi	HVL_hi	HVLmhi	HVLmed	HVLmlo	HVL_lo	HVLvlo
+	Life Mths, HVL Setpt  	0 	0 	0 	0 	0 	0 	1005866
+	Life Mths, Curr HVL  	0 	0 	0 	0 	0 	0 	1005866
+	OI: 	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Life Mths, no OI hist 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866 	1005866
+	Life Mths, with OI hist 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	CHRMs: 	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10
+	Life Mths, with CHRM hist (HIV+) 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+		HIVneg	unidentHIV+	identHIV+	HIVpos (All)
+	LMs by HIV State:	2535156	153347	852519	1005866
+		LMs	QALMs
+	LMs in HIV Scr Module:	2535156	2534928		LMs in "Reg CEPAC":	1005866
+	LMs on PrEP (HIV-):	0
+		male	female
+	LMs Gender	1005866	0
+	QALMs Gender	1005450	0
+OVERALL COSTS
+	Overall Discounted Cost	1256916417
+	CD4 Strata: 	CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	Costs [woOIHist] 	190156939 	0 	0 	0 	0 	1066759478	1256916417
+	Costs [w.OIHist] 	0 	0 	0 	0 	0 	0	0
+	Costs [Total] 	190156939 	0 	0 	0 	0 	1066759478	1256916417
+		CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10
+	CHRMs Costs:	0	0	0	0	0	0	0	0	0	0
+	HVL Strata: 	HVLvhi	HVL_hi	HVLmhi	HVLmed	HVLmlo	HVL_lo	HVLvlo
+	Costs, HVL Setpt  	0 	0 	0 	0 	0 	0 	1256916417
+	Costs, Curr HVL  	0 	0 	0 	0 	0 	0 	1256916417
+	Direct Proph Costs 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15 	All
+	Proph 1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 3 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Total Proph Costs 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	 	ART 1 	ART 2 	ART 3 	ART 4 	ART 5 	ART 6 	ART 7 	ART 8 	ART 9 	ART 10	Total
+	Direct ART Costs: 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0	0
+	Init ART Costs: 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0	0
+	Monthly ART Costs: 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0	0
+		CD4 Tests 	HVL Tests
+	Testing Costs: 	44459713 	80314320
+	Clinic Visit Costs: 	0
+		Tests	Misc
+	HIV Screening Costs:	0	2486457
+	Lab Staging Costs:	0	0
+
+		Never HIV	On PrEP When Infected	PrEP Dropout When Infected	Total
+	PrEP Costs:	0	0	0	0
+		Startup	Monthly
+	Intervention Costs:	0	0
+		DirectMedical	DirectNonMedical	TimeCosts	Indirect	Unclassified	DrugCosts	Toxicity
+	Total Undiscounted Costs:	4172143420	111313542	111313542	111313542	0	0	0
+	Total Discounted Costs:	1163191137	31193508	31193508	31193508	0	0	0
+		male	female
+	Costs Gender	1259258119	0
+	Total TB Costs	0
+		Direct Medical	Direct Nonmedical	Time	Indirect
+	TB Provider Visit Costs	0	0	0	0
+	TB Med Pick-Up Costs	0	0	0	0
+	TB Diagnostic Number	0	1	2	3
+	Initial Costs	0	0	0	0
+	DST Costs	0	0	0	0
+	Total TB Diagnostic Costs	0
+	TB Treatment Number	0	1	2	3	4	5	6	7	8	9
+	Direct Costs	0	0	0	0	0	0	0	0	0	0
+	Toxicity Costs	0	0	0	0	0	0	0	0	0	0
+	TB Treatment Total Direct Costs	0
+LOST TO FOLLOW UP AND RETURN TO CARE STATS
+	Total persons experiencing LTFU:	0
+	Total persons experiencing RTC:	0
+	Total deaths while LTFU:	0
+		CD4vhi	CD4_hi	CD4mhi	CD4mlo	CD4_lo	CD4vlo	Total
+	Total LTFU by CD4 	0 	0 	0 	0 	0 	0	0
+	Total RTC by CD4 	0 	0 	0 	0 	0 	0	0
+	Total Deaths while Lost by CD4 	0 	0 	0 	0 	0 	0	0
+		Mean 	StdDev 
+	Months Lost Before Returning:	0.00	0.00
+		ART1	ART2	ART3	ART4	ART5	ART6	ART7	ART8	ART9	ART10	Pre-ART	Post-ART(Off ART)
+	Total LTFU by ART:	0	0	0	0	0	0	0	0	0	0	0	0
+	Total RTC by ART continuing on previous ART:	0	0	0	0	0	0	0	0	0	0	0	0
+	Total RTC by ART switching to next ART:	0	0	0	0	0	0	0	0	0	0
+	Total Death while Lost by ART:	0	0	0	0	0	0	0	0	0	0	0	0
+OI PROPH TOXICITY EVENTS
+	Minor Tox Events 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15
+	Proph 1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 3 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Total 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Events 	OI1 	OI2 	OI3 	OI4 	OI5 	OI6 	OI7 	OI8 	OI9 	OI10 	OI11 	OI12 	OI13 	OI14 	OI15
+	Proph 1 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 2 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Proph 3 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+	Total 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0 	0
+PRIMARY OI PROPH MEAN CD4 AT INIT
+		Proph1 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd	Proph2 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd	Proph3 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd
+	OI1	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI2	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI3	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI4	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI5	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI6	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI7	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI8	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI9	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI10	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI11	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI12	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI13	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI14	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI15	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+SECONDARY OI PROPH MEAN CD4 AT INIT
+		Proph1 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd	Proph2 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd	Proph3 True	Obsv CD4	Times Init'd w.Absolute CD4 Metric	Total Times Init'd
+	OI1	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI2	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI3	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI4	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI5	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI6	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI7	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI8	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI9	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI10	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI11	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI12	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI13	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI14	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+	OI15	0 	0 	0 	0	0 	0 	0 	0	0 	0 	0 	0
+MONTHS IN SUPPRESSED/FAILED STATES ON ART
+		ART1	ART2	ART3	ART4	ART5	ART6	ART7	ART8	ART9	ART10	Total
+Months suppressed		0	0	0	0	0	0	0	0	0	0	0
+Months failed
+	HVLvhi	0	0	0	0	0	0	0	0	0	0	0
+	HVL_hi	0	0	0	0	0	0	0	0	0	0	0
+	HVLmhi	0	0	0	0	0	0	0	0	0	0	0
+	HVLmed	0	0	0	0	0	0	0	0	0	0	0
+	HVLmlo	0	0	0	0	0	0	0	0	0	0	0
+	HVL_lo	0	0	0	0	0	0	0	0	0	0	0
+	HVLvlo	0	0	0	0	0	0	0	0	0	0	0
+	Total	0	0	0	0	0	0	0	0	0	0
+ART 1 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 2 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 3 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 4 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 5 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 6 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 7 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 8 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 9 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
+ART 10 STATS
+	At Init(First time): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	AvgPropensity 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 
+	Any Response: 	0 	0.00 	0.00 	0.00 	0.00 	0 	0 
+	At Init(Any): 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	#Drawn Supp 	#Drawn Fail	CD4 Type 1	CD4 Type 2	CD4 Type 3	CD4 Type 4	Risk1	Risk2	Risk3	Risk4	Risk5
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0	0	0	0	0	0	0	0	0	0	0
+	At ART true fail: 	# Total 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToFail(Mean) 	MthsToFail(StdDev) 
+	Any response: 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	At ART obsv fail: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToObsvFail(Mean) 	MthsToObsvFail(StdDev) 
+	Any fail diagnosis 	0 	0 	0.00  	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Virologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Immunologic 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Clinical 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	No fail diagnoses 	0
+	At ART stop: 	# Total 	# with true fail 	AvgCD4Perc (Peds <5) 	AvgTrueCD4 	AvgObsvCD4 	Num w.Perc CD4 Metric 	Num w.Absolute CD4 Metric 	MthsToStop(Mean) 	MthsToStop(StdDev) 
+	All 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00 
+	Max Months on ART 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Major Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	With Chronic Toxicity 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	On Observed Failure 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and CD4 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Severe OI 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Fail and Max Months 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	LTFU 	0 	0 	0.00 	0.00 	0.00 	0 	0 	0.00 	0.00
+	Never stopped 	0
+	At Death on ART Line: 	# Total	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15	HIV	backgroundMort	TB(Active)	toxART	toxProph	toxTBProph	toxTBTreatment	toxInfantHIVProph	CHRM1	CHRM2	CHRM3	CHRM4	CHRM5	CHRM6	CHRM7	CHRM8	CHRM9	CHRM10	Risk1	Risk2	Risk3	Risk4	Risk5
+	Num Deaths (Total)	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5) at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4 at Death	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at Death	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	OI on ART Line:	OI1	OI2	OI3	OI4	OI5	OI6	OI7	OI8	OI9	OI10	OI11	OI12	OI13	OI14	OI15
+	Num OI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgCD4Perc (Peds <5)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgTrueCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	AvgObsvCD4	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	Num w.Perc CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Num w.Absolute CD4 Metric at OI event	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	AvgPropensity	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+	 	# at Mth 6 	# Supp, Mth 6 	# at Mth 12 	# Supp, Mth 12 	# at Mth 24 	# Supp, Mth 24
+	Number Patients: 	0 	0 	0 	0 	0 	0
+	 	Mean, Mth 6 	SD, Mth 6 	Mean, Mth 12 	SD, Mth 12 	Mean, Mth 24 	SD, Mth 24
+	HVL Drops: 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000 	0.0000
+	Pat Distrib at Init: 	HVLvhi 	HVL_hi 	HVLmhi 	HVLmed 	HVLmlo 	HVL_lo 	HVLvlo
+	CD4vhi 	0 	0 	0 	0 	0 	0 	0
+	CD4_hi 	0 	0 	0 	0 	0 	0 	0
+	CD4mhi 	0 	0 	0 	0 	0 	0 	0
+	CD4mlo 	0 	0 	0 	0 	0 	0 	0
+	CD4_lo 	0 	0 	0 	0 	0 	0 	0
+	CD4vlo 	0 	0 	0 	0 	0 	0 	0
+	Minor Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Chronic Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Major Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+	Death Tox Cases: 	0 	0 	0 	0 	0 	0 	0
+		Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+			Cycle 1	Cycle 2	Cycle 3	Cycle 4	Cycle 5	Cycle 6	Cycle 7	Cycle 8	Cycle 9	Cycle 10	Cycle 11	Cycle 12	Cycle 13	Cycle 14	Cycle 15	Cycle 16	Cycle 17	Cycle 18	Cycle 19	Cycle 20	Cycle 21	Cycle 22	Cycle 23	Cycle 24	Cycle 25	Cycle 26	Cycle 27	Cycle 28	Cycle 29	Cycle 30+
+	Interruptions:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		Restarts:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0		STI Endpoint:	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+		1 Interrupts	2 Interrupts	3 Interrupts	4 Interrupts	5 Interrupts	6 Interrupts	7 Interrupts	8 Interrupts	9 Interrupts	10 Interrupts	11 Interrupts	12 Interrupts	13 Interrupts	14 Interrupts	15 Interrupts	16 Interrupts	17 Interrupts	18 Interrupts	19 Interrupts	20 Interrupts	21 Interrupts	22 Interrupts	23 Interrupts	24 Interrupts	25 Interrupts	26 Interrupts	27 Interrupts	28 Interrupts	29 Interrupts	30 Interrupts+
+	#People who have had n interrupts	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	Mean Interruptions:	0.000000
+	Mean Interruption Duration:	0.000000
