@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEPAC - {% block title %}HIV/AIDS Simulation Model{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <h1 class="logo">CEPAC</h1>
+            <span class="tagline">Cost-Effectiveness of Preventing AIDS Complications</span>
+        </div>
+        <div class="header-right">
+            <div class="toolbar">
+                <button id="btn-validate" class="btn btn-secondary" title="Validate parameters">
+                    Validate
+                </button>
+                <button id="btn-run" class="btn btn-primary" title="Run simulation">
+                    Run Model
+                </button>
+                <div class="btn-group">
+                    <button id="btn-import" class="btn btn-secondary" title="Import .in file">
+                        Import
+                    </button>
+                    <button id="btn-export" class="btn btn-secondary" title="Export .in file">
+                        Export
+                    </button>
+                </div>
+                <button id="btn-reset" class="btn btn-danger" title="Reset to defaults">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <span>CEPAC Model - Medical Practice Evaluation Center, Massachusetts General Hospital</span>
+    </footer>
+
+    <!-- Hidden file input for import -->
+    <input type="file" id="file-input" accept=".in" style="display: none;">
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Processing...</div>
+    </div>
+
+    <!-- Message toast -->
+    <div id="message-toast" class="toast hidden"></div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/validation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/file_ops.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,161 @@
+<div class="form-section">
+    <h3>Clinical Visits</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="clinicVisitInterval">Clinic Visit Interval (months)</label>
+            <input type="number" id="clinicVisitInterval"
+                   data-tab="treatment" data-param="clinicVisitInterval"
+                   min="1" max="24" value="3">
+            <span class="help-text">Default interval between clinic visits</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>CD4 Testing</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="testingIntervalCD4Threshold">CD4 Threshold for Testing Frequency</label>
+            <input type="number" id="testingIntervalCD4Threshold"
+                   data-tab="treatment" data-param="testingIntervalCD4Threshold"
+                   min="0" max="1000" value="200">
+            <span class="help-text">CD4 count below which more frequent testing occurs</span>
+        </div>
+    </div>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Pre-ART High CD4</label>
+            <input type="number" data-tab="treatment" data-param="CD4TestingIntervalPreARTHighCD4"
+                   min="0" max="24" value="6">
+        </div>
+        <div class="form-group small">
+            <label>Pre-ART Low CD4</label>
+            <input type="number" data-tab="treatment" data-param="CD4TestingIntervalPreARTLowCD4"
+                   min="0" max="24" value="3">
+        </div>
+        <div class="form-group small">
+            <label>Post-ART</label>
+            <input type="number" data-tab="treatment" data-param="CD4TestingIntervalPostART"
+                   min="0" max="24" value="6">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="CD4TestStdDevPercentage">CD4 Test Error (% Std Dev)</label>
+            <input type="number" id="CD4TestStdDevPercentage"
+                   data-tab="treatment" data-param="CD4TestStdDevPercentage"
+                   min="0" max="1" step="0.01" value="0.15">
+            <span class="help-text">Standard deviation of CD4 test as percentage</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>HVL Testing</h3>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Pre-ART High CD4</label>
+            <input type="number" data-tab="treatment" data-param="HVLTestingIntervalPreARTHighCD4"
+                   min="0" max="24" value="6">
+        </div>
+        <div class="form-group small">
+            <label>Pre-ART Low CD4</label>
+            <input type="number" data-tab="treatment" data-param="HVLTestingIntervalPreARTLowCD4"
+                   min="0" max="24" value="3">
+        </div>
+        <div class="form-group small">
+            <label>Post-ART</label>
+            <input type="number" data-tab="treatment" data-param="HVLTestingIntervalPostART"
+                   min="0" max="24" value="6">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group small">
+            <label>HVL Error Higher</label>
+            <input type="number" data-tab="treatment" data-param="probHVLTestErrorHigher"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>HVL Error Lower</label>
+            <input type="number" data-tab="treatment" data-param="probHVLTestErrorLower"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>ART Start Policies</h3>
+    <p class="section-desc">Configure when each ART line should be started</p>
+
+    <div class="art-lines-container">
+        {% for i in range(10) %}
+        <div class="art-line-section collapsed" data-line="{{ i }}">
+            <h4 class="collapsible-header">
+                ART Line {{ i + 1 }}
+                <span class="toggle-icon">+</span>
+            </h4>
+            <div class="collapsible-content">
+                <div class="form-row">
+                    <div class="form-group small">
+                        <label>CD4 Upper</label>
+                        <input type="number" data-tab="treatment" data-param="startART"
+                               data-index="{{ i }}" data-subparam="CD4BoundsOnly" data-subindex="1"
+                               value="-1">
+                    </div>
+                    <div class="form-group small">
+                        <label>CD4 Lower</label>
+                        <input type="number" data-tab="treatment" data-param="startART"
+                               data-index="{{ i }}" data-subparam="CD4BoundsOnly" data-subindex="0"
+                               value="-1">
+                    </div>
+                    <div class="form-group small">
+                        <label>Min Month</label>
+                        <input type="number" data-tab="treatment" data-param="startART"
+                               data-index="{{ i }}" data-subparam="minMonthNum"
+                               min="0" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>ART Failure Diagnosis</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="ARTFailureOnlyAtRegularVisit">Failure Only at Regular Visit</label>
+            <input type="checkbox" id="ARTFailureOnlyAtRegularVisit"
+                   data-tab="treatment" data-param="ARTFailureOnlyAtRegularVisit" checked>
+            <span class="help-text">Only diagnose ART failure at scheduled clinic visits</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>CD4 Monitoring</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="cd4MonitoringStopEnable">Enable CD4 Monitoring Stop</label>
+            <input type="checkbox" id="cd4MonitoringStopEnable"
+                   data-tab="treatment" data-param="cd4MonitoringStopEnable">
+            <span class="help-text">Allow CD4 monitoring to stop based on criteria</span>
+        </div>
+
+        <div class="form-group">
+            <label for="cd4MonitoringStopThreshold">Stop Threshold (CD4)</label>
+            <input type="number" id="cd4MonitoringStopThreshold"
+                   data-tab="treatment" data-param="cd4MonitoringStopThreshold"
+                   min="0" max="1000" value="0">
+        </div>
+    </div>
+</div>

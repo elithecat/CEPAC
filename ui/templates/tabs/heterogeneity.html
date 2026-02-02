@@ -1,0 +1,125 @@
+<div class="form-section">
+    <h3>Baseline Response Propensity</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="propRespondBaselineLogitMean">Baseline Logit Mean</label>
+            <input type="number" id="propRespondBaselineLogitMean"
+                   data-tab="heterogeneity" data-param="propRespondBaselineLogitMean"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="propRespondBaselineLogitStdDev">Baseline Logit Std Dev</label>
+            <input type="number" id="propRespondBaselineLogitStdDev"
+                   data-tab="heterogeneity" data-param="propRespondBaselineLogitStdDev"
+                   min="0" step="0.1" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Response Propensity by CD4</h3>
+    <p class="section-desc">Adjustment to response propensity by CD4 stratum</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>VLO</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="0"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group small">
+            <label>LO</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="1"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group small">
+            <label>MLO</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="2"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group small">
+            <label>MHI</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="3"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group small">
+            <label>HI</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="4"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group small">
+            <label>VHI</label>
+            <input type="number" data-tab="heterogeneity" data-param="propRespondCD4" data-index="5"
+                   step="0.1" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Response Propensity Adjustments</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="propRespondFemale">Female</label>
+            <input type="number" id="propRespondFemale"
+                   data-tab="heterogeneity" data-param="propRespondFemale"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="propRespondHistoryOIs">OI History</label>
+            <input type="number" id="propRespondHistoryOIs"
+                   data-tab="heterogeneity" data-param="propRespondHistoryOIs"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="propRespondPriorARTToxicity">Prior ART Toxicity</label>
+            <input type="number" id="propRespondPriorARTToxicity"
+                   data-tab="heterogeneity" data-param="propRespondPriorARTToxicity"
+                   step="0.1" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Intervention Periods</h3>
+    <p class="section-desc">Configure up to 5 intervention periods</p>
+
+    {% for i in range(5) %}
+    <div class="intervention-period collapsed" data-period="{{ i }}">
+        <h4 class="collapsible-header">
+            Period {{ i + 1 }}
+            <span class="toggle-icon">+</span>
+        </h4>
+        <div class="collapsible-content">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Enable</label>
+                    <input type="checkbox" data-tab="heterogeneity" data-param="useIntervention" data-index="{{ i }}">
+                </div>
+                <div class="form-group small">
+                    <label>Duration Mean</label>
+                    <input type="number" data-tab="heterogeneity" data-param="interventionDurationMean" data-index="{{ i }}"
+                           min="0" value="0">
+                </div>
+                <div class="form-group small">
+                    <label>Duration SD</label>
+                    <input type="number" data-tab="heterogeneity" data-param="interventionDurationSD" data-index="{{ i }}"
+                           min="0" value="0">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group small">
+                    <label>Init Cost</label>
+                    <input type="number" data-tab="heterogeneity" data-param="interventionCostInit" data-index="{{ i }}"
+                           min="0" value="0">
+                </div>
+                <div class="form-group small">
+                    <label>Monthly Cost</label>
+                    <input type="number" data-tab="heterogeneity" data-param="interventionCostMonthly" data-index="{{ i }}"
+                           min="0" value="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

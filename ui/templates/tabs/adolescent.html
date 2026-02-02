@@ -1,0 +1,35 @@
+<div class="form-section">
+    <h3>Adolescent Model Settings</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableAdolescent">Enable Adolescent Model</label>
+            <input type="checkbox" id="enableAdolescent"
+                   data-tab="adolescent" data-param="enableAdolescent">
+            <span class="help-text">Enable adolescent-specific features</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Adolescent Age Bounds</h3>
+    <p class="section-desc">Define age boundaries for adolescent categories</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Lower Bound</label>
+            <input type="number" data-tab="adolescent" data-param="adolescentAgeBounds" data-index="0"
+                   min="0" max="25" value="10">
+        </div>
+        <div class="form-group small">
+            <label>Mid Bound</label>
+            <input type="number" data-tab="adolescent" data-param="adolescentAgeBounds" data-index="1"
+                   min="0" max="25" value="15">
+        </div>
+        <div class="form-group small">
+            <label>Upper Bound</label>
+            <input type="number" data-tab="adolescent" data-param="adolescentAgeBounds" data-index="2"
+                   min="0" max="25" value="20">
+        </div>
+    </div>
+</div>

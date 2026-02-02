@@ -1,0 +1,140 @@
+<div class="form-section">
+    <h3>Run Configuration</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="runSetName">Run Set Name</label>
+            <input type="text" id="runSetName" name="runspecs.runSetName"
+                   data-tab="runspecs" data-param="runSetName"
+                   placeholder="DefaultRunSet">
+            <span class="help-text">Name of the run set this run belongs to</span>
+        </div>
+
+        <div class="form-group">
+            <label for="runName">Run Name</label>
+            <input type="text" id="runName" name="runspecs.runName"
+                   data-tab="runspecs" data-param="runName"
+                   placeholder="run1">
+            <span class="help-text">Name for this specific run</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="numCohorts">Cohort Size</label>
+            <input type="number" id="numCohorts" name="runspecs.numCohorts"
+                   data-tab="runspecs" data-param="numCohorts"
+                   min="1" max="10000000" value="10000">
+            <span class="help-text">Number of patients to simulate</span>
+        </div>
+
+        <div class="form-group">
+            <label for="discountFactor">Discount Rate (Annual)</label>
+            <input type="number" id="discountFactor" name="runspecs.discountFactor"
+                   data-tab="runspecs" data-param="discountFactor"
+                   min="0" max="1" step="0.01" value="0.03">
+            <span class="help-text">Annual discount rate for costs and benefits</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="maxPatientCD4">Maximum Patient CD4</label>
+            <input type="number" id="maxPatientCD4" name="runspecs.maxPatientCD4"
+                   data-tab="runspecs" data-param="maxPatientCD4"
+                   min="0" max="5000" value="2000">
+            <span class="help-text">Maximum CD4 count allowed for patients</span>
+        </div>
+
+        <div class="form-group">
+            <label for="randomSeedByTime">Random Seed by Time</label>
+            <input type="checkbox" id="randomSeedByTime" name="runspecs.randomSeedByTime"
+                   data-tab="runspecs" data-param="randomSeedByTime" checked>
+            <span class="help-text">Use system time to initialize random number generator</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>CD4 Strata Bounds</h3>
+    <p class="section-desc">Define upper bounds for CD4 strata (VLO, LO, MLO, MHI, HI)</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>VLO Upper</label>
+            <input type="number" data-tab="runspecs" data-param="CD4StrataUpperBounds" data-index="0"
+                   min="0" value="50">
+        </div>
+        <div class="form-group small">
+            <label>LO Upper</label>
+            <input type="number" data-tab="runspecs" data-param="CD4StrataUpperBounds" data-index="1"
+                   min="0" value="100">
+        </div>
+        <div class="form-group small">
+            <label>MLO Upper</label>
+            <input type="number" data-tab="runspecs" data-param="CD4StrataUpperBounds" data-index="2"
+                   min="0" value="200">
+        </div>
+        <div class="form-group small">
+            <label>MHI Upper</label>
+            <input type="number" data-tab="runspecs" data-param="CD4StrataUpperBounds" data-index="3"
+                   min="0" value="350">
+        </div>
+        <div class="form-group small">
+            <label>HI Upper</label>
+            <input type="number" data-tab="runspecs" data-param="CD4StrataUpperBounds" data-index="4"
+                   min="0" value="500">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>OI Names</h3>
+    <p class="section-desc">Define names for the 15 opportunistic infections</p>
+
+    <div class="form-row oi-names">
+        {% for i in range(15) %}
+        <div class="form-group small">
+            <label>OI {{ i + 1 }}</label>
+            <input type="text" data-tab="runspecs" data-param="OINames" data-index="{{ i }}"
+                   value="OI_{{ i + 1 }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Multiple Discount Rates</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableMultipleDiscountRates">Enable Multiple Discount Rates</label>
+            <input type="checkbox" id="enableMultipleDiscountRates"
+                   data-tab="runspecs" data-param="enableMultipleDiscountRates">
+            <span class="help-text">Output results with multiple discount rates</span>
+        </div>
+    </div>
+
+    <div class="form-row inline-inputs" id="discount-rates-section">
+        <div class="form-group small">
+            <label>Cost Rate 1</label>
+            <input type="number" data-tab="runspecs" data-param="multDiscountRatesCost" data-index="0"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Cost Rate 2</label>
+            <input type="number" data-tab="runspecs" data-param="multDiscountRatesCost" data-index="1"
+                   min="0" max="1" step="0.01" value="0.03">
+        </div>
+        <div class="form-group small">
+            <label>Cost Rate 3</label>
+            <input type="number" data-tab="runspecs" data-param="multDiscountRatesCost" data-index="2"
+                   min="0" max="1" step="0.01" value="0.05">
+        </div>
+        <div class="form-group small">
+            <label>Cost Rate 4</label>
+            <input type="number" data-tab="runspecs" data-param="multDiscountRatesCost" data-index="3"
+                   min="0" max="1" step="0.01" value="0.07">
+        </div>
+    </div>
+</div>

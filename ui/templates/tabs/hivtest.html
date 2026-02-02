@@ -1,0 +1,81 @@
+<div class="form-section">
+    <h3>HIV Testing</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableHIVTesting">Enable HIV Testing</label>
+            <input type="checkbox" id="enableHIVTesting"
+                   data-tab="hivtest" data-param="enableHIVTesting">
+            <span class="help-text">Enable HIV testing module for uninfected patients</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="HIVTestSensitivity">Test Sensitivity</label>
+            <input type="number" id="HIVTestSensitivity"
+                   data-tab="hivtest" data-param="HIVTestSensitivity"
+                   min="0" max="1" step="0.01" value="0.99">
+        </div>
+        <div class="form-group">
+            <label for="HIVTestSpecificity">Test Specificity</label>
+            <input type="number" id="HIVTestSpecificity"
+                   data-tab="hivtest" data-param="HIVTestSpecificity"
+                   min="0" max="1" step="0.01" value="0.99">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="HIVTestCost">Test Cost</label>
+            <input type="number" id="HIVTestCost"
+                   data-tab="hivtest" data-param="HIVTestCost"
+                   min="0" step="1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="probHIVTestAccept">Acceptance Probability</label>
+            <input type="number" id="probHIVTestAccept"
+                   data-tab="hivtest" data-param="probHIVTestAccept"
+                   min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>PrEP (Pre-Exposure Prophylaxis)</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enablePrEP">Enable PrEP</label>
+            <input type="checkbox" id="enablePrEP"
+                   data-tab="hivtest" data-param="enablePrEP">
+            <span class="help-text">Enable pre-exposure prophylaxis for HIV-negative patients</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="PrEPCostMonthly">Monthly Cost</label>
+            <input type="number" id="PrEPCostMonthly"
+                   data-tab="hivtest" data-param="PrEPCostMonthly"
+                   min="0" step="1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="PrEPEfficacy">Efficacy</label>
+            <input type="number" id="PrEPEfficacy"
+                   data-tab="hivtest" data-param="PrEPEfficacy"
+                   min="0" max="1" step="0.01" value="0">
+            <span class="help-text">Reduction in HIV acquisition probability</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="probPrEPDropout">Dropout Probability</label>
+            <input type="number" id="probPrEPDropout"
+                   data-tab="hivtest" data-param="probPrEPDropout"
+                   min="0" max="1" step="0.01" value="0">
+            <span class="help-text">Monthly probability of PrEP discontinuation</span>
+        </div>
+    </div>
+</div>

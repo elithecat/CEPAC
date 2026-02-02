@@ -1,0 +1,50 @@
+<div class="form-section">
+    <h3>Trace Output</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="traceNumSelection">Number of Patients to Trace</label>
+            <input type="number" id="traceNumSelection" data-tab="output" data-param="traceNumSelection"
+                   min="0" max="100" value="100">
+            <span class="help-text">Maximum number of patients for detailed trace output (max 100)</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Subcohorts</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableSubCohorts">Enable Subcohorts</label>
+            <input type="checkbox" id="enableSubCohorts" data-tab="output" data-param="enableSubCohorts">
+            <span class="help-text">Enable subcohort reporting</span>
+        </div>
+    </div>
+
+    <div class="form-section subcohort-values">
+        <h4>Subcohort Values</h4>
+        <p class="section-desc">Define up to 25 subcohort values</p>
+        <div class="form-row inline-inputs">
+            {% for i in range(25) %}
+            <div class="form-group tiny">
+                <input type="number" data-tab="output" data-param="subCohorts" data-index="{{ i }}"
+                       min="0" value="0" title="Subcohort {{ i + 1 }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Detailed Costs</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableDetailedCostOutputs">Enable Detailed Cost Outputs</label>
+            <input type="checkbox" id="enableDetailedCostOutputs"
+                   data-tab="output" data-param="enableDetailedCostOutputs">
+            <span class="help-text">Generate detailed cost breakdown in .cout files</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="form-section">
+    <h3>Pediatric Model Settings</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enablePediatrics">Enable Pediatric Model</label>
+            <input type="checkbox" id="enablePediatrics"
+                   data-tab="peds" data-param="enablePediatrics">
+            <span class="help-text">Enable pediatric HIV modeling features</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Pediatric HIV Status at Entry</h3>
+    <p class="section-desc">Distribution of HIV-positive pediatric patients by infection timing</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Intra-Uterine (IU)</label>
+            <input type="number" data-tab="peds" data-param="probPedsHIVPosAtEntry" data-index="0"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Intra-Partum (IP)</label>
+            <input type="number" data-tab="peds" data-param="probPedsHIVPosAtEntry" data-index="1"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Post-Partum (PP)</label>
+            <input type="number" data-tab="peds" data-param="probPedsHIVPosAtEntry" data-index="2"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Initial CD4 Percentage</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="pedsInitialCD4PercMean">Mean CD4 Percentage</label>
+            <input type="number" id="pedsInitialCD4PercMean"
+                   data-tab="peds" data-param="pedsInitialCD4PercMean"
+                   min="0" max="1" step="0.01" value="0.25">
+        </div>
+        <div class="form-group">
+            <label for="pedsInitialCD4PercStdDev">CD4 Percentage Std Dev</label>
+            <input type="number" id="pedsInitialCD4PercStdDev"
+                   data-tab="peds" data-param="pedsInitialCD4PercStdDev"
+                   min="0" max="0.5" step="0.01" value="0.1">
+        </div>
+    </div>
+</div>

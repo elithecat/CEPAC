@@ -1,0 +1,44 @@
+<div class="form-section">
+    <h3>Chronic Conditions (CHRMs)</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="showCHRMsOutput">Show CHRMs Output</label>
+            <input type="checkbox" id="showCHRMsOutput"
+                   data-tab="chrms" data-param="showCHRMsOutput">
+            <span class="help-text">Include CHRM statistics in output</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>CHRM Names</h3>
+    <p class="section-desc">Define names for the 10 chronic conditions</p>
+
+    <div class="form-row inline-inputs">
+        {% for i in range(10) %}
+        <div class="form-group small">
+            <label>CHRM {{ i + 1 }}</label>
+            <input type="text" data-tab="chrms" data-param="CHRMNames" data-index="{{ i }}"
+                   value="CHRM_{{ i + 1 }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Orphans</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableOrphans">Enable Orphans</label>
+            <input type="checkbox" id="enableOrphans"
+                   data-tab="chrms" data-param="enableOrphans">
+        </div>
+        <div class="form-group">
+            <label for="showOrphansOutput">Show Orphans Output</label>
+            <input type="checkbox" id="showOrphansOutput"
+                   data-tab="chrms" data-param="showOrphansOutput">
+        </div>
+    </div>
+</div>

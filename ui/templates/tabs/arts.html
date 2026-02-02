@@ -1,0 +1,46 @@
+<div class="form-section">
+    <h3>ART Regimen Parameters</h3>
+    <p class="section-desc">Configure efficacy, toxicity, and costs for each ART line</p>
+
+    <div class="art-lines-container">
+        {% for i in range(10) %}
+        <div class="art-line-section collapsed" data-line="{{ i }}">
+            <h4 class="collapsible-header">
+                ART Line {{ i + 1 }}
+                <span class="toggle-icon">+</span>
+            </h4>
+            <div class="collapsible-content">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Initial Cost</label>
+                        <input type="number" data-tab="arts" data-param="artData"
+                               data-index="{{ i }}" data-subparam="costInitial"
+                               min="0" step="1" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Monthly Cost</label>
+                        <input type="number" data-tab="arts" data-param="artData"
+                               data-index="{{ i }}" data-subparam="costMonthly"
+                               min="0" step="1" value="0">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Efficacy Time Horizon (months)</label>
+                        <input type="number" data-tab="arts" data-param="artData"
+                               data-index="{{ i }}" data-subparam="efficacyTimeHorizon"
+                               min="0" value="48">
+                    </div>
+                    <div class="form-group">
+                        <label>Force Fail at Month</label>
+                        <input type="number" data-tab="arts" data-param="artData"
+                               data-index="{{ i }}" data-subparam="forceFailAtMonth"
+                               value="-1">
+                        <span class="help-text">-1 = no forced failure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

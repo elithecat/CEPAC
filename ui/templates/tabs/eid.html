@@ -1,0 +1,32 @@
+<div class="form-section">
+    <h3>Early Infant Diagnosis (EID)</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="enableEID">Enable EID</label>
+            <input type="checkbox" id="enableEID"
+                   data-tab="eid" data-param="enableEID">
+            <span class="help-text">Enable early infant diagnosis module</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>EID Test Costs</h3>
+    <p class="section-desc">Configure costs for up to 10 EID tests</p>
+
+    <div class="form-row inline-inputs">
+        {% for i in range(10) %}
+        <div class="form-group small">
+            <label>Test {{ i + 1 }}</label>
+            <input type="number" data-tab="eid" data-param="eidTestCost" data-index="{{ i }}"
+                   min="0" step="1" value="0">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>EID Test Performance</h3>
+    <p class="placeholder-text">Test sensitivity and specificity by age category available through import.</p>
+</div>

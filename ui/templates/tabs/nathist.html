@@ -1,0 +1,129 @@
+<div class="form-section">
+    <h3>HIV Death Rate Ratios</h3>
+    <p class="section-desc">Death rate ratios by CD4 stratum (relative to background mortality)</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>VLO</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="0"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>LO</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="1"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>MLO</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="2"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>MHI</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="3"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>HI</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="4"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>VHI</label>
+            <input type="number" data-tab="nathist" data-param="HIVDeathRateRatio" data-index="5"
+                   min="1" step="0.1" value="1">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>ART Effect on Mortality</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="ARTDeathRateRatio">ART Death Rate Ratio</label>
+            <input type="number" id="ARTDeathRateRatio"
+                   data-tab="nathist" data-param="ARTDeathRateRatio"
+                   min="0" max="2" step="0.01" value="1">
+            <span class="help-text">Multiplier for death rate while on suppressive ART</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Acute OI Death Rate Ratios</h3>
+    <p class="section-desc">Additional death risk during acute OI by CD4 stratum</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>VLO</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="0"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>LO</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="1"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>MLO</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="2"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>MHI</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="3"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>HI</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="4"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group small">
+            <label>VHI</label>
+            <input type="number" data-tab="nathist" data-param="acuteOIDeathRateRatio" data-index="5"
+                   min="1" step="0.1" value="1">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Severe OI History Effect</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="severeOIHistDeathRateRatio">Severe OI History Death Rate Ratio</label>
+            <input type="number" id="severeOIHistDeathRateRatio"
+                   data-tab="nathist" data-param="severeOIHistDeathRateRatio"
+                   min="1" step="0.1" value="1">
+        </div>
+        <div class="form-group">
+            <label for="severeOIHistEffectDuration">Effect Duration (months)</label>
+            <input type="number" id="severeOIHistEffectDuration"
+                   data-tab="nathist" data-param="severeOIHistEffectDuration"
+                   min="0" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Background Mortality</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="backgroundMortModifierType">Modifier Type</label>
+            <select id="backgroundMortModifierType"
+                    data-tab="nathist" data-param="backgroundMortModifierType">
+                <option value="0">Incremental</option>
+                <option value="1">Multiplicative</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="backgroundMortModifier">Modifier Value</label>
+            <input type="number" id="backgroundMortModifier"
+                   data-tab="nathist" data-param="backgroundMortModifier"
+                   step="0.01" value="0">
+        </div>
+    </div>
+</div>

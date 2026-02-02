@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Parameter Configuration{% endblock %}
+
+{% block content %}
+<div class="container">
+    <nav class="tab-nav">
+        <ul class="tab-list">
+            {% for tab in tabs %}
+            <li class="tab-item{% if loop.first %} active{% endif %}" data-tab="{{ tab.id }}">
+                <span class="tab-name">{{ tab.name }}</span>
+            </li>
+            {% endfor %}
+            <li class="tab-item" data-tab="results">
+                <span class="tab-name">Results</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="tab-content-container">
+        {% for tab in tabs %}
+        <div class="tab-content{% if loop.first %} active{% endif %}" id="tab-{{ tab.id }}">
+            <div class="tab-header">
+                <h2>{{ tab.name }}</h2>
+                <p class="tab-description">{{ tab.description }}</p>
+            </div>
+            <div class="tab-body" data-tab-id="{{ tab.id }}">
+                <!-- Content loaded dynamically or inline -->
+                {% include 'tabs/' + tab.id + '.html' ignore missing %}
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Results tab -->
+        <div class="tab-content" id="tab-results">
+            <div class="tab-header">
+                <h2>Simulation Results</h2>
+                <p class="tab-description">View model output and statistics</p>
+            </div>
+            <div class="tab-body">
+                {% include 'tabs/results.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Initialize with constants
+    window.CEPAC_CONSTANTS = {{ constants | tojson | safe }};
+
+    // Load initial parameters
+    document.addEventListener('DOMContentLoaded', function() {
+        loadParameters();
+    });
+</script>
+{% endblock %}

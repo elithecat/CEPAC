@@ -1,0 +1,185 @@
+<div class="form-section">
+    <h3>Initial CD4 Distribution</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="initialCD4Mean">Initial CD4 Mean</label>
+            <input type="number" id="initialCD4Mean" data-tab="cohort" data-param="initialCD4Mean"
+                   min="0" max="2000" value="500">
+            <span class="help-text">Mean initial CD4 count (cells/uL)</span>
+        </div>
+
+        <div class="form-group">
+            <label for="initialCD4StdDev">Initial CD4 Std Dev</label>
+            <input type="number" id="initialCD4StdDev" data-tab="cohort" data-param="initialCD4StdDev"
+                   min="0" max="1000" value="200">
+            <span class="help-text">Standard deviation of initial CD4</span>
+        </div>
+
+        <div class="form-group">
+            <label for="enableSquareRootTransform">Square Root Transform</label>
+            <input type="checkbox" id="enableSquareRootTransform"
+                   data-tab="cohort" data-param="enableSquareRootTransform" checked>
+            <span class="help-text">Use square root transformation for CD4 distribution</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Initial Age Distribution</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="initialAgeMean">Initial Age Mean (months)</label>
+            <input type="number" id="initialAgeMean" data-tab="cohort" data-param="initialAgeMean"
+                   min="0" max="1200" value="360">
+            <span class="help-text">Mean initial age in months (360 = 30 years)</span>
+        </div>
+
+        <div class="form-group">
+            <label for="initialAgeStdDev">Initial Age Std Dev (months)</label>
+            <input type="number" id="initialAgeStdDev" data-tab="cohort" data-param="initialAgeStdDev"
+                   min="0" max="600" value="120">
+            <span class="help-text">Standard deviation of initial age in months</span>
+        </div>
+
+        <div class="form-group">
+            <label for="useCustomAgeDist">Use Custom Age Distribution</label>
+            <input type="checkbox" id="useCustomAgeDist"
+                   data-tab="cohort" data-param="useCustomAgeDist">
+            <span class="help-text">Use custom age strata instead of normal distribution</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Gender Distribution</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="maleGenderDistribution">Proportion Male</label>
+            <input type="number" id="maleGenderDistribution"
+                   data-tab="cohort" data-param="maleGenderDistribution"
+                   min="0" max="1" step="0.01" value="0.5">
+            <span class="help-text">Proportion of cohort that is male (0-1)</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Patient Types</h3>
+
+    <div class="form-row">
+        <h4>Clinic Visit Types</h4>
+        <div class="form-group small">
+            <label>Initial Only</label>
+            <input type="number" data-tab="cohort" data-param="clinicVisitTypeDistribution" data-index="0"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Initial + Acute</label>
+            <input type="number" data-tab="cohort" data-param="clinicVisitTypeDistribution" data-index="1"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Scheduled</label>
+            <input type="number" data-tab="cohort" data-param="clinicVisitTypeDistribution" data-index="2"
+                   min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <h4>Therapy Implementation Types</h4>
+        <div class="form-group small">
+            <label>None</label>
+            <input type="number" data-tab="cohort" data-param="therapyImplementationDistribution" data-index="0"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Proph Only</label>
+            <input type="number" data-tab="cohort" data-param="therapyImplementationDistribution" data-index="1"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Proph + ART</label>
+            <input type="number" data-tab="cohort" data-param="therapyImplementationDistribution" data-index="2"
+                   min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Risk Factors</h3>
+    <p class="section-desc">Define generic risk factor prevalence and incidence</p>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Risk 1 Name</label>
+            <input type="text" data-tab="cohort" data-param="riskFactorNames" data-index="0" value="Risk_1">
+        </div>
+        <div class="form-group small">
+            <label>Risk 2 Name</label>
+            <input type="text" data-tab="cohort" data-param="riskFactorNames" data-index="1" value="Risk_2">
+        </div>
+        <div class="form-group small">
+            <label>Risk 3 Name</label>
+            <input type="text" data-tab="cohort" data-param="riskFactorNames" data-index="2" value="Risk_3">
+        </div>
+        <div class="form-group small">
+            <label>Risk 4 Name</label>
+            <input type="text" data-tab="cohort" data-param="riskFactorNames" data-index="3" value="Risk_4">
+        </div>
+        <div class="form-group small">
+            <label>Risk 5 Name</label>
+            <input type="text" data-tab="cohort" data-param="riskFactorNames" data-index="4" value="Risk_5">
+        </div>
+    </div>
+
+    <div class="form-row inline-inputs">
+        <div class="form-group small">
+            <label>Prevalence 1</label>
+            <input type="number" data-tab="cohort" data-param="probRiskFactorPrev" data-index="0"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Prevalence 2</label>
+            <input type="number" data-tab="cohort" data-param="probRiskFactorPrev" data-index="1"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Prevalence 3</label>
+            <input type="number" data-tab="cohort" data-param="probRiskFactorPrev" data-index="2"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Prevalence 4</label>
+            <input type="number" data-tab="cohort" data-param="probRiskFactorPrev" data-index="3"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+        <div class="form-group small">
+            <label>Prevalence 5</label>
+            <input type="number" data-tab="cohort" data-param="probRiskFactorPrev" data-index="4"
+                   min="0" max="1" step="0.01" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Transmission</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="showTransmissionOutput">Show Transmission Output</label>
+            <input type="checkbox" id="showTransmissionOutput"
+                   data-tab="cohort" data-param="showTransmissionOutput">
+            <span class="help-text">Include transmission statistics in output</span>
+        </div>
+
+        <div class="form-group">
+            <label for="useDynamicTransm">Use Dynamic Transmission</label>
+            <input type="checkbox" id="useDynamicTransm"
+                   data-tab="cohort" data-param="useDynamicTransm">
+            <span class="help-text">Enable dynamic transmission modeling</span>
+        </div>
+    </div>
+</div>

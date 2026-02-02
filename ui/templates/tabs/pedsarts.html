@@ -1,0 +1,31 @@
+<div class="form-section">
+    <h3>Pediatric ART Parameters</h3>
+    <p class="section-desc">Configure ART costs and efficacy for pediatric patients</p>
+
+    <div class="art-lines-container">
+        {% for i in range(10) %}
+        <div class="art-line-section collapsed" data-line="{{ i }}">
+            <h4 class="collapsible-header">
+                Peds ART Line {{ i + 1 }}
+                <span class="toggle-icon">+</span>
+            </h4>
+            <div class="collapsible-content">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Initial Cost</label>
+                        <input type="number" data-tab="pedsarts" data-param="pedsARTData"
+                               data-index="{{ i }}" data-subparam="costInitial"
+                               min="0" step="1" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Monthly Cost</label>
+                        <input type="number" data-tab="pedsarts" data-param="pedsARTData"
+                               data-index="{{ i }}" data-subparam="costMonthly"
+                               min="0" step="1" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

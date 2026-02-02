@@ -1,0 +1,70 @@
+<div class="form-section">
+    <h3>Loss to Follow-Up Settings</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="useLTFU">Enable LTFU</label>
+            <input type="checkbox" id="useLTFU" data-tab="ltfu" data-param="useLTFU">
+            <span class="help-text">Enable loss to follow-up modeling</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="propRespondLTFUPreARTLogitMean">Pre-ART LTFU Propensity (Logit Mean)</label>
+            <input type="number" id="propRespondLTFUPreARTLogitMean"
+                   data-tab="ltfu" data-param="propRespondLTFUPreARTLogitMean"
+                   step="0.1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="propRespondLTFUPreARTLogitStdDev">Pre-ART LTFU Propensity (Logit Std Dev)</label>
+            <input type="number" id="propRespondLTFUPreARTLogitStdDev"
+                   data-tab="ltfu" data-param="propRespondLTFUPreARTLogitStdDev"
+                   min="0" step="0.1" value="0">
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Intervention</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="useInterventionLTFU">Use LTFU Intervention</label>
+            <input type="checkbox" id="useInterventionLTFU"
+                   data-tab="ltfu" data-param="useInterventionLTFU">
+            <span class="help-text">Apply interventions to reduce LTFU</span>
+        </div>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>Return to Care</h3>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="minMonthsRemainLost">Minimum Months Lost</label>
+            <input type="number" id="minMonthsRemainLost"
+                   data-tab="ltfu" data-param="minMonthsRemainLost"
+                   min="1" value="1">
+            <span class="help-text">Minimum months patient must remain lost before RTC</span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="CD4ThresholdRTC">CD4 Threshold for RTC</label>
+            <input type="number" id="CD4ThresholdRTC"
+                   data-tab="ltfu" data-param="CD4ThresholdRTC"
+                   min="0" value="0">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="recheckARTStartPoliciesAtRTC">Recheck ART Policies at RTC</label>
+            <input type="checkbox" id="recheckARTStartPoliciesAtRTC"
+                   data-tab="ltfu" data-param="recheckARTStartPoliciesAtRTC">
+        </div>
+    </div>
+</div>

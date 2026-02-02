@@ -1,0 +1,227 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+CEPAC (**C**ost **E**ffectiveness of **P**reventing **A**IDS **C**omplications) is a Monte Carlo microsimulation model that simulates HIV disease progression and treatment outcomes. It is developed by the Medical Practice Evaluation Center (MPEC) at Massachusetts General Hospital.
+
+The model simulates individual patient lifecycles month-by-month, tracking HIV infection, disease progression, treatment, and mortality to generate cost-effectiveness analyses.
+
+## Build Commands
+
+This is a standard C++ project. No build system (Makefile/CMake) is provided in the repository.
+
+To compile manually (example for g++):
+```bash
+g++ -o cepac *.cpp -std=c++11
+```
+
+## Running the Model
+
+```bash
+# Run with input files in current directory
+./cepac
+
+# Run with input files in specified directory
+./cepac /path/to/inputs/
+```
+
+The model reads `.in` input files from the specified directory (or current directory) and produces:
+- `.out` files - main statistics output
+- `.cout` files - detailed cost statistics (if enabled)
+- `popstats` file - population summary across all runs
+- Trace files - detailed patient-level output for debugging
+
+## Architecture
+
+### Core Simulation Loop
+
+The simulation follows this flow (see `ConsoleMain.cpp`):
+
+1. `SimContext` reads configuration from `.in` files
+2. For each cohort patient:
+   - Create `Patient` object
+   - Loop `patient->simulateMonth()` until death
+3. `RunStats` aggregates results and writes output files
+
+### Key Classes
+
+**SimContext** (`SimContext.h/.cpp`)
+- Reads and stores all input parameters from `.in` files
+- Contains numerous nested structs corresponding to input tabs
+- Provides const accessor functions for all configuration data
+
+**Patient** (`Patient.h/.cpp`)
+- Represents a single simulated patient
+- Contains state subclasses:
+  - `GeneralState` - age, gender, risk factors, costs, survival
+  - `PedsState` - pediatric-specific state (maternal status, breastfeeding, EID)
+  - `DiseaseState` - HIV status, CD4/HVL, OIs, CHRMs, mortality
+  - `MonitoringState` - testing, clinic visits, PrEP, LTFU status
+  - `ProphState` - OI prophylaxis state
+  - `ARTState` - ART treatment state
+  - `TBState` - TB disease and treatment state
+
+**StateUpdater** (`StateUpdater.h/.cpp`)
+- Base class for all monthly update logic
+- Child classes implement `performInitialUpdates()` and `performMonthlyUpdates()`
+- StateUpdater is a friend class to Patient/RunStats and provides protected update functions
+
+### StateUpdater Hierarchy
+
+Each monthly update phase has its own updater class (executed in this order):
+- `BeginMonthUpdater` - month initialization, age updates
+- `HIVInfectionUpdater` - HIV infection events
+- `CHRMsUpdater` - chronic/hepatic/renal/malignancy conditions
+- `DrugToxicityUpdater` - ART toxicity events
+- `TBDiseaseUpdater` - TB disease progression
+- `AcuteOIUpdater` - acute opportunistic infections
+- `MortalityUpdater` - death events
+- `CD4HVLUpdater` - CD4/viral load changes
+- `HIVTestingUpdater` - HIV testing
+- `BehaviorUpdater` - risk behaviors
+- `DrugEfficacyUpdater` - ART efficacy
+- `CD4TestUpdater` / `HVLTestUpdater` - lab testing
+- `ClinicVisitUpdater` - clinic visit logic
+- `TBClinicalUpdater` - TB clinical care
+- `EndMonthUpdater` - finalize month, update statistics
+
+### Statistics Classes
+
+- `RunStats` - per-run statistics (`.out` files)
+- `CostStats` - detailed cost tracking (`.cout` files)
+- `SummaryStats` - population summary across runs (`popstats` file)
+- `Tracer` - detailed patient trace output
+
+### Utilities
+
+**CepacUtil** (`CepacUtil.h/.cpp`)
+- Random number generation (Mersenne Twister via `mtrand.h`)
+- Probability/rate/logit conversions
+- File handling and directory operations
+
+## Key Constants (SimContext.h)
+
+- `CD4_NUM_STRATA = 6` - CD4 strata (VLO, LO, MLO, MHI, HI, VHI)
+- `HVL_NUM_STRATA = 7` - Viral load strata
+- `OI_NUM = 15` - Number of opportunistic infections
+- `ART_NUM_LINES` - Number of ART regimen lines
+- `CHRM_NUM = 10` - Number of chronic conditions
+
+## Platform Support
+
+The code supports Linux, Windows, and macOS (see platform-specific includes in `include.h`).
+
+## Documentation
+
+The codebase uses Doxygen-style comments. The flowchart in `images/Flowchart.png` shows the monthly simulation logic.
+
+## Web UI
+
+A Flask-based web interface is provided for configuring and running the model.
+
+### Starting the UI
+
+```bash
+cd ui
+pip install -r requirements.txt
+python app.py
+# Open http://localhost:5000
+```
+
+Optional arguments:
+- `--host HOST` - Host to bind to (default: 0.0.0.0)
+- `--port PORT` - Port to listen on (default: 5000)
+- `--debug` - Enable debug mode
+
+### Using the UI
+
+1. **Navigate tabs** to configure parameters for different aspects of the model
+2. **Import** existing .in files using the Import button or drag-and-drop
+3. **Configure parameters** using the form fields
+4. **Validate** parameters before running
+5. **Run Model** to execute the simulation
+6. **View results** in the Results tab
+
+### UI Tabs
+
+The UI provides 21 configuration tabs matching the model's input structure:
+
+| Tab | Description |
+|-----|-------------|
+| Run Specs | Cohort size, discount rate, OI names |
+| Output | Tracing and subcohort settings |
+| Cohort | Initial demographics, CD4/HVL distribution |
+| Treatment | ART start/fail/stop policies, testing intervals |
+| LTFU | Loss to follow-up parameters |
+| Heterogeneity | Response propensity settings |
+| STI | Structured treatment interruption |
+| Prophylaxis | OI prophylaxis settings |
+| ARTs | ART regimen costs and efficacy |
+| Natural History | Mortality rates, CD4 decline |
+| CHRMs | Chronic conditions |
+| Costs | Testing, treatment, and care costs |
+| TB | Tuberculosis settings |
+| QOL | Quality of life modifiers |
+| HIV Testing | HIV testing and PrEP |
+| Pediatrics | Pediatric model settings |
+| Peds ARTs | Pediatric ART parameters |
+| Peds Costs | Pediatric costs |
+| EID | Early infant diagnosis |
+| Adolescent | Adolescent settings |
+| Adolescent ARTs | Adolescent ART parameters |
+
+### Exporting Input Files
+
+1. Configure all parameters in the UI
+2. Click **Export** in the toolbar
+3. A `.in` file will be downloaded with the current run name
+
+### Importing Input Files
+
+1. Click **Import** in the toolbar, or drag-and-drop a `.in` file
+2. Select a `.in` file
+3. Form fields populate automatically with the imported values
+
+### Input File Format
+
+The `.in` file format is keyword-based text:
+- Keywords mark the start of data sections (e.g., `CohortSize`, `DiscFactor`)
+- Values follow keywords, separated by whitespace
+- The order matches what `SimContext.cpp` expects
+
+See `ui/param_schema.py` for the complete parameter list and defaults.
+
+### API Endpoints
+
+The UI provides a REST API for programmatic access:
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/params` | GET | Get current parameters |
+| `/api/params` | POST | Update parameters |
+| `/api/params/reset` | POST | Reset to defaults |
+| `/api/export` | GET | Download .in file |
+| `/api/import` | POST | Upload .in file |
+| `/api/run` | POST | Run the model |
+| `/api/validate` | POST | Validate parameters |
+| `/api/status` | GET | Get model runner status |
+
+## Code Review Script
+
+An automated code review script is available at `scripts/code_review.py`:
+
+```bash
+# Requires: pip install anthropic
+# Requires: ANTHROPIC_API_KEY environment variable
+
+cd scripts
+python code_review.py --output ../docs/code_review_report.md
+```
+
+The script performs chunk-by-chunk review of all source files for:
+- Code quality issues
+- Potential bugs
+- Memory management concerns
+- Epidemiological accuracy
