@@ -1,4 +1,13 @@
 <div class="form-section">
+    <h3>Available Output Files</h3>
+    <p class="section-desc">Download pre-generated output files from the PMC9087297 study</p>
+
+    <div id="output-files-list" class="output-files-list">
+        <p>Loading output files...</p>
+    </div>
+</div>
+
+<div class="form-section">
     <h3>Simulation Results</h3>
     <p class="section-desc">Results will appear here after running the model</p>
 
@@ -6,6 +15,72 @@
         <p>No results available. Configure parameters and click "Run Model" to execute the simulation.</p>
     </div>
 </div>
+
+<script>
+// Load available output files
+(function() {
+    fetch('/api/outputs')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('output-files-list');
+            if (data.outputs && data.outputs.length > 0) {
+                let html = '<table class="output-table"><thead><tr><th>Filename</th><th>Size</th><th>Actions</th></tr></thead><tbody>';
+                data.outputs.forEach(file => {
+                    const sizeKB = (file.size / 1024).toFixed(1);
+                    html += `<tr>
+                        <td>${file.filename}</td>
+                        <td>${sizeKB} KB</td>
+                        <td>
+                            <a href="/api/outputs/${file.filename}" class="btn btn-sm btn-primary" download>Download</a>
+                            <button class="btn btn-sm btn-secondary" onclick="previewOutput('${file.filename}')">Preview</button>
+                        </td>
+                    </tr>`;
+                });
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            } else {
+                container.innerHTML = '<p>No output files available.</p>';
+            }
+        })
+        .catch(err => {
+            document.getElementById('output-files-list').innerHTML = '<p>Error loading output files.</p>';
+        });
+})();
+
+function previewOutput(filename) {
+    fetch('/api/outputs/' + filename + '/preview')
+        .then(response => response.json())
+        .then(data => {
+            if (data.content) {
+                document.getElementById('results-output').textContent = data.content;
+                document.getElementById('results-output-section').style.display = 'block';
+                document.getElementById('results-output-section').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+}
+</script>
+
+<style>
+.output-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.output-table th, .output-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.output-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 4px;
+}
+</style>
 
 <div class="form-section" id="results-output-section" style="display: none;">
     <h3>Model Output (.out)</h3>

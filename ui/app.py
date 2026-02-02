@@ -239,6 +239,63 @@ def render_tab(tab_id):
                          constants=CONSTANTS)
 
 
+# Output file download endpoints
+PRESETS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'presets')
+
+
+@app.route('/api/outputs', methods=['GET'])
+def list_outputs():
+    """List available output files in presets directory."""
+    outputs = []
+    if os.path.exists(PRESETS_DIR):
+        for filename in sorted(os.listdir(PRESETS_DIR)):
+            if filename.endswith('.out'):
+                filepath = os.path.join(PRESETS_DIR, filename)
+                outputs.append({
+                    'filename': filename,
+                    'size': os.path.getsize(filepath),
+                    'modified': os.path.getmtime(filepath)
+                })
+    return jsonify({'outputs': outputs})
+
+
+@app.route('/api/outputs/<filename>', methods=['GET'])
+def download_output(filename):
+    """Download a specific output file."""
+    # Security: only allow .out files and prevent directory traversal
+    if not filename.endswith('.out') or '/' in filename or '\\' in filename:
+        return jsonify({'error': 'Invalid filename'}), 400
+
+    filepath = os.path.join(PRESETS_DIR, filename)
+    if not os.path.exists(filepath):
+        return jsonify({'error': 'File not found'}), 404
+
+    return send_file(
+        filepath,
+        mimetype='text/plain',
+        as_attachment=True,
+        download_name=filename
+    )
+
+
+@app.route('/api/outputs/<filename>/preview', methods=['GET'])
+def preview_output(filename):
+    """Preview content of an output file."""
+    if not filename.endswith('.out') or '/' in filename or '\\' in filename:
+        return jsonify({'error': 'Invalid filename'}), 400
+
+    filepath = os.path.join(PRESETS_DIR, filename)
+    if not os.path.exists(filepath):
+        return jsonify({'error': 'File not found'}), 404
+
+    try:
+        with open(filepath, 'r') as f:
+            content = f.read()
+        return jsonify({'filename': filename, 'content': content})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 if __name__ == '__main__':
     import argparse
 
