@@ -128,6 +128,26 @@ Each monthly update phase has its own updater class (executed in this order):
 
 The code supports Linux, Windows, and macOS (see platform-specific includes in `include.h`).
 
+### Windows Setup
+
+To build and run CEPAC on Windows:
+
+1. **Install MinGW-w64** (provides `g++` compiler):
+   - Download from https://www.mingw-w64.org/ or install via `winget install mingw`
+   - Add MinGW's `bin` folder to your system PATH
+
+2. **Build the model**:
+   ```cmd
+   g++ -o cepac.exe *.cpp -std=c++11 -O3
+   ```
+
+3. **Run the model**:
+   ```cmd
+   cepac.exe C:\path\to\inputs\
+   ```
+
+**Note:** The Web UI automatically detects Windows and uses `cepac.exe` as the executable name.
+
 ## Documentation
 
 The codebase uses Doxygen-style comments. The flowchart in `images/Flowchart.png` shows the monthly simulation logic.
@@ -138,10 +158,18 @@ A Flask-based web interface is provided for configuring and running the model.
 
 ### Starting the UI
 
+**Linux/macOS:**
 ```bash
 cd ui
 pip install flask
 python3 app.py --port 3000
+```
+
+**Windows:**
+```cmd
+cd ui
+pip install flask
+python app.py --port 3000
 ```
 
 Then open http://localhost:3000 in your browser.

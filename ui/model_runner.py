@@ -8,6 +8,7 @@ import os
 import subprocess
 import tempfile
 import shutil
+import platform
 from pathlib import Path
 
 
@@ -20,7 +21,9 @@ class ModelRunner:
             # Default to parent of ui directory
             cepac_dir = Path(__file__).parent.parent
         self.cepac_dir = Path(cepac_dir)
-        self.executable = self.cepac_dir / 'cepac'
+        # Windows executables need .exe extension
+        exe_name = 'cepac.exe' if platform.system() == 'Windows' else 'cepac'
+        self.executable = self.cepac_dir / exe_name
 
     def compile_if_needed(self):
         """Compile the CEPAC model if executable doesn't exist or is outdated."""
@@ -54,12 +57,18 @@ class ModelRunner:
                 '-O3',
             ] + [str(f) for f in self.cepac_dir.glob('*.cpp')]
 
+            # On Windows, hide the console window for subprocess
+            kwargs = {}
+            if platform.system() == 'Windows':
+                kwargs['creationflags'] = subprocess.CREATE_NO_WINDOW
+
             result = subprocess.run(
                 cmd,
                 cwd=str(self.cepac_dir),
                 capture_output=True,
                 text=True,
-                timeout=120
+                timeout=120,
+                **kwargs
             )
 
             if result.returncode != 0:
@@ -110,12 +119,18 @@ class ModelRunner:
             try:
                 # Run CEPAC
                 cmd = [str(self.executable), str(tmpdir)]
+                # On Windows, hide the console window for subprocess
+                kwargs = {}
+                if platform.system() == 'Windows':
+                    kwargs['creationflags'] = subprocess.CREATE_NO_WINDOW
+
                 proc_result = subprocess.run(
                     cmd,
                     cwd=str(self.cepac_dir),
                     capture_output=True,
                     text=True,
-                    timeout=600  # 10 minute timeout
+                    timeout=600,  # 10 minute timeout
+                    **kwargs
                 )
 
                 result['message'] = proc_result.stdout
