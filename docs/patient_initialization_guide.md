@@ -17,7 +17,7 @@ When CEPAC simulates a patient, it first needs to "create" that patient with all
 
 Think of it like filling out a new patient intake form at a clinic, except the computer is rolling dice (using random number generators) to decide each characteristic based on the probabilities you specified in your `.in` input file.
 
-**A note on humility:** You probably think you understand how patient initialization works. The cat on your keyboard and the toddler pulling at your sleeve are both shaking their heads. They've seen your debugging sessions. They know you tried to access CD4 before checking HIV status. They remember. This guide exists so you can prove them wrong (or at least wrong less often).
+**A note on humility:** You probably think you understand how patient initialization works. The cat on your keyboard and the toddler pulling at your sleeve are both shaking their heads. They've seen your debugging sessions. They know you tried to access CD4 before checking HIV status. They remember. This guide exists so you can be wrong less often.
 
 ---
 
