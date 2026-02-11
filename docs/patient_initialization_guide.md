@@ -7,6 +7,8 @@
 
 > *The cat would like you to know he needs to drink his water now. He will close your laptop if you don't acknowledge this. He also accepts cuddles as tribute.*
 
+> *The cat has opinions about this codebase. Sixteen initializers? Really? He could do it in four. He won't, but he could.*
+
 ---
 
 ## What This Document Covers
@@ -190,7 +192,7 @@ This is the foundation. Everything else depends on these basic demographics.
 
 This is the **most complex initializer** because it handles both adults and pediatrics differently.
 
-> *The cat's favorite place to knock things over. 330+ lines of initialization code with two completely different paths. Bring snacks.*
+> *The cat's favorite place to knock things over. 330+ lines of initialization code with two completely different paths. The cat would like to know why there isn't a PediatricHIVInfectionUpdater and an AdultHIVInfectionUpdater. The cat has asked this before. The cat was ignored. The cat remembers.*
 
 ```mermaid
 flowchart TD
@@ -281,6 +283,8 @@ flowchart LR
 
 Simple: Just sets `hadTBTreatmentMajorTox = false`. No patient starts with prior toxicity.
 
+> *The cat notes this is one line of actual work wrapped in an entire updater class. The cat has thoughts about this. The cat is keeping them to himself. For now.*
+
 ---
 
 ### Step 5: TBDiseaseUpdater - "TB Disease State"
@@ -310,6 +314,8 @@ For chronic HIV+ patients, rolls for history of each OI type based on:
 ### Steps 7-8: MortalityUpdater, CD4HVLUpdater
 
 **No initialization actions.** These just call the parent class.
+
+> *The cat is staring at you. The cat is staring at the code. The cat would like to know why we call initializers that initialize nothing. "Consistency," you say. The cat has pushed your water glass closer to the edge of the desk.*
 
 ---
 
@@ -406,11 +412,15 @@ Sets up TB clinical care state:
 
 **No initialization actions.**
 
+> *"EndMonthUpdater." For initialization. At the beginning. The cat has closed your laptop. The cat needs a moment.*
+
 ---
 
 ## The Patient State Structure
 
 Here's what the final "patient object" looks like after initialization:
+
+> *Seven nested state objects. The cat counts GeneralState, PedsState, DiseaseState, MonitoringState, ProphState, ARTState, TBState. The cat wonders why MonitoringState isn't called CareState like everything else refers to it. The cat has learned not to ask.*
 
 ```mermaid
 classDiagram
@@ -486,6 +496,8 @@ CEPAC uses specific random number "streams" for reproducibility. Here are the ke
 
 > *"But I wanted a DIFFERENT number!"*
 > — A 3-year-old, also you when your simulation gives different results after you "just moved one line of code"
+
+> *The cat has noticed the seed numbers are not sequential. 20010, then 60050, then 90005. The cat suspects there are historical reasons for this. The cat does not want to know what they are.*
 
 | Seed | Used For |
 |------|----------|
