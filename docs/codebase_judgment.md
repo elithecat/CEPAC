@@ -2,7 +2,7 @@
 
 **A substantive but playful review of the CEPAC codebase by its harshest critics.**
 
-> *The orange cat has mass. The orange cat has inertia. The orange cat is not moving from this keyboard until he's finished judging your code.*
+> *The orange cat would like you to know that he has seen things. He has seen your commit history. He is concerned.*
 
 > *The 3-year-old asked "why?" 47 times while we wrote this. Every single time, it was a valid question.*
 
