@@ -62,47 +62,36 @@ flowchart TD
 The Patient constructor runs **16 "updater" initializers** in a specific order. This order matters because later initializers often depend on values set by earlier ones.
 
 ```mermaid
-flowchart TD
-    subgraph Phase1["Phase 1: Basic Demographics"]
-        direction TB
-        BMU["1. BeginMonthUpdater<br/>Sets: Age, Gender, Risk Factors"]
+flowchart LR
+    subgraph Phase1["Phase 1: Demographics"]
+        BMU["1. BeginMonth<br/>Age, Gender"]
     end
 
-    subgraph Phase2["Phase 2: Disease State"]
-        direction TB
-        HIU["2. HIVInfectionUpdater<br/>Sets: HIV status, CD4, HVL<br/><i>Uses: Age, Gender</i>"]
-        CHU["3. CHRMsUpdater<br/>Sets: Chronic conditions<br/><i>Uses: HIV, CD4, Age, Gender</i>"]
-        DTU["4. DrugToxicityUpdater<br/>Sets: Toxicity flags"]
-        TDU["5. TBDiseaseUpdater<br/>Sets: TB state, strain<br/><i>Uses: HIV status</i>"]
-        AOU["6. AcuteOIUpdater<br/>Sets: OI history<br/><i>Uses: HIV, CD4, HVL</i>"]
+    subgraph Phase2["Phase 2: Disease"]
+        HIU["2. HIVInfection"]
+        CHU["3. CHRMs"]
+        DTU["4. DrugTox"]
+        TDU["5. TBDisease"]
+        AOU["6. AcuteOI"]
     end
 
-    subgraph Phase3["Phase 3: No-ops"]
-        direction TB
-        MOU["7. MortalityUpdater<br/><i>(no initialization)</i>"]
-        CDU["8. CD4HVLUpdater<br/><i>(no initialization)</i>"]
+    subgraph Phase3["Phase 3: Skip"]
+        MOU["7-8. No-ops"]
     end
 
-    subgraph Phase4["Phase 4: Testing & Behavior"]
-        direction TB
-        HTU["9. HIVTestingUpdater<br/>Sets: Detection status<br/><i>Uses: HIV state, Age</i>"]
-        BEU["10. BehaviorUpdater<br/>Sets: LTFU response"]
-        DEU["11. DrugEfficacyUpdater<br/><i>(no initialization)</i>"]
-        C4U["12. CD4TestUpdater<br/>Sets: CD4 test availability"]
-        HVU["13. HVLTestUpdater<br/>Sets: HVL test flags"]
+    subgraph Phase4["Phase 4: Testing"]
+        HTU["9. HIVTesting"]
+        BEU["10. Behavior"]
+        DEU["11-13. Tests"]
     end
 
-    subgraph Phase5["Phase 5: Clinical Care"]
-        direction TB
-        CVU["14. ClinicVisitUpdater<br/>Sets: Clinic type, ART state,<br/>Prophylaxis, Response baseline<br/><i>Uses: Detection, OI history</i>"]
-        TCU["15. TBClinicalUpdater<br/>Sets: TB care state<br/><i>Uses: TB disease state</i>"]
-        EMU["16. EndMonthUpdater<br/><i>(no initialization)</i>"]
+    subgraph Phase5["Phase 5: Clinical"]
+        CVU["14. ClinicVisit"]
+        TCU["15. TBClinical"]
+        EMU["16. EndMonth"]
     end
 
-    Phase1 --> Phase2
-    Phase2 --> Phase3
-    Phase3 --> Phase4
-    Phase4 --> Phase5
+    Phase1 --> Phase2 --> Phase3 --> Phase4 --> Phase5
 
     style Phase1 fill:#bbdefb
     style Phase2 fill:#c8e6c9
@@ -110,6 +99,16 @@ flowchart TD
     style Phase4 fill:#fff9c4
     style Phase5 fill:#f8bbd9
 ```
+
+**Phase details:**
+
+| Phase | Updaters | What Gets Set |
+|-------|----------|---------------|
+| **1. Demographics** | BeginMonthUpdater | Age, gender, risk factors |
+| **2. Disease** | HIVInfection, CHRMs, DrugTox, TBDisease, AcuteOI | HIV state, CD4, HVL, chronic conditions, TB, OI history |
+| **3. Skip** | Mortality, CD4HVL | *(no initialization)* |
+| **4. Testing** | HIVTesting, Behavior, DrugEfficacy, CD4Test, HVLTest | Detection status, LTFU response, test availability |
+| **5. Clinical** | ClinicVisit, TBClinical, EndMonth | Clinic type, ART state, prophylaxis, TB care |
 
 ---
 
@@ -121,57 +120,46 @@ This is the critical diagram. It shows **which variables must be set BEFORE othe
 > — A 3-year-old explaining this dependency graph, also explaining why you can't have dessert before dinner
 
 ```mermaid
-flowchart LR
-    subgraph Demographics["Demographics<br/>(Set First)"]
+flowchart TB
+    subgraph Demographics["1. Demographics - Set First"]
         AGE[Age]
         GEN[Gender]
         RISK[Risk Factors]
     end
 
-    subgraph Core["Core Disease State<br/>(Depends on Demographics)"]
+    subgraph Core["2. Core Disease State"]
         HIV[HIV State]
-        CD4[CD4 Count/Strata]
+        CD4[CD4 Count]
         HVL[HVL Strata]
     end
 
-    subgraph Conditions["Conditions<br/>(Depends on Core)"]
+    subgraph Conditions["3. Conditions"]
         CHRM[CHRMs]
         TB[TB State]
         OI[OI History]
     end
 
-    subgraph Care["Care State<br/>(Depends on All Above)"]
+    subgraph Care["4. Care State - Set Last"]
         DET[Detection Status]
         LINK[Linked to Care]
         CLIN[Clinic Type]
         ART[ART State]
         PROPH[Proph State]
+        TBCARE[TB Care]
     end
 
-    AGE --> HIV
-    GEN --> HIV
-    AGE --> CD4
-    GEN --> CHRM
+    Demographics --> Core
+    Core --> Conditions
+    Conditions --> Care
 
-    HIV --> CD4
-    HIV --> HVL
-    HIV --> TB
-    HIV --> CHRM
-
-    CD4 --> HVL
-    CD4 --> CHRM
-    CD4 --> TB
-    CD4 --> OI
-
-    HVL --> OI
-
-    HIV --> DET
-    DET --> LINK
-    LINK --> CLIN
-    CLIN --> ART
-    OI --> ART
-
-    TB --> TBCARE[TB Care]
+    AGE -.-> HIV
+    GEN -.-> HIV
+    HIV -.-> CD4
+    CD4 -.-> HVL
+    CD4 -.-> OI
+    HVL -.-> OI
+    HIV -.-> DET
+    TB -.-> TBCARE
 
     style Demographics fill:#bbdefb
     style Core fill:#c8e6c9
@@ -206,35 +194,31 @@ This is the **most complex initializer** because it handles both adults and pedi
 
 ```mermaid
 flowchart TD
-    START[Start HIV Initialization]
+    START[Start HIV Initialization] --> CHECK{Pediatric?}
 
-    START --> CHECK{Is patient<br/>pediatric?}
+    CHECK -->|Yes| P1[Set maternal HIV status]
+    P1 --> P2[Set breastfeeding]
+    P2 --> P3[Roll vertical transmission]
+    P3 --> P4[If HIV+: Set CD4%, HVL]
+    P4 --> DONE[HIV State Complete]
 
-    CHECK -->|Yes| PED[Pediatric Path]
-    CHECK -->|No| ADULT[Adult Path]
+    CHECK -->|No| A1[Roll HIV status]
+    A1 --> A2[If HIV+: Roll CD4]
+    A2 --> A3[Roll HVL by CD4 strata]
+    A3 --> A4[Set transmission risk]
+    A4 --> DONE
 
-    subgraph PED[Pediatric Initialization]
-        P1[Set maternal HIV status]
-        P2[Set breastfeeding status]
-        P3[Roll for vertical transmission]
-        P4[If HIV+: Set CD4%, HVL]
-        P1 --> P2 --> P3 --> P4
-    end
-
-    subgraph ADULT[Adult Initialization]
-        A1[Roll HIV status<br/>Neg/Acute/Chronic]
-        A2[If HIV+: Roll CD4 from distribution]
-        A3[Roll HVL based on CD4 strata]
-        A4[Set transmission risk category]
-        A1 --> A2 --> A3 --> A4
-    end
-
-    PED --> DONE[HIV State Complete]
-    ADULT --> DONE
-
-    style PED fill:#e1f5fe
-    style ADULT fill:#fff3e0
+    style P1 fill:#e1f5fe
+    style P2 fill:#e1f5fe
+    style P3 fill:#e1f5fe
+    style P4 fill:#e1f5fe
+    style A1 fill:#fff3e0
+    style A2 fill:#fff3e0
+    style A3 fill:#fff3e0
+    style A4 fill:#fff3e0
 ```
+
+**Paths:** Blue = Pediatric, Orange = Adult
 
 **Key Variables Set:**
 
@@ -373,47 +357,28 @@ Minimal initialization:
 This initializer sets up the entire clinical care state:
 
 ```mermaid
-flowchart TD
-    subgraph Visits["Clinic Visits"]
-        CV[Clinic Visit Type]
-        TI[Therapy Implementation]
-    end
+flowchart LR
+    CV[Clinic Visit Type] --> ART[ART State]
+    ART --> Proph[Prophylaxis]
+    Proph --> Response[Heterogeneity]
+    Response --> Sched[Scheduling]
 
-    subgraph ART["ART State"]
-        OART[isOnART = false]
-        HART[hasTakenART = false]
-        NART[Find Next ART Regimen]
-    end
-
-    subgraph Proph["Prophylaxis State"]
-        OPRO[All isOnProph = false]
-        NPRO[Find Next Proph for Each OI]
-        COMP[Roll Proph Compliance]
-    end
-
-    subgraph Response["Heterogeneity"]
-        RESP[Response Baseline<br/>Logit-Normal Draw]
-        CD4R[CD4 Response Type]
-    end
-
-    subgraph Scheduling["Scheduling"]
-        ICLIN[Schedule Initial<br/>Clinic Visit]
-        ICD4[Schedule CD4 Test]
-        IHVL[Schedule HVL Test]
-    end
-
-    CV --> TI
-    TI --> ART
-    ART --> Proph
-    Proph --> Response
-    Response --> Scheduling
-
-    style Visits fill:#bbdefb
+    style CV fill:#bbdefb
     style ART fill:#c8e6c9
     style Proph fill:#fff9c4
     style Response fill:#f8bbd9
-    style Scheduling fill:#e0e0e0
+    style Sched fill:#e0e0e0
 ```
+
+**What each box initializes:**
+
+| Step | Variables Set |
+|------|--------------|
+| **Clinic Visit** | Visit type, therapy implementation |
+| **ART State** | `isOnART=false`, `hasTakenART=false`, find next regimen |
+| **Prophylaxis** | All `isOnProph=false`, find next proph per OI, roll compliance |
+| **Heterogeneity** | Response baseline (logit-normal), CD4 response type |
+| **Scheduling** | Initial clinic visit, CD4 test, HVL test |
 
 **Key Variables Set:**
 
@@ -695,7 +660,7 @@ The 3-year-old is right when:
 The cat is also right when:
 - He closes your laptop (you needed a break anyway)
 - He demands cuddles (see above)
-- He drinks his water loudly to remind you to hydrate
+- He drinks your water loudly to remind you to hydrate
 
 ---
 
