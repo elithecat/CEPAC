@@ -119,7 +119,7 @@ flowchart LR
 This is the critical diagram. It shows **which variables must be set BEFORE others can be calculated**.
 
 > *"NO! You have to do it in ORDER!"*
-> — The 3-year-old explaining this dependency graph, also explaining why you can't have dessert before dinner
+> — The 3-year-old explaining this dependency graph, but NOT explaining dessert, which should obviously come first
 
 ```mermaid
 flowchart TB
