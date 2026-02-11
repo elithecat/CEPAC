@@ -3,7 +3,7 @@
 **Audience:** New programmers to the CEPAC codebase who are health policy experts but may be less familiar with C++ code architecture.
 
 > *"You're doing it wrong."*
-> — Every cat, every 3-year-old, and this codebase when you initialize things out of order
+> — One orange cat, one 3-year-old, and this codebase when you initialize things out of order
 
 > *The cat would like you to know he needs to drink his water now. He will close your laptop if you don't acknowledge this. He also accepts cuddles as tribute.*
 
