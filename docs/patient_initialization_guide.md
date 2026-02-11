@@ -543,7 +543,7 @@ The AcuteOIUpdater can **upgrade** HIV state from asymptomatic to symptomatic if
 
 A patient can be HIV-detected but not yet linked to care. These are separate state variables.
 
-**The 3-year-old version:** "Just because you SEE the cookie doesn't mean you GET the cookie!"
+**The 3-year-old version:** "I SEE the cookie so it's MY cookie!" *(This is also how you treat detected HIV patients. You're wrong. They're not linked yet.)*
 
 ### 5. "No-op" Initializers
 
