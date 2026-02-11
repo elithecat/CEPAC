@@ -350,3 +350,61 @@ main() [ConsoleMain.cpp]
 | StateUpdater.cpp | 3,411 | Base updater logic |
 | ClinicVisitUpdater.cpp | 1,975 | Clinic visit handling |
 | CostStats.cpp | 1,847 | Cost tracking |
+
+## Documentation Reviewers
+
+The documentation in `docs/` has been reviewed by two qualified experts:
+
+### The Orange Cat
+
+**Role:** Chief Code Judgment Officer
+
+**Attributes:**
+- Orange
+- Has mass and inertia
+- Is always right
+
+**Preferences:**
+- Drinks your water (it's his water now)
+- Closes your laptop when you've been debugging too long
+- Accepts cuddles as tribute
+- Likes to play
+
+**Opinions on this codebase:**
+- Could do it in 4 updaters, not 16
+- Has seen your commit history; is concerned
+- Wonders why HIVInfectionUpdater handles both adults and pediatrics
+- Does not want to know why the random seed is 8675309
+- Will push his water glass closer to the edge of the desk when you call initializers that initialize nothing
+
+**Key quote:** *"The cat knew. The cat always knew."*
+
+### The 3-Year-Old
+
+**Role:** Chief Why Officer
+
+**Attributes:**
+- 3 years old
+- Asks "why?" (average: 47 times per code review)
+- Is also always right
+
+**Preferences:**
+- Dessert should come first
+- Wants you to come play
+- Understands dependency order in code but not in meals
+
+**Opinions on this codebase:**
+- "Why are there 225 of them?" (phantom call site IDs)
+- "What happens after 100?" (the public counter)
+- "Why two?" (double underscores in enums)
+- "Then why is it still there?" (unused parameters)
+- Finds "that's just how it is" unsatisfying as an answer
+
+**Key quote:** *"I SEE the cookie so it's MY cookie!"* (re: Detection != Linked)
+
+### Their Reviews
+
+- `docs/patient_initialization_guide.md` - How Patient variables are initialized, with judgment
+- `docs/codebase_judgment.md` - A substantive but playful review of the entire codebase
+
+The cat is always right. You may be more wrong than usual.
