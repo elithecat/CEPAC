@@ -315,7 +315,7 @@ For chronic HIV+ patients, rolls for history of each OI type based on:
 
 **No initialization actions.** These just call the parent class.
 
-> *The cat is staring at you. The cat is staring at the code. The cat would like to know why we call initializers that initialize nothing. "Consistency," you say. The cat has pushed your water glass closer to the edge of the desk.*
+> *The cat is staring at you. The cat is staring at the code. The cat would like to know why we call initializers that initialize nothing. "Consistency," you say. The cat has pushed your, I mean his, water glass closer to the edge of the desk.*
 
 ---
 
