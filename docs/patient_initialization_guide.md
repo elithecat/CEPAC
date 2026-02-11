@@ -2,6 +2,9 @@
 
 **Audience:** New programmers to the CEPAC codebase who are health policy experts but may be less familiar with C++ code architecture.
 
+> *"You're doing it wrong."*
+> — Every cat, every 3-year-old, and this codebase when you initialize things out of order
+
 ---
 
 ## What This Document Covers
@@ -9,6 +12,8 @@
 When CEPAC simulates a patient, it first needs to "create" that patient with all their initial characteristics: age, gender, HIV status, CD4 count, chronic conditions, etc. This document explains exactly how that happens, step by step.
 
 Think of it like filling out a new patient intake form at a clinic, except the computer is rolling dice (using random number generators) to decide each characteristic based on the probabilities you specified in your `.in` input file.
+
+**A note on humility:** You probably think you understand how patient initialization works. The cat on your keyboard and the toddler pulling at your sleeve are both shaking their heads. They've seen your debugging sessions. They know you tried to access CD4 before checking HIV status. They remember. This guide exists so you can prove them wrong (or at least wrong less often).
 
 ---
 
@@ -110,6 +115,9 @@ flowchart TD
 
 This is the critical diagram. It shows **which variables must be set BEFORE others can be calculated**.
 
+> *"NO! You have to do it in ORDER!"*
+> — A 3-year-old explaining this dependency graph, also explaining why you can't have dessert before dinner
+
 ```mermaid
 flowchart LR
     subgraph Demographics["Demographics<br/>(Set First)"]
@@ -191,6 +199,8 @@ This is the foundation. Everything else depends on these basic demographics.
 ### Step 2: HIVInfectionUpdater - "HIV Status & Immune State"
 
 This is the **most complex initializer** because it handles both adults and pediatrics differently.
+
+> *The cat's favorite place to knock things over. 330+ lines of initialization code with two completely different paths. Bring snacks.*
 
 ```mermaid
 flowchart TD
@@ -507,6 +517,9 @@ classDiagram
 
 CEPAC uses specific random number "streams" for reproducibility. Here are the key seeds used during initialization:
 
+> *"But I wanted a DIFFERENT number!"*
+> — A 3-year-old, also you when your simulation gives different results after you "just moved one line of code"
+
 | Seed | Used For |
 |------|----------|
 | 20010 | Gender roll |
@@ -526,25 +539,38 @@ CEPAC uses specific random number "streams" for reproducibility. Here are the ke
 
 ## Common Gotchas for New Developers
 
+> *"I TOLD you so."*
+> — The cat, watching you discover these the hard way at 2am
+
 ### 1. Order Matters!
 
 You cannot initialize CD4 before you know HIV status, because HIV-negative patients don't get a CD4 roll. Similarly, OI history depends on CD4 and HVL strata.
+
+**The 3-year-old version:** "You can't put on your shoes before your socks! That's SILLY!"
 
 ### 2. Pediatric vs. Adult Paths
 
 The HIVInfectionUpdater has completely different logic for pediatrics (vertical transmission, maternal status) vs. adults. Check which path you're on when debugging.
 
+**The cat version:** *knocks your coffee off the desk because you assumed all patients were adults*
+
 ### 3. State Upgrades
 
 The AcuteOIUpdater can **upgrade** HIV state from asymptomatic to symptomatic if OI history is present. This is a side effect that's easy to miss.
+
+**Why you'll get this wrong:** You'll grep for where `HIV_INF_SYMP_CHR_POS` is set, find it in HIVInfectionUpdater, and spend 3 hours confused about why your asymptomatic patient became symptomatic. The answer is in AcuteOIUpdater. The cat knew. The cat always knew.
 
 ### 4. Detection != Linked
 
 A patient can be HIV-detected but not yet linked to care. These are separate state variables.
 
+**The 3-year-old version:** "Just because you SEE the cookie doesn't mean you GET the cookie!"
+
 ### 5. "No-op" Initializers
 
 Several initializers (Mortality, CD4HVL, DrugEfficacy, EndMonth) do nothing during initialization. They're called for consistency but don't set any variables.
+
+**Why this will confuse you:** You'll read through EndMonthUpdater::performInitialUpdates() looking for the bug, find nothing, and wonder if you've lost your mind. You haven't. It's just empty. The cat is unimpressed by your wasted effort.
 
 ---
 
@@ -594,3 +620,83 @@ When a new patient is created in CEPAC:
 5. **Clinical care setup** (clinic type, ART, proph) - depends on everything above
 
 Each step uses random number draws from distributions you specify in your `.in` file. The order is fixed because of these dependencies.
+
+---
+
+## TL;DR: The "I Have a Grant Deadline" Quick Reference
+
+> *For when you need answers NOW and the cat is actively sitting on your keyboard*
+
+### What file do I look at?
+
+| I need to understand... | Look here |
+|------------------------|-----------|
+| How patients are created | `Patient.cpp:20-84` |
+| Age/gender initialization | `BeginMonthUpdater.cpp:14-129` |
+| HIV/CD4/HVL setup | `HIVInfectionUpdater.cpp:14-346` |
+| Why my patient has a CHRM | `CHRMsUpdater.cpp:14-75` |
+| TB initialization | `TBDiseaseUpdater.cpp:14-87` |
+| OI history logic | `AcuteOIUpdater.cpp:14-49` |
+| Detection status | `HIVTestingUpdater.cpp:14-95` |
+| ART/Proph/Clinic setup | `ClinicVisitUpdater.cpp:16-140` |
+
+### The 5 things you WILL mess up (and how to fix them)
+
+| Your Bug | The Fix |
+|----------|---------|
+| CD4 is garbage/undefined | Check HIV status first. HIV- patients don't get CD4 initialization. |
+| Patient became symptomatic mysteriously | Check OI history in `AcuteOIUpdater`. It upgrades HIV state as a side effect. |
+| Pediatric code isn't running | Check `isPediatric` flag. It depends on age AND module settings. |
+| Patient should be on ART but isn't | Detection and linkage are SEPARATE. Check both `isDetectedHIVPositive` AND `isLinked`. |
+| Random outputs changed unexpectedly | You changed initialization order. The RNG seeds are position-dependent. |
+
+### The dependency chain (memorize this)
+
+```
+Age/Gender  -->  HIV Status  -->  CD4  -->  HVL  -->  OI History
+                     |             |
+                     v             v
+                 Detection     CHRMs, TB
+                     |
+                     v
+              Linked to Care
+                     |
+                     v
+              ART/Proph/Clinic
+```
+
+**If something downstream is wrong, check everything upstream first.**
+
+### The 30-second mental model
+
+1. Patient starts as an empty shell
+2. 16 initializers run in strict order (like dominoes)
+3. Each initializer reads from your `.in` file and rolls dice
+4. Later initializers use values from earlier ones
+5. After step 16, patient is ready for `simulateMonth()` loop
+
+### When the cat is right and you are wrong
+
+The cat is right when:
+- You access a variable before its initializer has run
+- You assume pediatric and adult paths are the same
+- You forget that OI history can change HIV state
+- You think "detected" means "linked to care"
+- You modify initializer order and expect the same outputs
+
+The 3-year-old is right when:
+- You try to run before you can walk (skip to ART state before HIV state)
+- You ask "why?" and the answer is "because the code says so"
+- You insist something should work a certain way but it doesn't
+
+---
+
+## Final Words
+
+You now know more about patient initialization than 99% of people who will ever touch this codebase. The cat remains skeptical. The 3-year-old has moved on to asking why the sky is blue.
+
+When you find yourself debugging at midnight, remember: the order matters, the side effects are real, and somewhere, a cat is judging your variable access patterns.
+
+Good luck. You'll need it.
+
+*— The CEPAC Codebase (and the cat)*
