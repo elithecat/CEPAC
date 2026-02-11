@@ -119,7 +119,7 @@ flowchart LR
 This is the critical diagram. It shows **which variables must be set BEFORE others can be calculated**.
 
 > *"NO! You have to do it in ORDER!"*
-> — A 3-year-old explaining this dependency graph, also explaining why you can't have dessert before dinner
+> — The 3-year-old explaining this dependency graph, also explaining why you can't have dessert before dinner
 
 ```mermaid
 flowchart TB
@@ -495,7 +495,7 @@ classDiagram
 CEPAC uses specific random number "streams" for reproducibility. Here are the key seeds used during initialization:
 
 > *"But I wanted a DIFFERENT number!"*
-> — A 3-year-old, also you when your simulation gives different results after you "just moved one line of code"
+> — The 3-year-old, also you when your simulation gives different results after you "just moved one line of code"
 
 > *The cat has noticed the seed numbers are not sequential. 20010, then 60050, then 90005. The cat suspects there are historical reasons for this. The cat does not want to know what they are.*
 
