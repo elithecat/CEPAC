@@ -656,7 +656,7 @@ Age/Gender  -->  HIV Status  -->  CD4  -->  HVL  -->  OI History
 
 ### The cat is always right
 
-The cat is always right. Examples:
+The cat is always right, but you may be more wrong than usual. Examples:
 
 - You access a variable before its initializer has run *(the cat knew)*
 - You assume pediatric and adult paths are the same *(the cat knew)*
