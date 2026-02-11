@@ -190,7 +190,7 @@ This is the foundation. Everything else depends on these basic demographics.
 
 ### Step 2: HIVInfectionUpdater - "HIV Status & Immune State"
 
-This is the **most complex initializer** because it handles both adults and pediatrics differently.
+This is the **most complex initializer** because someone decided it should handle both adults and pediatrics.
 
 > *The cat's favorite place to knock things over. 330+ lines of initialization code with two completely different paths. The cat would like to know why there isn't a PediatricHIVInfectionUpdater and an AdultHIVInfectionUpdater. The cat has asked this before. The cat was ignored. The cat remembers.*
 
