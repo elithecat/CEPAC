@@ -539,13 +539,7 @@ The AcuteOIUpdater can **upgrade** HIV state from asymptomatic to symptomatic if
 
 **Why you'll get this wrong:** You'll grep for where `HIV_INF_SYMP_CHR_POS` is set, find it in HIVInfectionUpdater, and spend 3 hours confused about why your asymptomatic patient became symptomatic. The answer is in AcuteOIUpdater. The cat knew. The cat always knew.
 
-### 4. Detection != Linked
-
-A patient can be HIV-detected but not yet linked to care. These are separate state variables.
-
-**The 3-year-old version:** "I SEE the cookie so it's MY cookie!" *(This is also how you treat detected HIV patients. You're wrong. They're not linked yet.)*
-
-### 5. "No-op" Initializers
+### 4. "No-op" Initializers
 
 Several initializers (Mortality, CD4HVL, DrugEfficacy, EndMonth) do nothing during initialization. They're called for consistency but don't set any variables.
 
