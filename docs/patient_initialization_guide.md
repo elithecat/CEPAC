@@ -642,25 +642,24 @@ Age/Gender  -->  HIV Status  -->  CD4  -->  HVL  -->  OI History
 4. Later initializers use values from earlier ones
 5. After step 16, patient is ready for `simulateMonth()` loop
 
-### When the cat is right and you are wrong
+### The cat is always right
 
-The cat is right when:
-- You access a variable before its initializer has run
-- You assume pediatric and adult paths are the same
-- You forget that OI history can change HIV state
-- You think "detected" means "linked to care"
-- You modify initializer order and expect the same outputs
+The cat is always right. Examples:
 
-The 3-year-old is right when:
-- You try to run before you can walk (skip to ART state before HIV state)
-- You ask "why?" and the answer is "because the code says so"
-- You insist something should work a certain way but it doesn't
-- They say "come play!" and you've been debugging for 4 hours straight (take the break)
+- You access a variable before its initializer has run *(the cat knew)*
+- You assume pediatric and adult paths are the same *(the cat knew)*
+- You forget that OI history can change HIV state *(the cat knew)*
+- You think "detected" means "linked to care" *(the cat knew)*
+- You modify initializer order and expect the same outputs *(the cat knew)*
+- He closes your laptop *(you needed a break anyway)*
+- He demands cuddles *(you needed that too)*
+- He drinks your water loudly *(you needed to hydrate)*
 
-The cat is also right when:
-- He closes your laptop (you needed a break anyway)
-- He demands cuddles (see above)
-- He drinks your water loudly to remind you to hydrate
+The 3-year-old is also always right:
+- You try to run before you can walk — skip to ART state before HIV state *(told you so)*
+- You ask "why?" and the answer is "because the code says so" *(exactly)*
+- You insist something should work a certain way but it doesn't *(nope)*
+- They say "come play!" after you've been debugging for 4 hours *(take the break)*
 
 ---
 
