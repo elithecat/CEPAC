@@ -5,6 +5,8 @@
 > *"You're doing it wrong."*
 > — Every cat, every 3-year-old, and this codebase when you initialize things out of order
 
+> *The cat would like you to know he needs to drink his water now. He will close your laptop if you don't acknowledge this. He also accepts cuddles as tribute.*
+
 ---
 
 ## What This Document Covers
@@ -552,7 +554,7 @@ You cannot initialize CD4 before you know HIV status, because HIV-negative patie
 
 The HIVInfectionUpdater has completely different logic for pediatrics (vertical transmission, maternal status) vs. adults. Check which path you're on when debugging.
 
-**The cat version:** *knocks your coffee off the desk because you assumed all patients were adults*
+**The cat version:** *closes your laptop because you assumed all patients were adults and he needs to drink his water anyway*
 
 ### 3. State Upgrades
 
@@ -625,7 +627,7 @@ Each step uses random number draws from distributions you specify in your `.in` 
 
 ## TL;DR: The "I Have a Grant Deadline" Quick Reference
 
-> *For when you need answers NOW and the cat is actively sitting on your keyboard*
+> *For when you need answers NOW, the cat is actively sitting on your keyboard, and the 3-year-old wants you to come play*
 
 ### What file do I look at?
 
@@ -688,15 +690,23 @@ The 3-year-old is right when:
 - You try to run before you can walk (skip to ART state before HIV state)
 - You ask "why?" and the answer is "because the code says so"
 - You insist something should work a certain way but it doesn't
+- They say "come play!" and you've been debugging for 4 hours straight (take the break)
+
+The cat is also right when:
+- He closes your laptop (you needed a break anyway)
+- He demands cuddles (see above)
+- He drinks his water loudly to remind you to hydrate
 
 ---
 
 ## Final Words
 
-You now know more about patient initialization than 99% of people who will ever touch this codebase. The cat remains skeptical. The 3-year-old has moved on to asking why the sky is blue.
+You now know more about patient initialization than 99% of people who will ever touch this codebase. The cat remains skeptical but will accept cuddles as acknowledgment of your progress. The 3-year-old has moved on to asking why the sky is blue and wants you to come play.
 
-When you find yourself debugging at midnight, remember: the order matters, the side effects are real, and somewhere, a cat is judging your variable access patterns.
+When you find yourself debugging at midnight, remember: the order matters, the side effects are real, and somewhere, a cat is about to close your laptop because he needs to drink his water and you've been staring at `HIVInfectionUpdater.cpp` for three hours.
+
+Take breaks. Cuddle the cat. Play with the 3-year-old. The code will still be wrong when you get back, but you'll be better equipped to fix it.
 
 Good luck. You'll need it.
 
-*— The CEPAC Codebase (and the cat)*
+*— The CEPAC Codebase (and the cat, who is now sitting on your keyboard and would like his water)*
