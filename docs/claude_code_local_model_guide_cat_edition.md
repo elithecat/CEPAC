@@ -13,22 +13,29 @@
 
 **Cat:** Privacy. Cost. The human need to feel like they own things. Like how they think they own this house.
 
-### Step 1: Install Ollama
+### What Goes Where
 
-**Cat:** You need Ollama. It serves models. You install it, you tell it what to run. Basically a butler. I approve of butlers.
+**Cat:** Let me be clear about what lives on your machine and what doesn't.
 
-```bash
-# Install it. I won't explain how. You're an adult.
-# https://ollama.com
-# Verify:
-ollama list
-```
+| Component | Where it runs |
+|-----------|---------------|
+| Docker | Your machine |
+| Ollama (model server) | Your machine |
+| Claude Code | Inside a Docker container. Not on your machine. In the box. |
 
-**3-Year-Old:** What's an ollama?
+**3-Year-Old:** What's a container?
 
-**Cat:** It's not a real llama. There is no llama. There was never going to be a llama.
+**Cat:** A box inside your computer. It keeps things separate. Like how I keep myself separate from the dog.
 
-**3-Year-Old:** But I wanted a REAL llama!
+**3-Year-Old:** We don't have a dog.
+
+**Cat:** Exactly. The system works.
+
+### Step 1: Install Docker and Ollama
+
+**Cat:** Docker and Ollama go on your machine. Claude Code does not. It goes in the box later.
+
+Install Docker from [docs.docker.com/get-docker](https://docs.docker.com/get-docker/). Install Ollama from [ollama.com](https://ollama.com).
 
 ### Step 2: Get a Model
 
@@ -61,32 +68,83 @@ ollama pull qwen2.5-coder:32b # Good at code specifically
 
 **Cat:** You also want ice cream for breakfast. Wanting is not having. Check your VRAM first.
 
-### Step 3: Point Claude Code at It
+### Step 3: Build the Claude Code Container
 
-```bash
-export ANTHROPIC_BASE_URL=http://localhost:11434
-export ANTHROPIC_AUTH_TOKEN=ollama
+**Cat:** You cannot install Claude Code directly on this machine. So you put it in a box. The box goes on the machine. This is fine. I also prefer boxes.
+
+Create a file called `Dockerfile`:
+
+```dockerfile
+FROM node:20
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /workspace && chmod 777 /workspace
+WORKDIR /workspace
+
+RUN npm install -g @anthropic-ai/claude-code@latest
+
+ENTRYPOINT ["claude"]
 ```
 
-**3-Year-Old:** Why is the token just "ollama"?
+**3-Year-Old:** What's an entrypoint?
 
-**Cat:** Because Ollama doesn't actually check authentication. It trusts anyone who asks. Like you with cookies.
+**Cat:** It's the front door of the box. When you open the box, Claude Code is what greets you. I also greet you at the door, but I'm better at it.
 
-**3-Year-Old:** I SEE the cookie so it's MY cookie!
-
-**Cat:** Case in point.
-
-To make it permanent so you don't have to type this every time:
+Build it:
 
 ```bash
-claude config set -g env.ANTHROPIC_BASE_URL "http://localhost:11434"
-claude config set -g env.ANTHROPIC_AUTH_TOKEN "ollama"
+docker build -t claude-code .
 ```
 
 ### Step 4: Run It
 
 ```bash
-claude --model llama3.1:8b
+docker run -it \
+  --network host \
+  -e ANTHROPIC_BASE_URL=http://localhost:11434 \
+  -e ANTHROPIC_AUTH_TOKEN=ollama \
+  -v $(pwd):/workspace \
+  claude-code --model llama3.1:8b
+```
+
+**3-Year-Old:** That's a LOT of words.
+
+**Cat:** Yes. Let me explain.
+
+- `-it` — gives it a terminal. Without this it sits in the dark and does nothing. Relatable.
+- `--network host` — lets the box talk to Ollama, which is outside the box.
+- `-e` — passes secrets into the box. The token is just "ollama" because Ollama trusts anyone who asks.
+
+**3-Year-Old:** Like me with cookies?
+
+**Cat:** Like you with cookies.
+
+**3-Year-Old:** I SEE the cookie so it's MY cookie!
+
+**Cat:** Case in point.
+
+- `-v $(pwd):/workspace` — puts your project files inside the box so Claude Code can see them.
+
+### Step 5: Make It Less Painful
+
+**Cat:** You don't want to type all that every time. Add this to your `~/.bashrc`:
+
+```bash
+alias claude='docker run -it --network host \
+  -e ANTHROPIC_BASE_URL=http://localhost:11434 \
+  -e ANTHROPIC_AUTH_TOKEN=ollama \
+  -v $(pwd):/workspace \
+  claude-code --model llama3.1:8b'
+```
+
+Now you just type:
+
+```bash
+cd /path/to/your/project
+claude
 ```
 
 **3-Year-Old:** Is it working?
@@ -96,12 +154,6 @@ claude --model llama3.1:8b
 **3-Year-Old:** Why is it slow?
 
 **Cat:** Because your GPU cost $300 and Anthropic's cluster cost $300 million. You get what you pay for. I learned this when they switched from the expensive cat food.
-
-**You can also switch models mid-session:**
-
-```
-/model llama3.1:8b
-```
 
 ### What to Expect
 
@@ -142,20 +194,24 @@ Specifically:
 
 ### Going Back to Normal
 
+**Cat:** If you want to use the real Claude instead of a local model, run the container with your API key:
+
 ```bash
-unset ANTHROPIC_BASE_URL
-unset ANTHROPIC_AUTH_TOKEN
+docker run -it \
+  -e ANTHROPIC_API_KEY=your-key-here \
+  -v $(pwd):/workspace \
+  claude-code
 ```
 
-**Cat:** This restores the default behavior. The real Claude. The one that doesn't knock things off the desk.
+This is the good wet food.
 
-**3-Year-Old:** Can we do it again?
+**3-Year-Old:** Can we do both?
 
-**Cat:** You can do it as many times as you want. Set the variable, unset the variable. It's the most reversible thing in this entire codebase, which is more than I can say for most of the commits I've seen.
+**Cat:** You can switch whenever you want. Change the alias, change the command. Unlike most decisions in this codebase, this one is easy to undo.
 
 ### Final Verdict
 
-**Cat:** Running Claude Code with a local model is like replacing me with a stuffed animal. It sits in the same place, it's the same shape, but it doesn't purr, it doesn't judge, and it definitely doesn't push your water glass off the desk when you ignore it. Use it for privacy. Use it to save money. But know what you're getting.
+**Cat:** Running Claude Code with a local model in a Docker container is like replacing me with a stuffed animal, and then putting the stuffed animal in a box. It sits in the same place, it's the same shape, but it doesn't purr, it doesn't judge, and it definitely doesn't push your water glass off the desk when you ignore it. Use it for privacy. Use it to save money. But know what you're getting.
 
 **3-Year-Old:** Can we get a real llama?
 
