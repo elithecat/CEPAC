@@ -25,11 +25,11 @@
 
 **3-Year-Old:** What's a container?
 
-**Cat:** A box inside your computer. It keeps things separate. Like how I keep myself separate from the dog.
+**Cat:** A box inside your computer.
 
-**3-Year-Old:** We don't have a dog.
+**3-Year-Old:** Do you fit in it?
 
-**Cat:** Exactly. The system works.
+**Cat:** I fit in all boxes. If I fits, I sits. This is the law.
 
 ### Step 1: Install Docker and Ollama
 
