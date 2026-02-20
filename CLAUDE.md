@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Important: Repository Scope
+
+Always operate within the repository where you were initially started. Do not push commits, files, or changes to other repositories unless the user explicitly directs you to a different target repo. If the user provides a link to another repo for reference, read from it — do not write to it.
+
 ## Project Overview
 
 CEPAC (**C**ost **E**ffectiveness of **P**reventing **A**IDS **C**omplications) is a Monte Carlo microsimulation model that simulates HIV disease progression and treatment outcomes. It is developed by the Medical Practice Evaluation Center (MPEC) at Massachusetts General Hospital.
